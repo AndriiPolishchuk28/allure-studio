@@ -1,5 +1,27 @@
-@import "reset";
+@import 'reset';
+@import 'fonts';
+
+:root {
+    //colors
+    --icon: rgba(156, 37, 26, 0.87);
+    --gen: #453f41;
+    --dop: #604a51;
+    --gen-w: #e3dedb;
+    --text-black: #1e1e1e;
+    --gen-green: #07332b;
+    --click-on-button-color: #4b4849;
+    --dop-color: #a49e9d;
+
+    //fonts
+    --font-family: 'Montserrat', sans-serif;
+    --second-family: 'Italiana', sans-serif;
+    --third-family: 'Raleway', sans-serif;
+    --font3: 'Oooh Baby', sans-serif;
+}
 
 body {
-  background-color: #ffffff;
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: var(--gen-green);
+    background-color: var(--gen-w);
 }
