@@ -1,0 +1,30 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.contactsItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:last-child .contactIcon {
+        align-self: flex-start;
+        fill: transparent;
+        stroke: var(--gen-w);
+    }
+}
+
+.contactIcon {
+    width: 20px;
+    height: 20px;
+    fill: var(--gen-w);
+}
+
+.text {
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--gen-w);
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "label": "Uns Finden",
+        "href": "/finden"
+    },
+    {
+        "label": "Datenschutzerklärung",
+        "href": "/datenschutzerklärung"
+    },
+    {
+        "label": "Impressum",
+        "href": "/impressum"
+    },
+    {
+        "label": "Kontaktiere Uns",
+        "href": "/kontaktiere"
+    }
+]
