@@ -1,0 +1,29 @@
+@import 'breakpoints';
+
+@mixin media-rules($screen) {
+    @if $screen == tablet {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    } @else if $screen == desktop {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    } @else if $screen == mobile {
+        @media screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+}
+
+@mixin transition($property1, $property2: null) {
+    $transition: $property1 0.3s linear;
+
+    @if $property2 {
+        $transition:
+            $transition,
+            $property2 0.3s linear;
+    }
+
+    transition: $transition;
+}
