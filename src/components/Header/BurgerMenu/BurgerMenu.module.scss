@@ -1,0 +1,19 @@
+.burgerIcon {
+    width: 23px;
+    height: 15px;
+    fill: var(--gen-w);
+}
+
+.burgerMenu {
+    position: relative;
+    background-color: var(--gen-w);
+}
+
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.5;
+}
