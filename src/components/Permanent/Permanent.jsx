@@ -1,5 +1,5 @@
 import scss from './Permanent.module.scss';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Permanent = () => {
     return (

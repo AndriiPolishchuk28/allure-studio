@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 import scss from './ServicesItem.module.scss';
 import '../../../styles/globals.scss';
 
-const ServicesItem = ({ link, path, label }) => {
+const ServicesItem = ({ path, label }) => {
     return (
         <li className={scss.item}>
             {/* <Link href={link}> */}
