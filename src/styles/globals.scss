@@ -22,6 +22,12 @@
 body {
     font-family: var(--font-family);
     font-size: 12px;
+    font-weight: 400;
     color: var(--gen-green);
     background-color: var(--gen-w);
+}
+
+body .vp-center {
+    display: block !important;
+    flex-direction: row;
 }
