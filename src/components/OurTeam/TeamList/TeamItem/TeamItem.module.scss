@@ -1,0 +1,47 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+.personInfo {
+    position: relative;
+    // z-index: -1;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gen-green);
+    padding: 6px 8px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.name {
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--gen-w);
+}
+
+.socialIcon {
+    width: 13px;
+    height: 13px;
+}
+
+.description {
+    width: 159px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 12px;
+}
