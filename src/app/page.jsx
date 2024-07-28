@@ -1,5 +1,11 @@
+import OurTeam from '@/components/OurTeam';
+
 const Home = () => {
-    return <main>Home</main>;
+    return (
+        <main>
+            <OurTeam />
+        </main>
+    );
 };
 
 export default Home;
