@@ -1,0 +1,60 @@
+.slider_container {
+    position: relative;
+}
+
+.review_1 {
+    background-image: url('/img/feedbacks/review1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 203px;
+    width: 100%;
+    position: relative;
+}
+
+.slick-next::before {
+    display: none;
+}
+
+.ellipse {
+    background-image: url('/img/feedbacks/ellipse1.png');
+    width: 323px;
+    height: 114px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 20px;
+    bottom: 22px;
+}
+
+.text_1 {
+    font-family: var(--third-family);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--gen-green);
+    max-width: 291px;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+
+.custom_dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(227, 222, 219, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slick-slider .slick-dots ul {
+    position: absolute;
+    bottom: -3px;
+}
+
+.slick-dots li.slick-active .custom-dot {
+    background-color: green;
+}

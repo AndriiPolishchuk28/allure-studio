@@ -1,3 +1,4 @@
+import Feedbacks from '@/components/Feedbacks';
 import Permanent from '@/components/Permanent/Permanent';
 import dynamic from 'next/dynamic';
 
@@ -10,6 +11,7 @@ const Home = () => {
         <main>
             <Permanent />
             <ServicesVideo />
+            <Feedbacks />
         </main>
     );
 };
