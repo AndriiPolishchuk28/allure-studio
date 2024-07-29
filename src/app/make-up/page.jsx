@@ -1,5 +1,13 @@
+import PermanentMakeUpInBerlinMitte from '@/components/PermanentMakeUpInBerlinMitte';
+import PermanentMakeUpInfo from '@/components/PermanentMakeUpInfo';
+
 const MakeUp = () => {
-    return <div></div>;
+    return (
+        <main>
+            <PermanentMakeUpInBerlinMitte />
+            <PermanentMakeUpInfo />
+        </main>
+    );
 };
 
 export default MakeUp;

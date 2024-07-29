@@ -38,7 +38,7 @@ const BurgerMenu = () => {
                         >
                             X
                         </button>
-                        <Navs />
+                        <Navs onClose={() => setMenuIsOpen(false)} />
                     </Container>
                 </div>
             </Drawer>
