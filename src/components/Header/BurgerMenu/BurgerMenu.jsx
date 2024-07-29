@@ -22,7 +22,13 @@ const BurgerMenu = () => {
             <Drawer
                 open={menuIsOpen}
                 onClose={() => setMenuIsOpen(false)}
-                anchor="top"
+                anchor="right"
+                sx={{
+                    '& .MuiPaper-root': {
+                        width: '100%',
+                        height: 'auto',
+                    },
+                }}
             >
                 <div className={scss.burgerMenu}>
                     <Container>

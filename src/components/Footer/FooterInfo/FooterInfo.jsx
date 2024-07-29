@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import socialLinks from '../socialLinks.json';
-import scss from './FooterInfo.module.scss';
 import Image from 'next/image';
+import socialLinks from '../socialLinks.json';
+import { logo } from '@/assets/images/header';
+import scss from './FooterInfo.module.scss';
 
 const FooterInfo = () => {
     const icons = ['instagram1.svg', 'facebook1.svg'];
@@ -9,9 +10,7 @@ const FooterInfo = () => {
     return (
         <div className={scss.info}>
             <div className={scss.logo}>
-                <svg className={scss.logoIcon}>
-                    <use href="/icons/icons.svg#icon-logo-footer"></use>
-                </svg>
+                <Image src={logo} alt="ALLURE" className={scss.logoImage} />
                 <span className={scss.logoTitle}>ALLURE</span>
             </div>
 
