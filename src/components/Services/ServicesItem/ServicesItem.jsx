@@ -1,5 +1,5 @@
 // import Link from 'next/link';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 import scss from './ServicesItem.module.scss';
 import '../../../styles/globals.scss';
 
@@ -7,13 +7,14 @@ const ServicesItem = ({ path, label }) => {
     return (
         <li className={scss.item}>
             {/* <Link href={link}> */}
-            <ReactPlayer
-                className={scss.video_player}
-                url={path}
-                playing
-                loop
+            <iframe
+                src={`${path}?background=1&autoplay=1&loop=1`}
+                frameBorder="0"
+                allow="autoplay"
                 width={200}
-            />
+                height={239}
+                style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+            ></iframe>
             {/* </Link> */}
             <p className={scss.label}>{label}</p>
         </li>

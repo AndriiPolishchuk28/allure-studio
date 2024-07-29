@@ -12,3 +12,9 @@
 .video_player {
     height: 239px;
 }
+
+.item {
+    width: 200px; /* Встановіть ширину контейнера */
+    height: 239px; /* Встановіть висоту контейнера */
+    position: relative;
+}

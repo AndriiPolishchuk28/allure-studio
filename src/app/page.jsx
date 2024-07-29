@@ -1,7 +1,8 @@
+import Feedbacks from '@/components/Feedbacks';
+import Permanent from '@/components/Permanent/Permanent';
 import dynamic from 'next/dynamic';
 import Location from '@/components/Location';
 import OurTeam from '@/components/OurTeam';
-import Permanent from '@/components/Permanent/Permanent';
 
 const ServicesVideo = dynamic(() => import('../components/Services'), {
     ssr: false,
@@ -12,6 +13,7 @@ const Home = () => {
         <main>
             <Permanent />
             <ServicesVideo />
+            <Feedbacks />
             <OurTeam />
             <Location />
         </main>
