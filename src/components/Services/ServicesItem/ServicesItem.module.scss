@@ -14,7 +14,7 @@
 }
 
 .item {
-    width: 200px; /* Встановіть ширину контейнера */
-    height: 239px; /* Встановіть висоту контейнера */
+    width: 200px !important;
+    height: 239px !important;
     position: relative;
 }

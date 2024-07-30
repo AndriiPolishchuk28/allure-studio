@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import scss from './Feedbacks.module.scss';
+import Title from '../Title';
 
 const SampleNextArrow = () => {
     return null;
@@ -17,15 +18,17 @@ const Feedbacks = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
+        // dotsClass: 'dots',
         customPaging: () => <div className={scss.custom_dot}></div>,
         appendDots: (dots) => (
-            <div className={scss.dotsContainer}>
-                <ul style={{ margin: '0px' }}> {dots} </ul>
+            <div className={scss.dotsContainer} style={{ bottom: '-3px' }}>
+                <ul>{dots}</ul>
             </div>
         ),
     };
     return (
-        <div className={scss.slider_container}>
+        <div className={scss.slider_container} id="test">
+            <Title>SIE REDEN ÜBER UNS</Title>
             <Slider {...settings}>
                 <div className={scss.review_1}>
                     <div className={scss.ellipse}>

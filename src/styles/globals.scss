@@ -31,3 +31,8 @@ body .vp-center {
     display: block !important;
     flex-direction: row;
 }
+
+.slider_container .slick-slider .slick-dots {
+    // position: absolute;
+    bottom: -3px !important;
+}

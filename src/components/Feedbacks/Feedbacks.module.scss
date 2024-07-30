@@ -1,5 +1,5 @@
 .slider_container {
-    position: relative;
+    padding-top: 80px;
 }
 
 .review_1 {
@@ -9,10 +9,6 @@
     height: 203px;
     width: 100%;
     position: relative;
-}
-
-.slick-next::before {
-    display: none;
 }
 
 .ellipse {
@@ -50,11 +46,10 @@
     cursor: pointer;
 }
 
-.slick-slider .slick-dots ul{
-    position: absolute;
-    bottom: -3px;
+.slider_container .slick-slider .slick-dots {
+    bottom: -3px !important;
 }
 
-.slick-dots li.slick-active .custom-dot {
+.dots li.slick-active {
     background-color: green;
 }

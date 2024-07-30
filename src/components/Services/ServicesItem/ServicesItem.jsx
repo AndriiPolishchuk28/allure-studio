@@ -5,7 +5,7 @@ import '../../../styles/globals.scss';
 
 const ServicesItem = ({ path, label }) => {
     return (
-        <li className={scss.item}>
+        <div className={scss.item}>
             {/* <Link href={link}> */}
             <iframe
                 src={`${path}?background=1&autoplay=1&loop=1`}
@@ -17,7 +17,7 @@ const ServicesItem = ({ path, label }) => {
             ></iframe>
             {/* </Link> */}
             <p className={scss.label}>{label}</p>
-        </li>
+        </div>
     );
 };
 
