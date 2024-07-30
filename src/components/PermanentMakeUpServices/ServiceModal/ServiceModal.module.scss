@@ -1,0 +1,90 @@
+.service {
+    padding: 24px 0;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--gen);
+    margin-bottom: 40px;
+}
+
+.description {
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--gen);
+    margin-bottom: 40px;
+}
+
+.imageWrapper {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.imageItem {
+    position: relative;
+}
+
+.labelWrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    background: rgba(227, 222, 219, 0.59);
+    padding: 10px;
+}
+
+.priceList {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.priceListItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviceTitle {
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--gen);
+    margin-bottom: 8px;
+}
+
+.serviceProcessing {
+    font-weight: 200;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--gen);
+}
+
+.timePrice {
+    display: flex;
+    gap: 40px;
+}
+
+.time {
+    font-weight: 200;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--gen);
+}
+
+.price {
+    min-width: 58px;
+    line-height: 1.5;
+    color: var(--gen);
+    text-align: right;
+}

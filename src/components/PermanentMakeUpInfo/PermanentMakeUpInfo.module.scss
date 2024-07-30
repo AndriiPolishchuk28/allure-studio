@@ -1,0 +1,21 @@
+.section {
+    padding: 30px 0 40px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.image {
+    min-width: 159px;
+    height: 344px;
+    background-color: var(--photo-bg);
+}
+
+.description {
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}

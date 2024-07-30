@@ -1,0 +1,25 @@
+.image {
+    margin-bottom: 14px;
+}
+
+.description {
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.buttonWrapper {
+    text-align: right;
+}
+
+.modalButton {
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 2.4;
+    text-transform: capitalize;
+    color: var(--gen-w);
+    background-color: var(--gen-green);
+    border-radius: 2px;
+    outline: none;
+    padding: 1px 48px;
+}

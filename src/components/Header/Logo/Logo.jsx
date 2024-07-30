@@ -6,7 +6,7 @@ import scss from './Logo.module.scss';
 const Logo = ({ ...props }) => {
     return (
         <Link {...props} href="/" className={scss.logo}>
-            <Image src={logo} width={32} height={29} alt="Allure" priority />
+            <Image src={logo} alt="Allure" priority className={scss.image} />
             <span className={scss.logoTitle}>ALLURE</span>
         </Link>
     );
