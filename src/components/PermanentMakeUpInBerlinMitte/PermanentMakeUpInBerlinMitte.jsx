@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Container from '../Container';
 import PageTitle from '../PageTitle';
 import ReadMore from './ReadMore';
-import photo from '@/assets/images/make-up/photo-1.png';
+import { photo_1 } from '@/assets/images/make-up';
 import scss from './PermanentMakeUpInBerlinMitte.module.scss';
 
 const PermanentMakeUpInBerlinMitte = () => {
@@ -25,7 +25,7 @@ const PermanentMakeUpInBerlinMitte = () => {
                         <ReadMore />
                     </div>
                     <Image
-                        src={photo}
+                        src={photo_1}
                         alt="woman"
                         priority
                         className={scss.image}

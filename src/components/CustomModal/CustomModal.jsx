@@ -1,12 +1,17 @@
 'use client';
 
 import Image from 'next/image';
-import closeIcon from '@/assets/close.svg';
-import Container from '../Container';
-import scss from './CustomModal.module.scss';
+import clsx from 'clsx';
 import { Backdrop, Fade, Modal } from '@mui/material';
+import closeIcon from '@/assets/close.svg';
+import scss from './CustomModal.module.scss';
 
-const CustomModal = ({ modalIsOpen, closeModal, children }) => {
+const CustomModal = ({
+    modalIsOpen,
+    closeModal,
+    service = false,
+    children,
+}) => {
     return (
         <Modal
             open={modalIsOpen}
@@ -23,11 +28,19 @@ const CustomModal = ({ modalIsOpen, closeModal, children }) => {
         >
             <Fade in={modalIsOpen}>
                 <div>
-                    <Container>
-                        <div className={scss.content}>
+                    <div
+                        className={clsx(
+                            scss.content,
+                            service && scss.contentService
+                        )}
+                    >
+                        <div className={scss.container}>
                             <button
                                 onClick={closeModal}
-                                className={scss.closeButton}
+                                className={clsx(
+                                    scss.closeButton,
+                                    service && scss.closeButtonService
+                                )}
                             >
                                 <Image
                                     src={closeIcon}
@@ -38,7 +51,7 @@ const CustomModal = ({ modalIsOpen, closeModal, children }) => {
 
                             {children}
                         </div>
-                    </Container>
+                    </div>
                 </div>
             </Fade>
         </Modal>

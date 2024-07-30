@@ -1,8 +1,8 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Container from '../Container';
 import PageTitle from '../PageTitle';
 import ReadMore from './ReadMore';
-import photo from '@/assets/images/make-up/photo-1.png';
+// import photo from '@/assets/images/make-up/photo-1.png';
 import scss from './PermanentMakeUpInfo.module.scss';
 
 const PermanentMakeUpInfo = () => {
@@ -10,12 +10,13 @@ const PermanentMakeUpInfo = () => {
         <section className={scss.section}>
             <Container>
                 <div className={scss.wrapper}>
-                    <Image
+                    {/* <Image
                         src={photo}
                         alt="woman"
                         priority
                         className={scss.image}
-                    />
+                    /> */}
+                    <div className={scss.image}></div>
                     <div className={scss.info}>
                         <PageTitle>WAS IST PERMANENT MAKE-UP</PageTitle>
                         <p className={scss.description}>

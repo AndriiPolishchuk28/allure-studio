@@ -9,8 +9,9 @@
 }
 
 .image {
-    width: 159px;
+    min-width: 159px;
     height: 344px;
+    background-color: var(--photo-bg);
 }
 
 .description {
