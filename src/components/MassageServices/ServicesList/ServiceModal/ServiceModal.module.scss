@@ -1,0 +1,56 @@
+.service {
+    padding: 24px;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--gen);
+    margin-bottom: 40px;
+}
+
+.priceList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.priceListItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleTime {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.serviceTitle {
+    line-height: 1.5;
+    color: var(--gen);
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.specialText {
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.time {
+    font-weight: 200;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--gen);
+}
+
+.price {
+    line-height: 1.5;
+    color: var(--gen);
+}

@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import clsx from 'clsx';
 import { Backdrop, Fade, Modal } from '@mui/material';
@@ -37,10 +35,7 @@ const CustomModal = ({
                         <div className={scss.container}>
                             <button
                                 onClick={closeModal}
-                                className={clsx(
-                                    scss.closeButton,
-                                    service && scss.closeButtonService
-                                )}
+                                className={scss.closeButton}
                             >
                                 <Image
                                     src={closeIcon}
