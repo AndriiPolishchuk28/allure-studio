@@ -9,7 +9,7 @@ const ServiceModal = ({ title, titleModal, priceList }) => {
                 {priceList.map(({ service, time, price }, index) => (
                     <li key={index} className={scss.priceListItem}>
                         <div className={scss.titleTime}>
-                            <h4 className={scss.serviceTitle} title={service}>
+                            <h4 className={scss.serviceTitle}>
                                 {service.includes(
                                     '(Kopf, Arme, Beine, Bauch)'
                                 ) ? (
