@@ -3,14 +3,31 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import clsx from 'clsx';
+import feedbacks from './feedbacks.json';
 import scss from './Feedbacks.module.scss';
 import Title from '../Title';
+import { useEffect } from 'react';
 
 const SampleNextArrow = () => {
     return null;
 };
 
 const Feedbacks = () => {
+    useEffect(() => {
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .slick-dots li.slick-active>div {
+                background-color: #e3dedb;
+            }
+        `;
+        document.head.appendChild(style);
+
+        return () => {
+            document.head.removeChild(style);
+        };
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
@@ -18,7 +35,6 @@ const Feedbacks = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
-        // dotsClass: 'dots',
         customPaging: () => <div className={scss.custom_dot}></div>,
         appendDots: (dots) => (
             <div className={scss.dotsContainer} style={{ bottom: '-3px' }}>
@@ -30,28 +46,18 @@ const Feedbacks = () => {
         <div className={scss.slider_container} id="test">
             <Title>SIE REDEN ÜBER UNS</Title>
             <Slider {...settings}>
-                <div className={scss.review_1}>
-                    <div className={scss.ellipse}>
-                        <p className={scss.text_1}>
-                            ”Liebe Uliyana, gestern war ich zur meiner
-                            Powderbrows bei dir. Ich danke dir von Herzen. Ich
-                            ben Mega zufrieden und freue mich schon auf den
-                            Herbst wenn du meine Lippen nachbehandelst. Ich
-                            fühle mich bei dir in sichern Händen, du bist sehr
-                            professionell und deine Arbeit überzeugt mich immer
-                            wieder super!”{' '}
-                        </p>
+                {feedbacks.map(({ feedback, classReview, ellipse, text }) => (
+                    <div
+                        key={classReview}
+                        className={clsx(scss.base_review, scss[classReview])}
+                    >
+                        <div className={clsx(scss.base_ellipse, scss[ellipse])}>
+                            <p className={clsx(scss.base_text, scss[text])}>
+                                {feedback}
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h3>2</h3>
-                </div>
-                <div>
-                    <h3>3</h3>
-                </div>
-                <div>
-                    <h3>4</h3>
-                </div>
+                ))}
             </Slider>
         </div>
     );
