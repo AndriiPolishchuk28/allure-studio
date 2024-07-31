@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Container from '../Container';
 import PageTitle from '../PageTitle';
+import scss from './MassagenStudio.module.scss';
 import data from './data';
-import scss from './PermanentMakeUpNagelstudio.module.scss';
 
-const PermanentMakeUpNagelstudio = () => {
+const MassagenStudio = () => {
     return (
         <section className={scss.section}>
             <Container>
@@ -31,4 +31,4 @@ const PermanentMakeUpNagelstudio = () => {
     );
 };
 
-export default PermanentMakeUpNagelstudio;
+export default MassagenStudio;
