@@ -2,42 +2,107 @@
     padding-top: 80px;
 }
 
-.review_1 {
-    background-image: url('/img/feedbacks/review1.jpg');
+.base_review {
     background-size: cover;
     background-position: center;
     height: 203px;
-    width: 100%;
+    max-width: 100%;
     position: relative;
+    padding-bottom: 51.25%;
 }
 
-.ellipse {
-    background-image: url('/img/feedbacks/ellipse1.png');
-    width: 323px;
-    height: 114px;
+.base_ellipse {
     background-position: center;
     background-size: cover;
     position: absolute;
-    left: 20px;
-    bottom: 22px;
 }
 
-.text_1 {
+.base_text {
     font-family: var(--third-family);
     font-style: italic;
     font-weight: 200;
     font-size: 10px;
     line-height: 1.5;
     color: var(--gen-green);
-    max-width: 291px;
     position: absolute;
+    text-align: center;
+}
+
+.review_1 {
+    background-image: url('/img/feedbacks/review1.jpg');
+}
+
+.review_2 {
+    background-image: url('/img/feedbacks/review2.jpg');
+}
+
+.review_3 {
+    background-image: url('/img/feedbacks/review3.jpg');
+}
+
+.review_4 {
+    background-image: url('/img/feedbacks/review4.jpg');
+}
+
+.ellipse_1 {
+    background-image: url('/img/feedbacks/ellipse1.png');
+    width: 323px;
+    height: 114px;
+    left: 20px;
+    bottom: 22px;
+}
+
+.ellipse_2 {
+    background-image: url('/img/feedbacks/ellipse2.png');
+    width: 363px;
+    height: 94px;
+    left: 16px;
+    bottom: 22px;
+}
+
+.ellipse_3 {
+    background-image: url('/img/feedbacks/ellipse3.png');
+    width: 166px;
+    height: 102px;
+    left: 46px;
+    bottom: 22px;
+}
+
+.ellipse_4 {
+    background-image: url('/img/feedbacks/ellipse4.png');
+    width: 160px;
+    height: 142px;
+    left: 6px;
+    bottom: 3px;
+}
+
+.text_1 {
+    max-width: 291px;
     top: 16px;
     left: 20px;
 }
 
+.text_2 {
+    max-width: 331px;
+    top: 16px;
+    left: 9px;
+}
+
+.text_3 {
+    max-width: 138px;
+    top: 14px;
+    left: 14px;
+}
+
+.text_4 {
+    max-width: 127px;
+    top: 11px;
+    left: 6px;
+}
+
 .custom_dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: rgba(227, 222, 219, 0.5);
     display: flex;
@@ -46,10 +111,6 @@
     cursor: pointer;
 }
 
-.slider_container .slick-slider .slick-dots {
-    bottom: -3px !important;
-}
-
-.dots li.slick-active {
-    background-color: green;
+.slick-dots li.slick-active button:before {
+    color: green !important;
 }
