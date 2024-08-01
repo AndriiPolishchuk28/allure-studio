@@ -1,10 +1,19 @@
-.label {
-    font-family: var(--font-family);
+.playerWrapper {
+    width: 100%;
+    background-color: var(--photo-bg);
+
+}
+
+.link {
+    display: inline-block;
+}
+
+.linkText {
+    display: block;
     font-weight: 200;
     font-size: 14px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--gen-green);
-    margin-top: 12px;
     text-align: center;
+    margin-top: 12px;
 }
