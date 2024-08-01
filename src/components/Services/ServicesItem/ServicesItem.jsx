@@ -1,23 +1,41 @@
 // import Link from 'next/link';
-// import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player';
 import scss from './ServicesItem.module.scss';
 import '../../../styles/globals.scss';
+// import { useRef, useEffect } from 'react';
 
 const ServicesItem = ({ path, label }) => {
+    // const iframe = useRef(null);
+    // useEffect(() => {
+    //     if (iframe.current) {
+    //         const iframeDocument = iframe.current.contentDocument;
+    //         // iframeDocument.body.style.width = '200px';
+    //     } else {
+    //         console.log('iframeRef.current is null');
+    //     }
+    // }, []);
+
     return (
-        <div className={scss.item}>
+        <li className={scss.main_wrapper}>
             {/* <Link href={link}> */}
-            <iframe
-                src={`${path}?background=1&autoplay=1&loop=1`}
-                frameBorder="0"
-                allow="autoplay"
+            {/* <iframe
+                        ref={iframe}
+                        src={`${path}?background=1&autoplay=1&loop=1`}
+                        frameBorder="0"
+                        allow="autoplay"
+                        className={scss.iframe}
+                        width="200px"
+                    ></iframe> */}
+            <ReactPlayer
+                className={scss.video_player}
+                url={path}
+                playing
+                loop
                 width={200}
-                height={239}
-                style={{ aspectRatio: '16/9', objectFit: 'cover' }}
-            ></iframe>
+            />
             {/* </Link> */}
             <p className={scss.label}>{label}</p>
-        </div>
+        </li>
     );
 };
 
