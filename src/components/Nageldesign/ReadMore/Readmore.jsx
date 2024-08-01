@@ -21,12 +21,13 @@ const ReadMore = () => {
                 closeModal={() => setModalIsOpen(false)}
             >
                 <p className={scss.description}>
-                    Grundsätzlich kann man beim Permanent Make up in zwei
-                    Kategorien unterteilen. Permanent Make-up für einen
-                    natürlichen Look und Permanent Make up für einen expresiven
-                    Look. Die Entscheidung liegt bei dir. Gerne berate ich dich
-                    dazu ausführlich in einem Telefongespräch oder Vorort bei
-                    uns im Studio.
+                    Unsere Anwendungen umfassen Maniküre und Pediküre. Wir
+                    pflegen deine Nägel professionell in einer hygienisch
+                    einwandfreien Umgebung. Unser Portfolio beinhaltet Pflege
+                    und Reparatur, Schellack, Frenchnails, Nagelverlängerungen
+                    und umwerfende Designs von dezent bis extravagant. Du
+                    entscheidest über dein Nageldesign. Gerne beraten wir dich
+                    auch zur Pflege deiner Hände und Fingernägel.
                 </p>
             </CustomModal>
         </>
