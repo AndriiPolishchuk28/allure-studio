@@ -1,7 +1,7 @@
 'use client';
 
 import CustomModal from '@/components/CustomModal';
-import scss from './ReadMore.module.scss';
+import scss from './Readmore.module.scss';
 import { useState } from 'react';
 
 const ReadMore = () => {
