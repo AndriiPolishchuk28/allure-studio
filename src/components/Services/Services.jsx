@@ -1,31 +1,22 @@
-'use client';
-
+import { Container } from '@mui/material';
+import Title from '@/components/Title';
+import videos from './videoLinks.json';
 import scss from './Services.module.scss';
-import links from './videoLinks.json';
-import ServicesItem from './ServicesItem/ServicesItem';
+import ServicesItem from './ServicesItem';
 
 const Services = () => {
     return (
-        <div className={scss.wrapper_services}>
-            <h2 className={scss.title}>Services</h2>
-            <ul className={scss.list_wrapper}>
-                {links.map(({ label, path, link }) => (
-                    <ServicesItem
-                        key={label}
-                        label={label}
-                        path={path}
-                        link={link}
-                    />
-                ))}
-                {/* <iframe
-                    src={`https://player.vimeo.com/video/990765332?background=1&autoplay=1&loop=1`}
-                    frameBorder="0"
-                    allow="autoplay"
-                    width={300}
-                    height={239}
-                ></iframe> */}
-            </ul>
-        </div>
+        <section className={scss.section}>
+            <Container>
+                <Title>SERVICES</Title>
+
+                <ul className={scss.list}>
+                    {videos.map((video) => (
+                        <ServicesItem key={video.id} {...video} />
+                    ))}
+                </ul>
+            </Container>
+        </section>
     );
 };
 

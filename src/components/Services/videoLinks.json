@@ -1,20 +1,24 @@
 [
     {
+        "id": 1,
         "label": "Permanent make up",
         "path": "https://player.vimeo.com/video/990765332",
         "link": "/make-up"
     },
     {
+        "id": 2,
         "label": "Nageldesign",
         "path": "https://player.vimeo.com/video/990765407",
         "link": "/nageldesign"
     },
     {
+        "id": 3,
         "label": "Massage",
         "path": "https://player.vimeo.com/video/990765381",
         "link": "/massage"
     },
     {
+        "id": 4,
         "label": "Injektionen",
         "path": "https://player.vimeo.com/video/990765381",
         "link": "/injektionen"
