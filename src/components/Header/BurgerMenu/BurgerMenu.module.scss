@@ -1,24 +1,132 @@
+@import '@/styles/mixins';
+
+.controlWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include media-rules(tablet) {
+        order: 0;
+    }
+}
+
 .burgerButton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     outline: transparent;
     padding: 6px;
+
+    @include media-rules(tablet) {
+        padding: 14px 10px;
+    }
 }
 
 .burgerIcon {
     width: 36px;
     height: 20px;
     fill: var(--gen-w);
+
+    @include media-rules(tablet) {
+        width: 23px;
+        height: 19px;
+        fill: var(--gen-green);
+    }
+}
+
+.burgerButtonText {
+    display: none;
+
+    @include media-rules(tablet) {
+        display: inline-block;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 1.33;
+        text-transform: capitalize;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+.link {
+    display: none;
+
+    @include media-rules(tablet) {
+        display: inline-block;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 1.33;
+        padding: 14px 10px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
 
 .burgerMenu {
     position: relative;
     background-color: var(--gen-w);
+    height: 100%;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 390px;
+    padding: 0 24px;
+    margin: 0 auto;
+
+    @include media-rules(tablet) {
+        max-width: 376px;
+        padding: 0 50px;
+    }
+
+    @include media-rules(desktop) {
+        max-width: 540px;
+    }
 }
 
 .closeButton {
     position: absolute;
-    top: 0;
+    top: 14px;
     right: 14px;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 1.5;
+
+    @include media-rules(tablet) {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+.closeText {
+    display: none;
+
+    @include media-rules(tablet) {
+        display: block;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 1.5;
+        color: var(--gen-green);
+    }
+
+    @include media-rules(desktop) {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+}
+
+.closeIcon {
+    width: 24px;
+    height: 24px;
+
+    @include media-rules(tablet) {
+        width: 28px;
+        height: 28px;
+    }
 }
