@@ -1,5 +1,6 @@
 import scss from './Permanent.module.scss';
-// import Image from 'next/image';
+import Image from 'next/image';
+import ReadMore from './ReadMore';
 
 const Permanent = () => {
     return (
@@ -11,12 +12,24 @@ const Permanent = () => {
                 </h2>
                 <p className={scss.text_owner}>by Uliana Eremenko</p>
             </div>
-            {/* <Image
-                src="/img/fr.jpg"
-                alt="Description of the image"
-                width={299} // Specify the width of the image
-                height={299}
-            /> */}
+            <div className={scss.img_wrapper}>
+                <Image
+                    src="/img/photo.png"
+                    alt="Owner photo"
+                    width={174}
+                    height={269}
+                />
+                <div className={scss.stick}></div>
+                <div className={scss.smear_wrapper}>
+                    <p className={scss.smear_text}>
+                        2022 Inhaberin und Geschäftsführering von ALLURE
+                        Permanent Make up & Beauty, 2022 Jury-Mitgleider der
+                        German WULOP, 2021 Siegerin der German WULOP (Powder
+                        Brow), seit 2018 Permanent Make up - Artis
+                    </p>
+                    <ReadMore />
+                </div>
+            </div>
         </section>
     );
 };

@@ -35,3 +35,35 @@
     letter-spacing: 0.15em;
     text-align: center;
 }
+
+.img_wrapper {
+    position: relative;
+    display: flex;
+}
+
+.stick {
+    position: absolute;
+    background-color: rgba(69, 63, 65, 0.5);
+    width: 0.5px;
+    height: 20px;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smear_wrapper {
+    background: url('/img/bg_permanent.jpg') no-repeat center;
+    width: 100%;
+    background-size: cover;
+    padding-top: 50px;
+    padding-right: 24px;
+    padding-left: 36px;
+}
+
+.smear_text {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--gen-green);
+}
