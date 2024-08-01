@@ -1,4 +1,4 @@
-import Container from '../Container';
+import Link from 'next/link';
 import Logo from './Logo';
 import BurgerMenu from './BurgerMenu';
 import scss from './Header.module.scss';
@@ -6,12 +6,15 @@ import scss from './Header.module.scss';
 const Header = () => {
     return (
         <header className={scss.header}>
-            <Container>
+            <div className={scss.container}>
                 <div className={scss.wrapper}>
                     <Logo />
                     <BurgerMenu />
+                    <Link href="#" className={scss.link}>
+                        Jetzt Buchen
+                    </Link>
                 </div>
-            </Container>
+            </div>
         </header>
     );
 };

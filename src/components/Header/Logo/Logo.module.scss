@@ -1,12 +1,30 @@
+@import '@/styles/mixins';
+
 .logo {
     display: flex;
     align-items: center;
     gap: 4px;
+
+    @include media-rules(tablet) {
+        gap: 10px;
+        order: 1;
+        margin-right: auto;
+        margin-left: 50px;
+    }
+
+    @include media-rules(desktop) {
+        margin-left: 290px;
+    }
 }
 
 .image {
     width: 32px;
     height: 29px;
+
+    @include media-rules(tablet) {
+        width: 79px;
+        height: 72px;
+    }
 }
 
 .logoTitle {
@@ -14,4 +32,13 @@
     font-size: 18px;
     letter-spacing: 0.15em;
     color: var(--gen-w);
+
+    @include media-rules(tablet) {
+        font-size: 36px;
+        color: var(--gen-green);
+    }
+
+    @include media-rules(desktop) {
+        font-size: 62px;
+    }
 }
