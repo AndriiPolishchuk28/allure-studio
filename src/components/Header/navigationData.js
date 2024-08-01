@@ -8,8 +8,8 @@ const navigationItems = [
         href: '/make-up',
     },
     {
-        label: 'Negeldesign',
-        href: '/negeldesign',
+        label: 'Nageldesign',
+        href: '/nageldesign',
     },
     {
         label: 'Massage',
