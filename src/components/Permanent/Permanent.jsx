@@ -1,6 +1,6 @@
 import scss from './Permanent.module.scss';
 import Image from 'next/image';
-import ReadMore from './ReadMore';
+import ReadMore from './ReadMore/ReadMore';
 
 const Permanent = () => {
     return (
