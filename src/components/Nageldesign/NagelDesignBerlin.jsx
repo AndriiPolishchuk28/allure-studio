@@ -2,10 +2,11 @@ import Image from 'next/image';
 import { photo_1 } from '@/assets/images/nageldesign';
 import scss from './NagelDesignBerlin.module.scss';
 import PageTitle from '../PageTitle';
+import ReadMore from './ReadMore';
 
 const NagelDesignBerlin = () => {
     return (
-        <>
+        <div className={scss.wrapper}>
             <Image
                 src={photo_1}
                 alt="Nageldesign main photo"
@@ -19,8 +20,9 @@ const NagelDesignBerlin = () => {
                     höchsten Wert auf Perfektion und Design legen. Zusammen
                     haben wir 10 Jahre Erfahrung als Nageldesignerin.{' '}
                 </p>
+                <ReadMore />
             </div>
-        </>
+        </div>
     );
 };
 
