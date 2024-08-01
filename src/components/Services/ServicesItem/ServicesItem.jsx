@@ -15,6 +15,7 @@ const ServicesItem = ({ label, path, link }) => {
                         muted
                         loop
                         onReady
+                        playsinline
                     />
                 </div>
 
