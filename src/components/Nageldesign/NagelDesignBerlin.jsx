@@ -1,16 +1,26 @@
 import Image from 'next/image';
 import { photo_1 } from '@/assets/images/nageldesign';
 import scss from './NagelDesignBerlin.module.scss';
+import PageTitle from '../PageTitle';
 
 const NagelDesignBerlin = () => {
     return (
-        <div>
+        <>
             <Image
                 src={photo_1}
                 alt="Nageldesign main photo"
                 className={scss.image}
             />
-        </div>
+            <div className={scss.text_wrapper}>
+                <PageTitle>PERFEKTES NAGELDESIGN IN BERLIN MITTE</PageTitle>
+                <p className={scss.description}>
+                    Wir sind Oxana und Tanja, deine Nageldesigner in
+                    Berlin-Mitte. Wir sind professionelle Nageldesigner, die
+                    höchsten Wert auf Perfektion und Design legen. Zusammen
+                    haben wir 10 Jahre Erfahrung als Nageldesignerin.{' '}
+                </p>
+            </div>
+        </>
     );
 };
 
