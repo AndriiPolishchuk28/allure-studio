@@ -40,6 +40,7 @@ const BurgerMenu = () => {
                     '& .MuiPaper-root': {
                         width: drawerWidth,
                         height: `${isMobile ? 'auto' : 'none'}`,
+                        bgcolor: '#e3dedb',
                     },
                 }}
             >

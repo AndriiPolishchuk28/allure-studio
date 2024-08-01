@@ -6,6 +6,12 @@
 
     @include media-rules(tablet) {
         background-color: transparent;
+        padding: 14px 0;
+    }
+
+    @include media-rules(desktop) {
+        background-color: transparent;
+        padding: 18px 0;
     }
 }
 
