@@ -1,3 +1,5 @@
+@import "@/styles/mixins";
+
 .team {
     display: flex;
     flex-direction: column;
@@ -5,4 +7,21 @@
     background-image: url(../../../assets/images/team/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include media-rules(tablet) {
+        background-image: url(../../../assets/images/team/bg-tab.png);
+        background-position: top center;
+        max-width: 624px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 48px;
+        margin: 0 auto;
+    }
+
+    @include media-rules(desktop) {
+        column-gap: 48px;
+        max-width: 768px;
+        background-image: none;
+    }
 }
