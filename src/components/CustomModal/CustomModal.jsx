@@ -9,6 +9,7 @@ const CustomModal = ({
     closeModal,
     service = false,
     children,
+    nageldesign = false,
 }) => {
     return (
         <Modal
@@ -31,6 +32,7 @@ const CustomModal = ({
                             scss.content,
                             service && scss.contentService
                         )}
+                        style={nageldesign ? { height: 'inherit' } : {}}
                     >
                         <div className={scss.container}>
                             <button

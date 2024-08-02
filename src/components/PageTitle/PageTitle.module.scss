@@ -1,7 +1,12 @@
+@import '@/styles/mixins';
+
 .title {
     font-weight: 200;
     font-size: 14px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 14px;
+    @include media-rules(tablet) {
+        font-size: 26px;
+    }
 }

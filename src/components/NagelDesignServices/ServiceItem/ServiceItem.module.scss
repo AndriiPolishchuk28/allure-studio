@@ -1,0 +1,27 @@
+.description {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 14px;
+}
+
+.wrapper_btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+}
+
+.btn {
+    border-radius: 2px;
+    background-color: var(--gen-green);
+    width: 159px;
+    height: 26px;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 2.4;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+}

@@ -1,0 +1,27 @@
+.wrapper_content {
+    padding: 24px 0;
+}
+
+.list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_service {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--gen);
+}
+
+.time {
+    font-weight: 200;
+}
