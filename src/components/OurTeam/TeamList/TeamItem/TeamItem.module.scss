@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .item {
     display: flex;
     align-items: center;
@@ -6,11 +8,40 @@
     &:nth-child(even) {
         flex-direction: row-reverse;
     }
+
+    @include media-rules(tablet) {
+        position: relative;
+        display: block;
+        flex-basis: calc((100% - 20px) / 2);
+        gap: 0;
+
+        &:nth-child(even) {
+            flex-direction: row;
+        }
+    }
+
+    @include media-rules(desktop) {
+        flex-basis: calc((100% - 48px) / 2);
+    }
 }
 
 .personInfo {
     position: relative;
-    // z-index: -1;
+}
+
+.image {
+    width: 159px;
+    height: 200px;
+
+    @include media-rules(tablet) {
+        width: 100%;
+        height: 342px;
+        object-fit: cover;
+    }
+
+    @include media-rules(desktop) {
+        height: 480px;
+    }
 }
 
 .person {
@@ -19,23 +50,44 @@
     justify-content: space-between;
     background-color: var(--gen-green);
     padding: 6px 8px;
+
+    @include media-rules(tablet) {
+        padding: 16px 22px;
+    }
 }
 
 .socials {
     display: flex;
     align-items: center;
     gap: 8px;
+
+    @include media-rules(tablet) {
+        gap: 14px;
+    }
 }
 
 .name {
     font-weight: 200;
     line-height: 1.5;
     color: var(--gen-w);
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
 }
 
 .socialIcon {
     width: 13px;
     height: 13px;
+
+    @include media-rules(tablet) {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .description {
@@ -44,4 +96,22 @@
     line-height: 1.5;
     text-align: center;
     padding: 0 12px;
+
+    @include media-rules(tablet) {
+        position: absolute;
+        left: 50%;
+        bottom: 74px;
+        transform: translateX(-50%);
+        max-width: 270px;
+        width: 100%;
+        font-size: 14px;
+        background-color: rgba(227, 222, 219, 0.9);
+        padding: 12px;
+    }
+
+    @include media-rules(desktop) {
+        bottom: 84px;
+        max-width: 292px;
+        font-size: 16px;
+    }
 }

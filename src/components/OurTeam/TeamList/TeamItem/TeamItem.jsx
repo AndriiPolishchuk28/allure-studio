@@ -1,19 +1,15 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import instagramImage from '../../../../../public/icons/instagram.svg';
+import facebookImage from '../../../../../public/icons/facebook.svg';
 import scss from './TeamItem.module.scss';
 
 const TeamItem = ({ name, description, image, facebook, instagram }) => {
     return (
         <li className={scss.item}>
             <div className={scss.personInfo}>
-                <Image
-                    src={image}
-                    width={159}
-                    height={200}
-                    alt={name}
-                    priority
-                    className={scss.image}
-                />
+                <Image src={image} alt={name} priority className={scss.image} />
                 <div className={scss.person}>
                     <p className={scss.name}>{name}</p>
                     <div className={scss.socials}>
@@ -23,9 +19,7 @@ const TeamItem = ({ name, description, image, facebook, instagram }) => {
                             rel="noopener noreferrer"
                         >
                             <Image
-                                src="/icons/facebook.svg"
-                                width={13}
-                                height={13}
+                                src={facebookImage}
                                 alt="facebook"
                                 className={scss.socialIcon}
                             />
@@ -36,9 +30,7 @@ const TeamItem = ({ name, description, image, facebook, instagram }) => {
                             rel="noopener noreferrer"
                         >
                             <Image
-                                src="/icons/instagram.svg"
-                                width={13}
-                                height={13}
+                                src={instagramImage}
                                 alt="facebook"
                                 className={scss.socialIcon}
                             />
