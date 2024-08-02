@@ -7,7 +7,7 @@
         padding: 70px 0 35px;
     }
 
-    @include media-rules(tablet) {
+    @include media-rules(desktop) {
         padding: 70px 0 75px;
     }
 }
