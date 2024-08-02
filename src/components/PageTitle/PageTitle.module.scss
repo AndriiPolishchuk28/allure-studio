@@ -6,7 +6,12 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 14px;
+
     @include media-rules(tablet) {
         font-size: 26px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 32px;
     }
 }

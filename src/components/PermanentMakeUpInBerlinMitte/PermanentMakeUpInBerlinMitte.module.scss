@@ -1,5 +1,11 @@
+@import "@/styles/mixins";
+
 .section {
     padding: 20px 0 30px;
+
+    @include media-rules(tablet) {
+        padding: 70px 0 75px;
+    }
 }
 
 .wrapper {
@@ -7,10 +13,28 @@
     margin-bottom: 20px;
 }
 
+.info {
+    max-width: 183px;
+
+    @include media-rules(tablet) {
+        max-width: 220px;
+    }
+}
+
 .description {
     font-weight: 200;
     line-height: 1.5;
     margin-bottom: 10px;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+}
+
+.image {
+    width: 159px;
+    height: 308px;
 }
 
 .linkWrapper {
@@ -20,7 +44,11 @@
 .image {
     width: 159px;
     height: 308px;
-    background-color: var(--photo-bg);
+
+    @include media-rules(tablet) {
+        width: 455px;
+        height: 446px;
+    }
 }
 
 .link {
