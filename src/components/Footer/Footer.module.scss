@@ -1,10 +1,46 @@
+@import '@/styles/mixins';
+
 .footer {
     background-color: var(--gen-green);
     padding: 14px 0;
+
+    @include media-rules(tablet) {
+        padding: 36px 0;
+    }
+
+    @include media-rules(desktop) {
+        padding: 82px 0;
+    }
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include media-rules(tablet) {
+        gap: 36px;
+    }
+
+    @include media-rules(desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 123px;
+    }
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include media-rules(tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    @include media-rules(desktop) {
+        gap: 86px;
+        order: 0;
+    }
 }

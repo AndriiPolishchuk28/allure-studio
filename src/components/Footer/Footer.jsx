@@ -1,8 +1,8 @@
 import Container from '../Container';
 import FooterInfo from './FooterInfo/FooterInfo';
 import FooterLinks from './FooterLinks';
-import scss from './Footer.module.scss';
 import FooterContacts from './FooterContacts';
+import scss from './Footer.module.scss';
 
 const Footer = () => {
     return (
@@ -10,8 +10,10 @@ const Footer = () => {
             <Container>
                 <div className={scss.wrapper}>
                     <FooterInfo />
-                    <FooterLinks />
-                    <FooterContacts />
+                    <div className={scss.mainWrapper}>
+                        <FooterLinks />
+                        <FooterContacts />
+                    </div>
                 </div>
             </Container>
         </footer>

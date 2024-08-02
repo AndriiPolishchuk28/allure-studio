@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import socialLinks from '../socialLinks.json';
-import { logo } from '@/assets/images/header';
+import logo from '@/assets/images/header/logo.svg';
 import scss from './FooterInfo.module.scss';
 
 const FooterInfo = () => {
@@ -29,6 +29,7 @@ const FooterInfo = () => {
                                 width={24}
                                 height={24}
                                 alt={label}
+                                className={scss.socialIcon}
                             />
                         </Link>
                     </li>

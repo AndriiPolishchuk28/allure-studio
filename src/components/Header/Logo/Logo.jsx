@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { logo } from '@/assets/images/header';
+import logo from '../../../assets/images/header/logo.svg';
 import scss from './Logo.module.scss';
 
 const Logo = ({ ...props }) => {
