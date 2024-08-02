@@ -1,3 +1,5 @@
+@import "@/styles/mixins";
+
 .content {
     position: absolute;
     top: 50%;
@@ -8,6 +10,10 @@
     background-color: var(--gen-w);
     outline: none;
     border-radius: 2px;
+
+    @include media-rules(tablet) {
+        max-width: 624px;
+    }
 }
 
 .contentService {
@@ -19,6 +25,10 @@
 .container {
     max-width: 342px;
     margin: 0 auto;
+
+    @include media-rules(tablet) {
+        max-width: 624px;
+    }
 }
 
 .closeButton {

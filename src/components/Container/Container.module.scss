@@ -8,7 +8,7 @@
 
     @include media-rules(tablet) {
         max-width: $tablet;
-        padding: 0 32px;
+        padding: 0 72px;
     }
 
     @include media-rules(desktop) {

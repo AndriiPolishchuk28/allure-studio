@@ -9,9 +9,11 @@
 
     @include media-rules(tablet) {
         font-size: 26px;
+        margin-bottom: 12px;
     }
 
     @include media-rules(desktop) {
         font-size: 32px;
+        margin-bottom: 36px;
     }
 }
