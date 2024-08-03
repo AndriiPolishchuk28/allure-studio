@@ -1,0 +1,143 @@
+@import "@/styles/mixins";
+
+.section {
+    padding: 40px 0 80px;
+
+    @include media-rules(tablet) {
+        padding: 75px 0 150px;
+    }
+}
+
+.head {
+    margin-bottom: 40px;
+
+    @include media-rules(tablet) {
+        margin-bottom: 70px;
+    }
+}
+
+.title {
+    position: relative;
+    max-width: 320px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: var(--gen-green);
+    margin: 0 auto 44px;
+
+    @include media-rules(tablet) {
+        max-width: 100%;
+        font-size: 36px;
+        margin: 0;
+        margin-bottom: 72px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 48px;
+        margin-bottom: 132px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 20px;
+        background-color: rgba(69, 63, 65, 0.5);
+
+        @include media-rules(tablet) {
+            top: calc(100% + 16px);
+            height: 40px;
+        }
+
+        @include media-rules(desktop) {
+            top: calc(100% + 36px);
+            height: 60px;
+        }
+    }
+}
+
+.subtitle {
+    font-family: var(--font3);
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-transform: lowercase;
+    text-align: center;
+
+    @include media-rules(tablet) {
+        font-size: 30px;
+    }
+    
+    @include media-rules(desktop) {
+        font-size: 42px;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include media-rules(tablet) {
+        gap: 36px;
+    }
+
+    @include media-rules(desktop) {
+        gap: 48px;
+    }
+}
+
+.item {
+    @include media-rules(desktop) {
+       display: flex;
+       gap: 24px;
+    }
+
+    &:nth-child(odd) {
+        @include media-rules(desktop) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.image {
+    margin-bottom: 14px;
+
+    @include media-rules(tablet) {
+        margin-bottom: 12px;
+    }
+
+    @include media-rules(desktop) {
+        width: 552px;
+        height: 324px;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
+}
+
+.pageTitle {
+    text-align: center;
+
+    @include media-rules(desktop) {
+        text-align: left;
+    }
+}
+
+.description {
+    font-weight: 200;
+    line-height: 1.5;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+        text-align: left;
+    }
+}

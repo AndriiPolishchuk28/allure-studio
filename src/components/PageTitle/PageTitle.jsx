@@ -3,7 +3,7 @@ import scss from './PageTitle.module.scss';
 
 const PageTitle = ({ children, className, ...rest }) => {
     return (
-        <h3 {...rest} className={clsx(scss.title, className)}>
+        <h3 {...rest} className={clsx(scss.title, className && className)}>
             {children}
         </h3>
     );

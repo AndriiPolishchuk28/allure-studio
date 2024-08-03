@@ -1,7 +1,7 @@
 import PermanentMakeUpInBerlinMitte from '@/components/PermanentMakeUpInBerlinMitte';
 import PermanentMakeUpInfo from '@/components/PermanentMakeUpInfo';
-import PermanentMakeUpNagelstudio from '@/components/PermanentMakeUpNagelstudio';
 import PermanentMakeUpServices from '@/components/PermanentMakeUpServices';
+import PermanentMakeUpChoiceMaster from '@/components/PermanentMakeUpChoiceMaster';
 
 const MakeUp = () => {
     return (
@@ -9,7 +9,7 @@ const MakeUp = () => {
             <PermanentMakeUpInBerlinMitte />
             <PermanentMakeUpInfo />
             <PermanentMakeUpServices />
-            <PermanentMakeUpNagelstudio />
+            <PermanentMakeUpChoiceMaster />
         </main>
     );
 };
