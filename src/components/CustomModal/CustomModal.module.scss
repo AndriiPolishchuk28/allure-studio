@@ -29,6 +29,10 @@
     @include media-rules(tablet) {
         max-width: 624px;
     }
+
+    @include media-rules(desktop) {
+        max-width: 1128px;
+    }
 }
 
 .closeButton {
