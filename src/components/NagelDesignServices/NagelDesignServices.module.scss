@@ -1,5 +1,14 @@
+@import '@/styles/mixins';
+
 .section {
-    padding-top: 80px;
+    padding: 40px 0;
+    @include media-rules(tablet) {
+        padding: 75px 0;
+    }
+    @include media-rules(desktop) {
+        padding-top: 66px;
+        padding-bottom: 75px;
+    }
 }
 
 .list {

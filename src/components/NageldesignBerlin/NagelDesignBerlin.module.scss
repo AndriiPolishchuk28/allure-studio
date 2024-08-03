@@ -2,8 +2,14 @@
 
 .section {
     padding-top: 20px;
+    padding-bottom: 40px;
     @include media-rules(tablet) {
         order: 0;
+        padding-bottom: 75px;
+        padding-top: 70px;
+    }
+    @include media-rules(desktop) {
+        padding-bottom: 66px;
     }
 }
 

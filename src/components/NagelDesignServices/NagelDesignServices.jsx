@@ -33,7 +33,6 @@ const NagelDesignServices = () => {
                     <CustomModal
                         modalIsOpen={modalIsOpen}
                         closeModal={() => setModalIsOpen(false)}
-                        service={info}
                         nageldesign
                     >
                         <ServiceModal item={info} />

@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .title {
     font-family: var(--second-family);
     font-weight: 400;
@@ -6,4 +8,7 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
+    @include media-rules(tablet) {
+        font-size: 36px;
+    }
 }

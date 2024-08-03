@@ -5,18 +5,28 @@
 }
 
 .wrapper_text {
-    max-width: $mobile;
+    max-width: 390px;
+    width: 100%;
     padding: 0 34px;
     margin: 0 auto;
+    @include media-rules(tablet) {
+        max-width: $tablet;
+        padding: 0 62px;
+    }
 }
 
 .title_text {
     text-transform: uppercase;
     text-align: center;
+    font-weight: 400;
     font-family: var(--second-family);
     font-size: 18px;
     letter-spacing: 0.14em;
     margin-bottom: 12px;
+    @include media-rules(tablet) {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
 }
 
 .subtitle_text {
@@ -26,6 +36,10 @@
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 12px;
+    @include media-rules(tablet) {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
 }
 
 .text_owner {
@@ -34,11 +48,28 @@
     font-size: 18px;
     letter-spacing: 0.15em;
     text-align: center;
+    @include media-rules(tablet) {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
 }
 
 .img_wrapper {
     position: relative;
     display: flex;
+    justify-content: center;
+    @include media-rules(tablet) {
+        padding-left: 35px;
+    }
+}
+
+.image {
+    width: 174px;
+    height: 269px;
+    @include media-rules(tablet) {
+        width: 279px;
+        height: 377px;
+    }
 }
 
 .stick {
@@ -49,15 +80,31 @@
     top: 12px;
     left: 50%;
     transform: translateX(-50%);
+    @include media-rules(tablet) {
+        width: 1px;
+        height: 40px;
+    }
 }
 
 .smear_wrapper {
-    background: url('/img/bg_permanent.jpg') no-repeat center;
+    background: url('/img/bg_permanent.jpg') no-repeat;
     width: 100%;
     background-size: cover;
     padding-top: 50px;
     padding-right: 24px;
     padding-left: 36px;
+    max-width: 219px;
+    @include media-rules(tablet) {
+        background-size: cover;
+        max-width: 453px;
+        padding-left: 0;
+        background-image: url('/img/bg_tablet.jpg');
+        background-position: 2px 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 0;
+    }
 }
 
 .smear_text {
@@ -66,4 +113,10 @@
     font-size: 12px;
     line-height: 1.5;
     color: var(--gen-green);
+    max-width: 159px;
+    margin-bottom: 12px;
+    @include media-rules(tablet) {
+        max-width: 302px;
+        margin-left: 75px;
+    }
 }

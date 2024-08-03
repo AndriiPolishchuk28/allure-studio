@@ -1,0 +1,12 @@
+@import '@/styles/mixins';
+
+.description {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 14px;
+    @include media-rules(tablet) {
+        font-size: 14px;
+        text-align: center;
+    }
+}

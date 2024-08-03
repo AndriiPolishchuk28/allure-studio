@@ -14,14 +14,19 @@
 }
 
 .name_service {
+    line-height: 1.5;
+    color: var(--gen);
+}
+
+.time {
+    font-weight: 200;
+}
+
+.text_service {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
     color: var(--gen);
-}
-
-.time {
-    font-weight: 200;
 }
