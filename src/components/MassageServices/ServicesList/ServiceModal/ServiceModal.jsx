@@ -30,6 +30,7 @@ const ServiceModal = ({ title, titleModal, priceList }) => {
                             <p className={scss.time}>{time}</p>
                         </div>
                         <div className={scss.timePrice}>
+                            <p className={scss.timeDesk}>{time}</p>
                             <p className={scss.price}>{`${price} euro`}</p>
                         </div>
                     </li>

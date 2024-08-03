@@ -1,11 +1,28 @@
+@import '@/styles/mixins';
+
 .section {
     padding-bottom: 40px;
+
+    @include media-rules(tablet) {
+        padding: 70px 0 75px;
+    }
 }
 
 .container {
     max-width: 390px;
     padding-right: 24px;
     margin: 0 auto;
+
+    @include media-rules(tablet) {
+        max-width: 768px;
+        padding-right: 0;
+        padding-left: 74px;
+    }
+
+    @include media-rules(desktop) {
+        max-width: 1440px;
+        padding-left: 156px;
+    }
 }
 
 .wrapper {
@@ -13,20 +30,76 @@
     align-items: flex-end;
     gap: 8px;
     margin-bottom: 20px;
+
+    @include media-rules(tablet) {
+        align-items: start;
+        flex-direction: row-reverse;
+        gap: 20px;
+        margin-bottom: 36px;
+    }
+
+    @include media-rules(desktop) {
+        gap: 24px;
+        margin-bottom: 0;
+    }
 }
 
 .image {
-    width: 200px;
-    height: 316px;
+    min-width: 200px;
+    height: 332px;
+    object-fit: cover;
+
+    @include media-rules(tablet) {
+        min-width: 455px;
+        height: 390px;
+    }
+
+    @include media-rules(desktop) {
+        min-width: 708px;
+        height: 463px;
+    }
 }
 
 .description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-weight: 200;
     line-height: 1.5;
+    margin-bottom: 12px;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+}
+
+.descriptionParagraphAdditional {
+    display: none;
+
+    @include media-rules(desktop) {
+        display: block;
+    }
 }
 
 .linkWrapper {
     text-align: center;
+
+    @include media-rules(desktop) {
+        display: none;
+    }
+}
+
+.linkWrapperDesk {
+    display: none; 
+
+    @include media-rules(desktop) {
+        display: block;
+    }
 }
 
 .link {
@@ -40,4 +113,11 @@
     background-color: var(--gen-green);
     border-radius: 2px;
     padding: 1px 10px;
+
+    @include media-rules(tablet) {
+        font-size: 20px;
+        line-height: 1.2;
+        border-radius: 6px;
+        padding: 14px 20px;
+    }
 }
