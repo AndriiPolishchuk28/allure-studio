@@ -1,11 +1,19 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CustomModal from '@/components/CustomModal';
 import scss from './ReadMore.module.scss';
+import { useMedia } from '@/hooks/useMedia';
 
 const ReadMore = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const { isDesktop } = useMedia();
+
+    useEffect(() => {
+        if (isDesktop) {
+            setModalIsOpen(false);
+        }
+    }, [isDesktop]);
     return (
         <>
             <button

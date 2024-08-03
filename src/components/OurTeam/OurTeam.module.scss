@@ -1,3 +1,15 @@
+@import "@/styles/mixins";
+
 .team {
     padding: 40px 0;
+
+    @include media-rules(tablet) {
+        padding: 75px 0;
+    }
+
+    @include media-rules(desktop) {
+        background-image: url(../../assets/images/team/bg-desk.png);
+        background-position: center;
+        background-size: cover;
+    }
 }
