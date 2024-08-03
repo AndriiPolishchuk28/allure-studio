@@ -8,10 +8,6 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
-<<<<<<< HEAD
-    @include media-rules(tablet) {
-        font-size: 36px;
-=======
 
     @include media-rules(tablet) {
         font-size: 36px;
@@ -21,6 +17,5 @@
     @include media-rules(desktop) {
         font-size: 48px;
         margin-bottom: 70px;
->>>>>>> 5fb9a64b2a8b2584099a14a32251637227cc7086
     }
 }
