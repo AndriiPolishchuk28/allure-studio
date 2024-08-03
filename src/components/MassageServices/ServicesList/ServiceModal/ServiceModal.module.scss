@@ -1,5 +1,15 @@
+@import '@/styles/mixins';
+
 .service {
     padding: 24px;
+
+    @include media-rules(tablet) {
+        padding: 36px 72px;
+    }
+
+    @include media-rules(desktop) {
+        padding: 70px 160px;
+    }
 }
 
 .title {
@@ -10,12 +20,25 @@
     text-align: center;
     color: var(--gen);
     margin-bottom: 40px;
+
+    @include media-rules(tablet) {
+        font-size: 26px;
+        margin-bottom: 70px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 32px;
+    }
 }
 
 .priceList {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include media-rules(tablet) {
+        gap: 26px;
+    }
 }
 
 .priceListItem {
@@ -36,11 +59,42 @@
     // white-space: nowrap;
     // overflow: hidden;
     // text-overflow: ellipsis;
+
+    @include media-rules(tablet) {
+        width: 320px;
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        width: 360px;
+        font-size: 16px;
+    }
 }
 
 .specialText {
     font-weight: 200;
     text-transform: capitalize;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
+}
+
+.timePrice {
+    @include media-rules(desktop) {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: var(--gen);
+    }
 }
 
 .time {
@@ -48,9 +102,35 @@
     line-height: 1.5;
     text-transform: uppercase;
     color: var(--gen);
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        display: none;
+    }
+}
+
+.timeDesk {
+    display: none;
+
+    @include media-rules(desktop) {
+        display: block;
+    }
 }
 
 .price {
     line-height: 1.5;
     color: var(--gen);
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        width: 106px;
+        font-size: 16px;
+        text-align: right;
+    }
 }

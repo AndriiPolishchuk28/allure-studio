@@ -17,12 +17,20 @@ const MassagenStudio = () => {
 
                 <ul className={scss.list}>
                     {data.map(({ id, title, image, description }) => (
-                        <li key={id}>
-                            <PageTitle style={{ textAlign: 'center' }}>
-                                {title}
-                            </PageTitle>
-                            <Image src={image} alt={title} />
-                            <p className={scss.description}>{description}</p>
+                        <li key={id} className={scss.item}>
+                            <Image
+                                src={image}
+                                alt={title}
+                                className={scss.image}
+                            />
+                            <div>
+                                <PageTitle className={scss.pageTitle}>
+                                    {title}
+                                </PageTitle>
+                                <p className={scss.description}>
+                                    {description}
+                                </p>
+                            </div>
                         </li>
                     ))}
                 </ul>

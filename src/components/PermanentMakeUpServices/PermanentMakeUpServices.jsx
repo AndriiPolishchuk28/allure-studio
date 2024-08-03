@@ -7,7 +7,7 @@ const PermanentMakeUpServices = () => {
     return (
         <section className={scss.section}>
             <Container>
-                <Title>SERVICES</Title>
+                <Title line>SERVICES</Title>
 
                 <ServicesList />
             </Container>

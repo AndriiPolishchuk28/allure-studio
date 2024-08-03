@@ -1,9 +1,19 @@
+@import '@/styles/mixins';
+
 .section {
     padding: 40px 0 80px;
+
+    @include media-rules(tablet) {
+        padding: 75px 0;
+    }
 }
 
 .head {
     margin-bottom: 40px;
+
+    @include media-rules(tablet) {
+        margin-bottom: 70px;
+    }
 }
 
 .title {
@@ -14,8 +24,18 @@
     font-size: 18px;
     letter-spacing: 0.15em;
     text-align: center;
-    color: var(--gen-green);
     margin: 0 auto 44px;
+
+    @include media-rules(tablet) {
+        max-width: 100%;
+        font-size: 36px;
+        margin-bottom: 72px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 48px;
+        margin-bottom: 132px;
+    }
 
     &::after {
         content: '';
@@ -26,6 +46,16 @@
         width: 1px;
         height: 20px;
         background-color: rgba(69, 63, 65, 0.5);
+
+        @include media-rules(tablet) {
+            top: calc(100% + 16px);
+            height: 40px;
+        }
+
+        @include media-rules(desktop) {
+            top: calc(100% + 36px);
+            height: 60px;
+        }
     }
 }
 
@@ -35,16 +65,76 @@
     letter-spacing: 0.15em;
     text-transform: lowercase;
     text-align: center;
+
+    @include media-rules(tablet) {
+        font-size: 30px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 42px;
+    }
 }
 
 .list {
     display: flex;
     flex-direction: column;
     gap: 50px;
+
+    @include media-rules(tablet) {
+        gap: 36px;
+    }
+
+    @include media-rules(desktop) {
+        gap: 48px;
+    }
+}
+
+.item {
+    &:nth-child(odd) {
+        @include media-rules(desktop) {
+            flex-direction: row-reverse;
+        }
+    }
+    @include media-rules(desktop) {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.image {
+    margin-bottom: 14px;
+
+    @include media-rules(tablet) {
+        margin-bottom: 12px;
+    }
+
+    @include media-rules(desktop) {
+        width: 552px;
+        height: 324px;
+        margin-bottom: 12px;
+    }
+}
+
+.pageTitle {
+    text-align: center;
+
+    @include media-rules(desktop) {
+        text-align: left;
+    }
 }
 
 .description {
     font-weight: 200;
     line-height: 1.5;
-    margin-top: 14px;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+        text-align: left;
+    }
 }
