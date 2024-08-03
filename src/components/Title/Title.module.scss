@@ -1,6 +1,7 @@
 @import '@/styles/mixins';
 
 .title {
+    position: relative;
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 18px;
@@ -17,5 +18,20 @@
     @include media-rules(desktop) {
         font-size: 48px;
         margin-bottom: 70px;
+    }
+}
+
+.titleLine {
+    @include media-rules(desktop) {
+        &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(69, 63, 65, 0.5);
+            margin: 36px auto 0;
+        }
     }
 }

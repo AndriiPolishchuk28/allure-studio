@@ -7,7 +7,7 @@ const MassageServices = () => {
     return (
         <section className={scss.section}>
             <Container>
-                <Title>Services</Title>
+                <Title line>Services</Title>
 
                 <ServicesList />
             </Container>
