@@ -1,0 +1,96 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.checkboxWrapper {
+    margin-bottom: 18px;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--gen-green);
+    transition: border-color .1s linear;
+}
+
+.checkboxIcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.1s linear,
+        visibility 0.1s linear;
+}
+
+.inputCheckbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.inputCheckbox:checked + label .checkboxIcon {
+    opacity: 1;
+    visibility: visible;
+}
+
+.checkboxText {
+    display: inline-block;
+    max-width: 215px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--gen-green);
+}
+
+.checkboxLink {
+    display: inline-block;
+    font-weight: 200;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.submitButtonWrapper {
+    text-align: right;
+}
+
+.submitButton {
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 2.4;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--gen-w);
+    background-color: var(--gen-green);
+    border-radius: 2px;
+    padding: 1px 10px;
+}
+
+.errorBorder {
+    border-color: #d96868;
+}
