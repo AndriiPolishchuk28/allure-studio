@@ -1,15 +1,78 @@
+@import "@/styles/mixins";
+
+.item {
+    @include media-rules(desktop) {
+        display: flex;
+        gap: 24px;
+        height: 284px;
+    }
+
+    &:nth-child(odd) {
+        @include media-rules(desktop) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
 .image {
     margin-bottom: 14px;
+
+    @include media-rules(tablet) {
+        margin-bottom: 12px;
+    }
+
+    @include media-rules(desktop) {
+        width: 552px;
+        height: 284px;
+    }
+}
+
+.info {
+    @include media-rules(desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.pageTitle {
+    text-align: center;
+
+    @include media-rules(desktop) {
+        text-align: left;
+        margin-bottom: 0;
+    }
 }
 
 .description {
     font-weight: 200;
     line-height: 1.5;
     margin-bottom: 14px;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    @include media-rules(desktop) {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 0;
+    }
 }
 
 .buttonWrapper {
     text-align: right;
+
+    @include media-rules(tablet) {
+        padding: 0 36px;
+    }
+
+    @include media-rules(desktop) {
+        padding: 0;
+    }
 }
 
 .modalButton {
@@ -22,4 +85,12 @@
     border-radius: 2px;
     outline: none;
     padding: 1px 48px;
+
+    @include media-rules(tablet) { 
+        width: 100%;
+        font-size: 20px;
+        line-height: 1.2;
+        border-radius: 6px;
+        padding: 14px 0;
+    }
 }

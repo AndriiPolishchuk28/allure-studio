@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import Container from '../Container';
 import PageTitle from '../PageTitle';
-import scss from './MassagenStudio.module.scss';
 import data from './data';
+import scss from './PermanentMakeUpChoiceMaster.module.scss';
 
-const MassagenStudio = () => {
+const PermanentMakeUpNagelstudio = () => {
     return (
         <section className={scss.section}>
             <Container>
                 <div className={scss.head}>
                     <h2 className={scss.title}>
-                        WIE FINDEST DU DEIN PERFEKTES NAGELSTUDIO?
+                        DIE RICHTIGE WAHL BEIM PERMANTENT MAKE-UP-ARTIST
                     </h2>
                     <p className={scss.subtitle}>Darauf solltest du achten</p>
                 </div>
@@ -39,4 +39,4 @@ const MassagenStudio = () => {
     );
 };
 
-export default MassagenStudio;
+export default PermanentMakeUpNagelstudio;

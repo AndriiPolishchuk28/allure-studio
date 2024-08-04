@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import scss from './ServiceModal.module.scss';
 import { photo_3 } from '@/assets/images/make-up';
+import scss from './ServiceModal.module.scss';
 
 const ServiceModal = ({ title, titleModal, descriptionModal, priceList }) => {
     return (
@@ -9,11 +9,11 @@ const ServiceModal = ({ title, titleModal, descriptionModal, priceList }) => {
             <p className={scss.description}>{descriptionModal}</p>
             <div className={scss.imageWrapper}>
                 <div className={scss.imageItem}>
-                    <Image src={photo_3} alt="Woman" />
+                    <Image src={photo_3} alt="Woman" className={scss.image} />
                     <div className={scss.labelWrapper}>voher</div>
                 </div>
                 <div className={scss.imageItem}>
-                    <Image src={photo_3} alt="Woman" />
+                    <Image src={photo_3} alt="Woman" className={scss.image} />
                     <div className={scss.labelWrapper}>naher</div>
                 </div>
             </div>
@@ -22,7 +22,7 @@ const ServiceModal = ({ title, titleModal, descriptionModal, priceList }) => {
                 {priceList.map(
                     ({ service, processing, time, price }, index) => (
                         <li key={index} className={scss.priceListItem}>
-                            <div>
+                            <div className={scss.serviceWrapper}>
                                 <h4 className={scss.serviceTitle}>{service}</h4>
                                 {processing && (
                                     <p className={scss.serviceProcessing}>

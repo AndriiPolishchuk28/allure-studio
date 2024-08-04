@@ -1,8 +1,9 @@
+import clsx from 'clsx';
 import scss from './PageTitle.module.scss';
 
-const PageTitle = ({ children, ...rest }) => {
+const PageTitle = ({ children, className, ...rest }) => {
     return (
-        <h3 {...rest} className={scss.title}>
+        <h3 {...rest} className={clsx(scss.title, className && className)}>
             {children}
         </h3>
     );

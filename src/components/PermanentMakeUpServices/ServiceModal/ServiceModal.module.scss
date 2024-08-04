@@ -1,5 +1,15 @@
+@import "@/styles/mixins";
+
 .service {
     padding: 24px 0;
+
+    @include media-rules(tablet) {
+        padding: 36px 0;
+    }
+
+    @include media-rules(desktop) {
+        padding: 70px 0;
+    }
 }
 
 .title {
@@ -10,6 +20,15 @@
     text-align: center;
     color: var(--gen);
     margin-bottom: 40px;
+
+    @include media-rules(tablet) {
+        font-size: 26px;
+        margin-bottom: 36px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 32px;
+    }
 }
 
 .description {
@@ -18,16 +37,51 @@
     text-align: center;
     color: var(--gen);
     margin-bottom: 40px;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+        margin-bottom: 70px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
 }
 
 .imageWrapper {
     display: flex;
     gap: 25px;
     margin-bottom: 40px;
+
+    @include media-rules(tablet) {
+        gap: 24px;
+        margin-bottom: 70px;
+    }
+
+    @include media-rules(desktop) {
+        justify-content: center;
+    }
 }
 
 .imageItem {
     position: relative;
+}
+
+.image {
+    width: 159px;
+    height: 170px;
+
+    @include media-rules(tablet) {
+        width: 344px;
+        height: 178px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    @include media-rules(desktop) {
+        width: 456px;
+        height: 236px;
+    }
 }
 
 .labelWrapper {
@@ -42,6 +96,10 @@
     color: #000000;
     background: rgba(227, 222, 219, 0.59);
     padding: 10px;
+
+    @include media-rules(tablet) {
+        font-size: 32px;
+    }
 }
 
 .priceList {
@@ -55,11 +113,28 @@
     justify-content: space-between;
 }
 
+.serviceWrapper {
+    @include media-rules(tablet) {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
 .serviceTitle {
     font-weight: 400;
     line-height: 1.5;
     color: var(--gen);
     margin-bottom: 8px;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
 }
 
 .serviceProcessing {
@@ -67,10 +142,17 @@
     line-height: 1.5;
     text-transform: uppercase;
     color: var(--gen);
+
+    @include media-rules(tablet) {
+        text-transform: capitalize;
+    }
+
+    
 }
 
 .timePrice {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -80,6 +162,14 @@
     text-transform: uppercase;
     text-align: right;
     color: var(--gen);
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
 }
 
 .price {
@@ -87,4 +177,14 @@
     line-height: 1.5;
     color: var(--gen);
     text-align: right;
+
+    @include media-rules(tablet) {
+        min-width: 82px;
+        font-size: 14px;
+    }
+
+    @include media-rules(desktop) {
+        min-width: 90px;
+        font-size: 16px;
+    }
 }
