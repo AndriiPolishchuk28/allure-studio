@@ -3,10 +3,11 @@
 import CustomModal from '@/components/CustomModal';
 import scss from './Readmore.module.scss';
 import { useState } from 'react';
+import { useMedia } from '@/hooks/useMedia';
 
 const ReadMore = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-
+    const { isTablet } = useMedia();
     return (
         <>
             <button
@@ -20,14 +21,30 @@ const ReadMore = () => {
                 modalIsOpen={modalIsOpen}
                 closeModal={() => setModalIsOpen(false)}
             >
-                <p className={scss.description}>
-                    Grundsätzlich kann man beim Permanent Make up in zwei
-                    Kategorien unterteilen. Permanent Make-up für einen
-                    natürlichen Look und Permanent Make up für einen expresiven
-                    Look. Die Entscheidung liegt bei dir. Gerne berate ich dich
-                    dazu ausführlich in einem Telefongespräch oder Vorort bei
-                    uns im Studio.
-                </p>
+                {isTablet ? (
+                    <p className={scss.description}>
+                        Die sich das Ziel gesetzt haben Menschen aus Berlin und
+                        aller Welt ihren Wunsch nach permanenter Schönheit zu
+                        erfüllen. Unser Leistungskatalog von ALLURE Permanent
+                        Make up & Beauty umfasst Permanent Make- up
+                        Behandlungen, Nageldesign, Wimpernverdichtung und
+                        Wimpernverlängerung. Neu in unserem Angebot sind zu dem
+                        Massagen.
+                    </p>
+                ) : (
+                    <p className={scss.description}>
+                        Beauty ist unsere Leidenschaft. 2022 konnten wir nun
+                        endlich unser eigenes Studio im Herzen von Berlin
+                        eröffnen. Wir sind ein Zusammenschluss aus sechs
+                        Beauty-Experten. Die sich das Ziel gesetzt haben
+                        Menschen aus Berlin und aller Welt ihren Wunsch nach
+                        permanenter Schönheit zu erfüllen. Unser
+                        Leistungskatalog von ALLURE Permanent Make up & Beauty
+                        umfasst Permanent Make- up Behandlungen, Nageldesign,
+                        Wimpernverdichtung und Wimpernverlängerung. Neu in
+                        unserem Angebot sind zu dem Massagen.
+                    </p>
+                )}
             </CustomModal>
         </>
     );

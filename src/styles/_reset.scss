@@ -36,13 +36,14 @@ button {
     padding: 0;
 }
 
-input, textarea {
+input,
+textarea {
     font-family: inherit;
 }
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 

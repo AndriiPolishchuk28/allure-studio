@@ -99,11 +99,11 @@
         max-width: 453px;
         padding-left: 0;
         background-image: url('/img/bg_tablet.jpg');
-        background-position: 2px 12px;
+        background-position: 2px -14px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        padding-top: 0;
+        // justify-content: space-evenly;
+        padding-top: 76px;
     }
 }
 
@@ -118,5 +118,6 @@
     @include media-rules(tablet) {
         max-width: 302px;
         margin-left: 75px;
+        font-size: 14px;
     }
 }
