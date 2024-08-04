@@ -1,5 +1,44 @@
 @import '@/styles/mixins';
 
+.image {
+    margin-bottom: 12px;
+    @include media-rules(desktop) {
+        margin-bottom: 0;
+        order: 1;
+        width: 552px;
+        height: 284px;
+    }
+}
+
+.item {
+    @include media-rules(desktop) {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+.item:nth-child(2) {
+    @include media-rules(desktop) {
+        flex-direction: row-reverse;
+    }
+}
+
+.wrapper_info {
+    @include media-rules(desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.page_title {
+    text-align: center;
+    @include media-rules(desktop) {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
 .description {
     font-family: var(--font-family);
     font-weight: 200;
@@ -9,6 +48,10 @@
     @include media-rules(tablet) {
         font-size: 14px;
         text-align: center;
+    }
+    @include media-rules(desktop) {
+        font-size: 16px;
+        text-align: left;
     }
 }
 
@@ -38,7 +81,7 @@
         width: 552px;
         height: 52px;
         font-size: 20px;
-line-height: 1.2;
-color: var(--gen-w);
+        line-height: 1.2;
+        color: var(--gen-w);
     }
 }

@@ -4,10 +4,12 @@ import PageTitle from '@/components/PageTitle';
 
 const BenefitsList = ({ title, image, description }) => {
     return (
-        <li>
-            <PageTitle style={{ textAlign: 'center' }}>{title}</PageTitle>
-            <Image alt="image" src={image} />
-            <p className={scss.description}>{description}</p>
+        <li className={scss.item}>
+            <Image className={scss.image} alt="image" src={image} />
+            <div className={scss.text_wrapper}>
+                <PageTitle className={scss.title}>{title}</PageTitle>
+                <p className={scss.description}>{description}</p>
+            </div>
         </li>
     );
 };

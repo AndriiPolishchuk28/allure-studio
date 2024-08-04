@@ -3,9 +3,6 @@
 .section {
     padding-top: 40px;
     padding-bottom: 80px;
-    @include media-rules(tablet) {
-        padding: 75px;
-    }
 }
 
 .title {
@@ -15,6 +12,9 @@
     text-align: center;
     @include media-rules(tablet) {
         font-size: 36px;
+    }
+    @include media-rules(desktop) {
+        font-size: 48px;
     }
 }
 
@@ -28,6 +28,10 @@
         width: 1px;
         margin: 16px auto;
     }
+    @include media-rules(desktop) {
+        height: 60px;
+        margin: 36px auto;
+    }
 }
 
 .subtitle {
@@ -39,6 +43,9 @@
     @include media-rules(tablet) {
         font-size: 30px;
     }
+    @include media-rules(desktop) {
+        font-size: 42px;
+    }
 }
 
 .list {
@@ -49,5 +56,8 @@
     @include media-rules(tablet) {
         margin-top: 70px;
         gap: 36px;
+    }
+    @include media-rules(desktop) {
+        gap: 48px;
     }
 }

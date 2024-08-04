@@ -19,7 +19,9 @@ const NagelDesignServices = () => {
     return (
         <section className={scss.section}>
             <Container>
-                <Title style={{ marginBottom: '0' }}>Services</Title>
+                <Title line style={{ marginBottom: '0' }}>
+                    Services
+                </Title>
                 <ul className={scss.list}>
                     {services.map((item) => (
                         <ServiceItem

@@ -15,4 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    @include media-rules(desktop) {
+        gap: 70px;
+    }
 }
