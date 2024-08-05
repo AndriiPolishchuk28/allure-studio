@@ -1,0 +1,15 @@
+@import "@/styles/mixins";
+
+.pageTitle {
+    max-width: 290px;
+    text-align: center;
+    margin: 0 auto 36px;
+
+    @include media-rules(tablet) {
+        max-width: 456px;
+    }
+
+    @include media-rules(tablet) {
+        text-align: left;
+    }
+}

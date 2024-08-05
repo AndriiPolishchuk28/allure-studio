@@ -1,0 +1,87 @@
+@import "@/styles/mixins";
+
+.checkboxWrapper {
+    margin-bottom: 18px;
+
+    @include media-rules(tablet) {
+        margin-bottom: 22px;
+    }
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+
+    @include media-rules(tablet) {
+        margin-bottom: 22px;
+    }
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid var(--gen-green);
+    transition: border-color 0.1s linear;
+}
+
+.checkboxIcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.1s linear,
+        visibility 0.1s linear;
+}
+
+.inputCheckbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.inputCheckbox:checked + label .checkboxIcon {
+    opacity: 1;
+    visibility: visible;
+}
+
+.checkboxText {
+    display: inline-block;
+    max-width: 215px;
+    font-weight: 200;
+    line-height: 1.5;
+
+    @include media-rules(tablet) {
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+
+.checkboxLink {
+    display: inline-block;
+    font-weight: 200;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+
+    @include media-rules(tablet) {
+        font-size: 16px;
+    }
+}
