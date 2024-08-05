@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import checkIcon from '@/assets/check.svg';
 import scss from './CustomCheckbox.module.scss';
 
-const CustomCheckbox = ({ register, errorText }) => {
+const CustomCheckbox = ({ register, errors }) => {
     return (
         <div className={scss.checkboxWrapper}>
             <input
@@ -17,7 +17,7 @@ const CustomCheckbox = ({ register, errorText }) => {
                 <span
                     className={clsx(
                         scss.checkbox,
-                        errorText && scss.errorBorder
+                        errors.checkbox?.message && scss.errorBorder
                     )}
                 >
                     <Image
