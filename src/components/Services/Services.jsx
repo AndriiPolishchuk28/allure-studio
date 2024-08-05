@@ -9,7 +9,6 @@ const Services = () => {
         <section className={scss.section}>
             <Container>
                 <Title>SERVICES</Title>
-
                 <ul className={scss.list}>
                     {videos.map((video) => (
                         <ServicesItem key={video.id} {...video} />

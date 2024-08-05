@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .slider_container {
     padding-top: 80px;
 }
@@ -9,6 +11,9 @@
     max-width: 100%;
     position: relative;
     padding-bottom: 51.25%;
+    @include media-rules(tablet) {
+        padding-bottom: 46.25%;
+    }
 }
 
 .base_ellipse {
@@ -26,78 +31,157 @@
     color: var(--gen-green);
     position: absolute;
     text-align: center;
+    @include media-rules(tablet) {
+        font-size: 16px;
+    }
 }
 
 .review_1 {
-    background-image: url('/img/feedbacks/review1.jpg');
+    background-image: url('../../assets/images/feedbacks/review1.jpg');
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/review1_tablet.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .review_2 {
-    background-image: url('/img/feedbacks/review2.jpg');
+    background-image: url('../../assets/images/feedbacks/review2.jpg');
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/review2_tablet.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .review_3 {
-    background-image: url('/img/feedbacks/review3.jpg');
+    background-image: url('../../assets/images/feedbacks/review3.jpg');
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/review3_tablet.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .review_4 {
-    background-image: url('/img/feedbacks/review4.jpg');
+    background-image: url('../../assets/images/feedbacks/review4.jpg');
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/review4_tablet.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 .ellipse_1 {
-    background-image: url('/img/feedbacks/ellipse1.png');
+    background-image: url('../../assets/images/feedbacks/ellipse1.png');
     width: 323px;
     height: 114px;
     left: 20px;
     bottom: 22px;
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/ellipse1_tablet.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 632px;
+        height: 145px;
+        left: 74px;
+        bottom: 22px;
+    }
 }
 
 .ellipse_2 {
-    background-image: url('/img/feedbacks/ellipse2.png');
+    background-image: url('../../assets/images/feedbacks/ellipse2.png');
     width: 363px;
     height: 94px;
     left: 16px;
     bottom: 22px;
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/ellipse2_tablet.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 645px;
+        height: 145px;
+        left: 74px;
+        bottom: 22px;
+    }
 }
 
 .ellipse_3 {
-    background-image: url('/img/feedbacks/ellipse3.png');
+    background-image: url('../../assets/images/feedbacks/ellipse3.png');
     width: 166px;
     height: 102px;
     left: 46px;
     bottom: 22px;
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/ellipse3_tablet.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 270px;
+        height: 148px;
+        left: 57px;
+        bottom: 36px;
+    }
 }
 
 .ellipse_4 {
-    background-image: url('/img/feedbacks/ellipse4.png');
+    background-image: url('../../assets/images/feedbacks/ellipse4.png');
     width: 160px;
     height: 142px;
     left: 6px;
     bottom: 3px;
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/ellipse4_tablet.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 201px;
+        height: 295px;
+        left: 24px;
+        bottom: 12px;
+    }
 }
 
 .text_1 {
     max-width: 291px;
     top: 16px;
     left: 20px;
+    @include media-rules(tablet) {
+        max-width: 582px;
+        top: 19px;
+        left: 24px;
+    }
 }
 
 .text_2 {
     max-width: 331px;
     top: 16px;
     left: 9px;
+    @include media-rules(tablet) {
+        max-width: 579px;
+        top: 22px;
+        left: 18px;
+    }
 }
 
 .text_3 {
     max-width: 138px;
     top: 14px;
     left: 14px;
+    @include media-rules(tablet) {
+        max-width: 230px;
+        top: 15px;
+        left: 19px;
+    }
 }
 
 .text_4 {
     max-width: 127px;
     top: 11px;
     left: 6px;
+    @include media-rules(tablet) {
+        max-width: 156px;
+        top: 16px;
+        left: 8px;
+    }
 }
 
 .custom_dot {

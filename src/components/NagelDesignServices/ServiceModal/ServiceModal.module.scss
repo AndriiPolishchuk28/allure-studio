@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .wrapper_content {
     padding: 24px 0;
 }
@@ -6,6 +8,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @include media-rules(tablet) {
+        gap: 26px;
+    }
 }
 
 .item {
@@ -22,11 +27,20 @@
     font-weight: 200;
 }
 
+.price_upper {
+    text-transform: uppercase;
+}
+
 .text_service {
     font-family: var(--font-family);
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
     color: var(--gen);
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
 }

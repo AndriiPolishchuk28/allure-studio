@@ -18,7 +18,6 @@ const ServicesItem = ({ label, path, link }) => {
                         playsinline
                     />
                 </div>
-
                 <span className={scss.linkText}>{label}</span>
             </Link>
         </li>

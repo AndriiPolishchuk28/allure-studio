@@ -1,3 +1,5 @@
+@import '../../../styles/mixins';
+
 .readMoreButton {
     width: 100%;
     font-weight: 200;
@@ -6,6 +8,13 @@
     text-decoration-skip-ink: none;
     text-align: right;
     outline: none;
+    font-size: 12px;
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+    @include media-rules(desktop) {
+        display: none;
+    }
 }
 
 .description {
@@ -14,4 +23,8 @@
     font-size: 12px;
     line-height: 1.5;
     padding: 32px 41px;
+    @include media-rules(tablet) {
+        font-size: 16px;
+        padding: 32px 66px;
+    }
 }

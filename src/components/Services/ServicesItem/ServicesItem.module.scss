@@ -1,7 +1,8 @@
+@import '../../../styles/mixins';
+
 .playerWrapper {
     width: 100%;
     background-color: var(--photo-bg);
-
 }
 
 .link {
@@ -16,4 +17,8 @@
     text-transform: uppercase;
     text-align: center;
     margin-top: 12px;
+    @include media-rules(tablet) {
+        font-size: 26px;
+        margin-top: 24px;
+    }
 }

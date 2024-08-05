@@ -2,6 +2,7 @@
 
 .image {
     margin-bottom: 12px;
+    object-fit: cover;
     @include media-rules(desktop) {
         margin-bottom: 0;
         order: 1;

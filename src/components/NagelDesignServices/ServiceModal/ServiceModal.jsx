@@ -1,6 +1,7 @@
 import PageTitle from '@/components/PageTitle';
 import scss from './ServiceModal.module.scss';
 import Container from '@/components/Container';
+import clsx from 'clsx';
 
 const ServiceModal = ({ item }) => {
     const { info, title } = item;
@@ -13,12 +14,19 @@ const ServiceModal = ({ item }) => {
                     {info.map(({ name, price, time }, index) => (
                         <li className={scss.item} key={index}>
                             <h4 className={scss.text_service}>
-                                {name}{' '}
+                                {name}
                                 {time && (
                                     <span className={scss.time}>{time}</span>
                                 )}
                             </h4>
-                            <p className={scss.text_service}>{price}</p>
+                            <p
+                                className={clsx(
+                                    scss.text_service,
+                                    scss.price_upper
+                                )}
+                            >
+                                {price}
+                            </p>
                         </li>
                     ))}
                 </ul>

@@ -1,34 +1,12 @@
 'use client';
-import { useEffect, useState } from 'react';
+
 import scss from './Permanent.module.scss';
 import Image from 'next/image';
 import ReadMore from './ReadMore/ReadMore';
-import { main_tablet, main_phone } from '@/assets/images/main';
-import { photo1 } from '@/assets/images/nageldesign';
-import { useMediaQuery } from 'react-responsive';
-
-const generateText = (isMobile, isTablet) => {
-    if (isMobile) {
-        return '2022 Inhaberin und Geschäftsführering von ALLURE Permanent Make up & Beauty,\n2022 Jury-Mitgleider der German WULOP,\n2021 Siegerin der German WULOP (Powder Brow),\nseit 2018 Permanent Make up - Artis';
-    } else if (isTablet) {
-        return '2022 Inhaberin und Geschäftsführering von ALLURE Permanent Make up & Beauty,\n2022 Jury-Mitgleider der German WULOP,\n2021 Siegerin der German WULOP (Powder Brow),\nseit 2018 Permanent Make up - Artist.\nBeauty ist unsere Leidenschaft.\n2022 konnten wir nun endlich unser eigenes Studio im Herzen von Berlin eröffnen.\nWir sind ein Zusammenschluss aus sechs Beauty-Experten.';
-    } else {
-        return 'desktop';
-    }
-};
+import { main_tablet, main_phone, main_desktop } from '@/assets/images/main';
+import clsx from 'clsx';
 
 const Permanent = () => {
-    const isTablet = useMediaQuery({
-        query: '(min-width: 768px) and (max-width: 1439px)',
-    });
-    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
-
-    const [text, setText] = useState('');
-
-    useEffect(() => {
-        setText(generateText(isMobile, isTablet));
-    }, [isMobile, isTablet]);
-
     return (
         <section className={scss.section}>
             <div className={scss.wrapper_text}>
@@ -40,7 +18,10 @@ const Permanent = () => {
             </div>
             <div className={scss.img_wrapper}>
                 <picture>
-                    <source media="(min-width: 1440px)" srcSet={photo1.src} />
+                    <source
+                        media="(min-width: 1440px)"
+                        srcSet={main_desktop.src}
+                    />
                     <source
                         media="(min-width: 768px)"
                         srcSet={main_tablet.src}
@@ -54,8 +35,41 @@ const Permanent = () => {
                 </picture>
                 <div className={scss.stick}></div>
                 <div className={scss.smear_wrapper}>
-                    <p className={scss.smear_text}>{text}</p>
-                    <ReadMore />
+                    <div className={scss.smear_wrapper_text}>
+                        <p className={scss.smear_text}>
+                            2022 Inhaberin und Geschäftsführering von ALLURE
+                            Permanent Make up & Beauty, 2022 Jury-Mitgleider der
+                            German WULOP, 2021 Siegerin der German WULOP (Powder
+                            Brow), seit 2018 Permanent Make up - Artis Mehr
+                            lesen
+                        </p>
+                        <div className={scss.tablet_text_wrapper}>
+                            <p
+                                className={clsx(
+                                    scss.smear_text,
+                                    scss.tablet_text
+                                )}
+                            >
+                                2022 Inhaberin und Geschäftsführering von ALLURE
+                                Permanent Make up & Beauty, 2022 Jury-Mitgleider
+                                der German WULOP, 2021 Siegerin der German WULOP
+                                (Powder Brow), seit 2018 Permanent Make up -
+                                Artist.
+                            </p>
+                            <p
+                                className={clsx(
+                                    scss.smear_text,
+                                    scss.tablet_text
+                                )}
+                            >
+                                Beauty ist unsere Leidenschaft. 2022 konnten wir
+                                nun endlich unser eigenes Studio im Herzen von
+                                Berlin eröffnen. Wir sind ein Zusammenschluss
+                                aus sechs Beauty-Experten.
+                            </p>
+                        </div>
+                        <ReadMore />
+                    </div>
                 </div>
             </div>
         </section>

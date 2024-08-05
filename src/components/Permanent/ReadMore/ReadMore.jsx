@@ -2,12 +2,17 @@
 
 import CustomModal from '@/components/CustomModal';
 import scss from './Readmore.module.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useMedia } from '@/hooks/useMedia';
 
 const ReadMore = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const { isTablet } = useMedia();
+    const { isTablet, isDesktop } = useMedia();
+    useEffect(() => {
+        if (isDesktop) {
+            setModalIsOpen(false);
+        }
+    }, [isDesktop]);
     return (
         <>
             <button
