@@ -9,6 +9,7 @@ const CustomInput = ({ register, name, textarea, errorText, ...rest }) => {
                     {...rest}
                     type="text"
                     {...register(name)}
+                    autoComplete="new-password"
                     className={clsx(
                         scss.textarea,
                         errorText && scss.errorBorder
@@ -19,6 +20,7 @@ const CustomInput = ({ register, name, textarea, errorText, ...rest }) => {
                     {...rest}
                     type="text"
                     {...register(name)}
+                    autoComplete="new-password"
                     className={clsx(scss.input, errorText && scss.errorBorder)}
                 />
             )}
