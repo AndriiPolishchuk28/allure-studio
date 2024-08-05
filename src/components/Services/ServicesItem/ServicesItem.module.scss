@@ -1,8 +1,19 @@
-@import '../../../styles/mixins';
+@import '@/styles/mixins';
 
 .playerWrapper {
-    width: 100%;
+    width: 200px;
+    height: 360px;
     background-color: var(--photo-bg);
+
+    @include media-rules(tablet) {
+        width: 302px;
+        height: 391px;
+    }
+
+    @include media-rules(desktop) {
+        width: 552px;
+        height: 580px;
+    }
 }
 
 .link {
@@ -16,9 +27,14 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 12px;
+    padding: 12px 0;
+
     @include media-rules(tablet) {
         font-size: 26px;
-        margin-top: 24px;
+        padding: 24px 0;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 32px;
     }
 }
