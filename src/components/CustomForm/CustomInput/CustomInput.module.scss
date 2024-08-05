@@ -1,3 +1,9 @@
+@import "@/styles/mixins";
+
+.inputWrapper {
+    position: relative;
+}
+
 .input,
 .textarea {
     width: 100%;
@@ -11,8 +17,11 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     padding: 0 16px;
 
+    @include media-rules(tablet) {
+        font-size: 16px;
+    }
+
     &::placeholder {
-        font-size: 12px;
         color: #6b7280;
     }
 
@@ -29,4 +38,12 @@
 
 .errorBorder {
     border-color: #d96868;
+}
+
+.errorText {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 2px);
+    color: #d96868;
+    line-height: 1.5;
 }

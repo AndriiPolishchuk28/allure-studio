@@ -12,11 +12,8 @@ const validationSchema = yup.object({
     phone: yup
         .string()
         .required('Telefonnummer ist erforderlich*')
-        .matches(/^\+?[1-9]\d{1,14}$/, 'Telefonnummer ist nicht gültig'),
-    subject: yup
-        .string()
-        .required('Betreff ist erforderlich*')
-        .min(5, 'Der Betreff muss mindestens 5 Zeichen lang sein'),
+        .matches(/^[0-9]{1,14}$/, 'Telefonnummer ist nicht gültig'),
+    subject: yup.string(),
     message: yup
         .string()
         .required('Nachricht ist erforderlich*')

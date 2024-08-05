@@ -1,14 +1,11 @@
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import clsx from 'clsx';
 import CustomInput from './CustomInput';
-import checkIcon from '@/assets/check.svg';
 import fields from './fields';
 import validationSchema from './validationSchema';
 import scss from './CustomForm.module.scss';
+import CustomCheckbox from './CustomCheckbox';
 
 const CustomForm = () => {
     const {
@@ -22,7 +19,7 @@ const CustomForm = () => {
     const onSubmit = (data) => console.log(data);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className={scss.form}>
             <div className={scss.wrapper}>
                 {fields.map(({ name, placeholder, textarea }) => (
                     <CustomInput
@@ -36,37 +33,11 @@ const CustomForm = () => {
                 ))}
             </div>
 
-            <div className={scss.checkboxWrapper}>
-                <input
-                    type="checkbox"
-                    id="checkbox"
-                    {...register('checkbox')}
-                    className={scss.inputCheckbox}
-                />
-                <label htmlFor="checkbox" className={scss.checkboxLabel}>
-                    <span
-                        className={clsx(
-                            scss.checkbox,
-                            errors.checkbox?.message && scss.errorBorder
-                        )}
-                    >
-                        <Image
-                            src={checkIcon}
-                            alt="check icon"
-                            className={scss.checkboxIcon}
-                        />
-                    </span>
-                    <p className={scss.checkboxText}>
-                        Ich habe die Datenschutzerklärung zur Kenntnis genommen.
-                    </p>
-                </label>
+            <CustomCheckbox
+                register={register}
+                errorText={errors.checkbox?.message}
+            />
 
-                {errors.checkbox?.message && <p>{errors.checkbox?.message}</p>}
-
-                <Link href="#" className={scss.checkboxLink}>
-                    Zur Datenschutzerklärung
-                </Link>
-            </div>
             <div className={scss.submitButtonWrapper}>
                 <button type="submit" className={scss.submitButton}>
                     absenden

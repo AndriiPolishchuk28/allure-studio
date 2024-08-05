@@ -6,7 +6,7 @@ const ContactsForm = () => {
     return (
         <section className={scss.section}>
             <PageTitle className={scss.pageTitle}>
-                haben sie fragen ? KONTAKTIERE uns
+                haben sie fragen? KONTAKTIERE uns
             </PageTitle>
             <CustomForm />
         </section>

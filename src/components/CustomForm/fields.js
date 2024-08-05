@@ -1,15 +1,15 @@
 const fields = [
     {
         name: 'fullName',
-        placeholder: 'Vor und Nachname',
+        placeholder: 'Vor und Nachname*',
     },
     {
         name: 'email',
-        placeholder: 'Email',
+        placeholder: 'Email*',
     },
     {
         name: 'phone',
-        placeholder: 'Telefonnummer',
+        placeholder: 'Telefonnummer*',
     },
     {
         name: 'subject',
@@ -17,7 +17,7 @@ const fields = [
     },
     {
         name: 'message',
-        placeholder: 'Nachricht',
+        placeholder: 'Nachricht*',
         textarea: true,
     },
 ];

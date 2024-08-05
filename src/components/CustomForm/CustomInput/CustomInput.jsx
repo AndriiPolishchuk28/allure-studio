@@ -3,7 +3,7 @@ import scss from './CustomInput.module.scss';
 
 const CustomInput = ({ register, name, textarea, errorText, ...rest }) => {
     return (
-        <div>
+        <div className={scss.inputWrapper}>
             {textarea ? (
                 <textarea
                     {...rest}
@@ -22,7 +22,8 @@ const CustomInput = ({ register, name, textarea, errorText, ...rest }) => {
                     className={clsx(scss.input, errorText && scss.errorBorder)}
                 />
             )}
-            {errorText && <p>{errorText}</p>}
+
+            {errorText && <p className={scss.errorText}>{errorText}</p>}
         </div>
     );
 };

@@ -1,0 +1,119 @@
+@import '@/styles/mixins';
+
+.section {
+    @include media-rules(desktop) {
+        flex-grow: 1;
+    }
+}
+
+.lineDesk {
+    @include media-rules(tablet) {
+        display: none;
+    }
+}
+
+.map {
+    width: 100%;
+    height: 304px;
+    border: none;
+    margin: 40px 0;
+
+    @include media-rules(tablet) {
+        height: 554px;
+        margin: 0;
+        margin-bottom: 36px;
+    }
+}
+
+.contactsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    @include media-rules(tablet) {
+        gap: 36px;
+        text-align: left;
+    }
+}
+
+.contactsItemBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media-rules(tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @include media-rules(desktop) {
+        padding-right: 36px;
+    }
+}
+
+.contactsItemTitle {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+
+    @include media-rules(tablet) {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+}
+
+.contactsItemWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include media-rules(tablet) {
+        gap: 22px;
+    }
+}
+
+.contactsItemInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    @include media-rules(tablet) {
+        justify-content: start;
+    }
+}
+
+.contactsItemIcon {
+    width: 24px;
+    height: 24px;
+    fill: var(--gen-green);
+
+    @include media-rules(tablet) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.contactsItemIconStroke {
+    fill: transparent;
+    stroke: var(--gen-green);
+}
+
+.contactsItemData {
+    composes: contactsItemTitle;
+    margin-bottom: 0;
+
+    @include media-rules(tablet) {
+        font-size: 16px;
+    }
+}
+
+.line {
+    margin-top: 20px;
+
+    @include media-rules(desktop) {
+        margin-top: 36px;
+    }
+}
