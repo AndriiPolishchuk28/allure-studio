@@ -1,12 +1,7 @@
 @import '@/styles/mixins';
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-
     @include media-rules(tablet) {
-        gap: 10px;
         order: 1;
         margin-right: auto;
         margin-left: 50px;
@@ -14,6 +9,16 @@
 
     @include media-rules(desktop) {
         margin-left: 290px;
+    }
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    @include media-rules(tablet) {
+        gap: 10px;
     }
 }
 

@@ -4,33 +4,67 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Drawer } from '@mui/material';
+import { motion } from 'framer-motion';
 import Navs from '../Navs';
 import closeIcon from '@/assets/close.svg';
-import scss from './BurgerMenu.module.scss';
 import { useMedia } from '@/hooks/useMedia';
+import scss from './BurgerMenu.module.scss';
 
 const BurgerMenu = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const { isMobile, isDesktop } = useMedia();
+    const burgerAnimation = {
+        hidden: {
+            x: -100,
+            opacity: 0,
+        },
+        visible: {
+            x: 0,
+            opacity: 1,
+        },
+    };
 
     const drawerWidth = isMobile ? '100%' : isDesktop ? '540px' : '376px';
 
     return (
         <>
-            <div className={scss.controlWrapper}>
-                <button
-                    onClick={() => setMenuIsOpen(true)}
-                    className={scss.burgerButton}
+            {isDesktop ? (
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    transition={{ duration: 1 }}
+                    variants={burgerAnimation}
+                    className={scss.controlWrapper}
                 >
-                    <svg className={scss.burgerIcon}>
-                        <use href="/icons/icons.svg#icon-burger"></use>
-                    </svg>
-                    <span className={scss.burgerButtonText}>Menu</span>
-                </button>
-                <Link href="/" className={scss.link}>
-                    Home
-                </Link>
-            </div>
+                    <button
+                        onClick={() => setMenuIsOpen(true)}
+                        className={scss.burgerButton}
+                    >
+                        <svg className={scss.burgerIcon}>
+                            <use href="/icons/icons.svg#icon-burger"></use>
+                        </svg>
+                        <span className={scss.burgerButtonText}>Menu</span>
+                    </button>
+                    <Link href="/" className={scss.link}>
+                        Home
+                    </Link>
+                </motion.div>
+            ) : (
+                <div className={scss.controlWrapper}>
+                    <button
+                        onClick={() => setMenuIsOpen(true)}
+                        className={scss.burgerButton}
+                    >
+                        <svg className={scss.burgerIcon}>
+                            <use href="/icons/icons.svg#icon-burger"></use>
+                        </svg>
+                        <span className={scss.burgerButtonText}>Menu</span>
+                    </button>
+                    <Link href="/" className={scss.link}>
+                        Home
+                    </Link>
+                </div>
+            )}
 
             <Drawer
                 open={menuIsOpen}

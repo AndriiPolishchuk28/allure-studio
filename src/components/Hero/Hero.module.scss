@@ -1,0 +1,14 @@
+@import '@/styles/mixins';
+
+.section {
+    background-color: var(--photo-bg);
+    height: 190px;
+
+    @include media-rules(tablet) {
+        height: 403px;
+    }
+
+    @include media-rules(desktop) {
+        height: 651px;
+    }
+}
