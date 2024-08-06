@@ -1,15 +1,18 @@
 @import '@/styles/mixins';
 
 .header {
+    min-height: 56px;
     background-color: var(--gen-green);
     padding: 12px 0;
 
     @include media-rules(tablet) {
+        min-height: 100px;
         background-color: transparent;
         padding: 14px 0;
     }
 
     @include media-rules(desktop) {
+        min-height: 109px;
         background-color: transparent;
         padding: 18px 0;
     }
@@ -61,6 +64,6 @@
     @include media-rules(desktop) {
         font-size: 20px;
         line-height: 1.2;
-        padding: 14px 20px;   
+        padding: 14px 20px;
     }
 }
