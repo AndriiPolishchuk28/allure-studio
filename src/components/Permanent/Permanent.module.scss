@@ -160,7 +160,6 @@
         font-size: 14px;
     }
     @include media-rules(desktop) {
-        // display: none;
         max-width: 491px;
     }
 }

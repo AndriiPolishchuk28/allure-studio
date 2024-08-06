@@ -5,6 +5,7 @@
 }
 
 .base_review {
+    // position: relative;
     background-size: cover;
     background-position: center;
     height: 203px;
@@ -17,6 +18,7 @@
 }
 
 .base_ellipse {
+    // position: absolute;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -33,6 +35,9 @@
     text-align: center;
     @include media-rules(tablet) {
         font-size: 16px;
+    }
+    @include media-rules(desktop) {
+        font-size: 24px;
     }
 }
 
@@ -76,7 +81,9 @@
     background-image: url('../../assets/images/feedbacks/ellipse1.png');
     width: 323px;
     height: 114px;
-    left: 20px;
+    // left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 22px;
     @include media-rules(tablet) {
         background: url('../../assets/images/feedbacks/ellipse1_tablet.png');
@@ -84,8 +91,16 @@
         background-size: contain;
         width: 632px;
         height: 145px;
-        left: 74px;
+        // left: 74px;
         bottom: 22px;
+    }
+    @include media-rules(tablet) {
+        background: url('../../assets/images/feedbacks/ellipse1_desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 1111px;
+        height: 214px;
+        bottom: 40px;
     }
 }
 
@@ -93,7 +108,9 @@
     background-image: url('../../assets/images/feedbacks/ellipse2.png');
     width: 363px;
     height: 94px;
-    left: 16px;
+    // left: 16px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 22px;
     @include media-rules(tablet) {
         background: url('../../assets/images/feedbacks/ellipse2_tablet.png');
@@ -101,8 +118,16 @@
         background-size: contain;
         width: 645px;
         height: 145px;
-        left: 74px;
+        // left: 74px;
         bottom: 22px;
+    }
+    @include media-rules(desktop) {
+        background: url('../../assets/images/feedbacks/ellipse2_desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 755px;
+        height: 240px;
+        bottom: 40px;
     }
 }
 
@@ -121,6 +146,15 @@
         left: 57px;
         bottom: 36px;
     }
+    @include media-rules(desktop) {
+        background: url('../../assets/images/feedbacks/ellipse3_desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 413px;
+        height: 230px;
+        left: 64px;
+        bottom: 73px;
+    }
 }
 
 .ellipse_4 {
@@ -135,8 +169,17 @@
         background-size: cover;
         width: 201px;
         height: 295px;
-        left: 24px;
+        left: 29px;
         bottom: 12px;
+    }
+    @include media-rules(desktop) {
+        background: url('../../assets/images/feedbacks/ellipse4_desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 367px;
+        height: 428px;
+        left: 29px;
+        bottom: 60px;
     }
 }
 
@@ -149,6 +192,11 @@
         top: 19px;
         left: 24px;
     }
+    @include media-rules(desktop) {
+        max-width: 956px;
+        max-width: 953px;
+        left: 70px;
+    }
 }
 
 .text_2 {
@@ -159,6 +207,11 @@
         max-width: 579px;
         top: 22px;
         left: 18px;
+    }
+    @include media-rules(desktop) {
+        max-width: 686px;
+        top: 39px;
+        left: 21px;
     }
 }
 
@@ -171,6 +224,11 @@
         top: 15px;
         left: 19px;
     }
+    @include media-rules(desktop) {
+        max-width: 334px;
+        top: 15px;
+        left: 44px;
+    }
 }
 
 .text_4 {
@@ -182,19 +240,23 @@
         top: 16px;
         left: 8px;
     }
+    @include media-rules(desktop) {
+        max-width: 261px;
+        top: 48px;
+        left: 28px;
+    }
 }
 
 .custom_dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: rgba(227, 222, 219, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-
-.slick-dots li.slick-active button:before {
-    color: green !important;
+    @include media-rules(desktop) {
+        bottom: 10px;
+    }
 }

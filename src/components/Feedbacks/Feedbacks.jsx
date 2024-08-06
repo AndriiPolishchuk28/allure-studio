@@ -20,6 +20,12 @@ const Feedbacks = () => {
             .slick-dots li.slick-active>div {
                 background-color: #e3dedb;
             }
+            .slick-dots li {
+            margin: 0;
+            display: block;
+            padding-bottom: 10px;
+            height: initial;
+            }
         `;
         document.head.appendChild(style);
 
@@ -37,8 +43,10 @@ const Feedbacks = () => {
         nextArrow: <SampleNextArrow />,
         customPaging: () => <div className={scss.custom_dot}></div>,
         appendDots: (dots) => (
-            <div className={scss.dotsContainer} style={{ bottom: '-3px' }}>
-                <ul>{dots}</ul>
+            <div className={scss.dotsContainer}>
+                <ul style={{ display: 'flex', justifyContent: 'center' }}>
+                    {dots}
+                </ul>
             </div>
         ),
     };

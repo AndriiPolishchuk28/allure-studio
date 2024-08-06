@@ -17,7 +17,6 @@ const Permanent = () => {
                 <p className={scss.text_owner}>by Uliana Eremenko</p>
             </div>
             <div className={scss.img_wrapper}>
-                {/* <div className={scss.test}> */}
                 <picture>
                     <source
                         media="(min-width: 1440px)"
@@ -34,8 +33,6 @@ const Permanent = () => {
                         className={scss.image}
                     />
                 </picture>
-                {/* </div> */}
-
                 <div className={scss.stick}></div>
                 <div className={scss.smear_wrapper}>
                     <div className={scss.smear_wrapper_text}>
