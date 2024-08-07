@@ -1,21 +1,22 @@
 import nodemailer from 'nodemailer';
 
-const { UKR_NET_EMAIL, UKR_NET_PASSWORD } = process.env;
+const { GMAIL_EMAIL, GMAIL_PASSWORD } = process.env;
 
 const nodemailerConfig = {
-    host: 'smtp.ukr.net',
+    service: 'gmail',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
-        user: UKR_NET_EMAIL,
-        pass: UKR_NET_PASSWORD,
+        user: GMAIL_EMAIL,
+        pass: GMAIL_PASSWORD,
     },
 };
 
 const transport = nodemailer.createTransport(nodemailerConfig);
 
 const sendMail = (data) => {
-    const email = { ...data, from: UKR_NET_EMAIL };
+    const email = { ...data, from: GMAIL_EMAIL };
 
     return transport.sendMail(email);
 };
