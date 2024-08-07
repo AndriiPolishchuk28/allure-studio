@@ -4,10 +4,17 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Logo from './Logo';
 import BurgerMenu from './BurgerMenu';
-import scss from './Header.module.scss';
 import { useMedia } from '@/hooks/useMedia';
+import scss from './Header.module.scss';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     const { isDesktop } = useMedia();
     const linkAnimation = {
         hidden: {
@@ -26,7 +33,7 @@ const Header = () => {
                     <Logo />
                     <BurgerMenu />
                     <Link href="#" className={scss.link}>
-                        {isDesktop ? (
+                        {isDesktop && isMounted ? (
                             <motion.div
                                 initial="hidden"
                                 whileInView="visible"

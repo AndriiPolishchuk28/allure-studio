@@ -4,11 +4,13 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import logo from '../../../assets/images/header/logo.svg';
-import scss from './Logo.module.scss';
 import { useMedia } from '@/hooks/useMedia';
+import scss from './Logo.module.scss';
+import { usePathname } from 'next/navigation';
 
 const Logo = ({ ...props }) => {
     const [isMounted, setIsMounted] = useState(false);
+    const pathname = usePathname();
     const { isDesktop } = useMedia();
 
     useEffect(() => {
@@ -19,7 +21,7 @@ const Logo = ({ ...props }) => {
         return <div className={scss.logo}></div>;
     }
 
-    const textAnimation = {
+    const logoAnimation = {
         hidden: {
             y: 300,
             scale: 2,
@@ -32,10 +34,10 @@ const Logo = ({ ...props }) => {
 
     return (
         <Link {...props} href="/" className={scss.logo}>
-            {isDesktop ? (
+            {isDesktop && pathname === '/' ? (
                 <motion.div initial="hidden" whileInView="visible">
                     <motion.div
-                        variants={textAnimation}
+                        variants={logoAnimation}
                         transition={{ duration: 0.5, ease: 'easeOut' }}
                         className={scss.logoWrapper}
                     >
