@@ -17,9 +17,9 @@ const Feedbacks = () => {
     useEffect(() => {
         const style = document.createElement('style');
         style.innerHTML = `
-            // .slick-dots {
-            // bottom: 7px;
-            // }
+            .slick-dots {
+            bottom: 3px;
+            }
             .slick-dots li.slick-active>div {
                 background-color: #e3dedb;
             }
@@ -47,7 +47,10 @@ const Feedbacks = () => {
         customPaging: () => <div className={scss.custom_dot}></div>,
         appendDots: (dots) => (
             <div className={scss.dotsContainer}>
-                <ul style={{ display: 'flex', justifyContent: 'center' }}>
+                <ul
+                    className={scss.test}
+                    style={{ display: 'flex', justifyContent: 'center' }}
+                >
                     {dots}
                 </ul>
             </div>

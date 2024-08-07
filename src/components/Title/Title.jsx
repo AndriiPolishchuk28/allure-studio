@@ -1,13 +1,13 @@
 import clsx from 'clsx';
 import scss from './Title.module.scss';
 
-const Title = ({ line, children, lineImpressum }) => {
+const Title = ({ line, children, className }) => {
     return (
         <h2
             className={clsx(
                 scss.title,
                 line && scss.titleLine,
-                lineImpressum && scss.impressumLine
+                className && className
             )}
         >
             {children}

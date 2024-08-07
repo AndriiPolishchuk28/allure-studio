@@ -1,4 +1,120 @@
+@import '@/styles/mixins';
+
 .section {
-    padding-left: 25px;
     padding-bottom: 40px;
+    @include media-rules(tablet) {
+        padding-bottom: 75px;
+        padding-top: 70px;
+    }
+    @include media-rules(desktop) {
+        padding-bottom: 150px;
+    }
+}
+
+.injektionen_wrapper {
+    max-width: 390px;
+    padding-left: 25px;
+    margin: 0 auto;
+    @include media-rules(tablet) {
+        max-width: 768px;
+        padding-right: 72px;
+        padding-left: 0;
+    }
+    @include media-rules(desktop) {
+        max-width: 1440px;
+        padding-right: 155px;
+    }
+}
+
+.title_wrapper {
+    display: flex;
+    gap: 7px;
+    @include media-rules(tablet) {
+        flex-direction: row-reverse;
+        gap: 20px;
+        justify-content: flex-end;
+    }
+    @include media-rules(desktop) {
+        gap: 24px;
+    }
+}
+
+.text_wrapper {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    @include media-rules(tablet) {
+        padding-top: 0px;
+        max-width: 200px;
+    }
+    @include media-rules(desktop) {
+        max-width: 552px;
+        gap: 36px;
+        justify-content: center;
+    }
+}
+
+.text_wrapper .title {
+    @include media-rules(desktop) {
+        margin-bottom: 0;
+    }
+}
+
+.description {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+}
+
+.image {
+    width: 200px;
+    height: 315px;
+    @include media-rules(tablet) {
+        width: 445px;
+        height: 456px;
+    }
+    @include media-rules(desktop) {
+        width: 708px;
+        height: 562px;
+    }
+}
+
+.link_wrapper {
+    text-align: center;
+    margin-top: 20px;
+    @include media-rules(tablet) {
+        margin-top: 36px;
+    }
+    @include media-rules(desktop) {
+        display: none;
+    }
+}
+
+.link {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 2.4;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--gen-w);
+    padding: 6px 10px;
+    background-color: var(--gen-green);
+    border-radius: 2px;
+    @include media-rules(tablet) {
+        padding: 14px 20px;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+.link_wrapper_desktop {
+    display: none;
+    @include media-rules(desktop) {
+        display: block;
+    }
 }

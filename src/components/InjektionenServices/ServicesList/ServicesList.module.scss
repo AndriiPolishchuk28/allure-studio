@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 183px;
+}
+
+.price {
+    max-width: 83px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--gen);
+}
+
+.service_text {
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.additional {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: var(--gen);
+}

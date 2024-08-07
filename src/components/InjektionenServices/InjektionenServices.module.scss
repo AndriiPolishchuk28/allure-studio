@@ -1,0 +1,42 @@
+@import '@/styles/mixins';
+
+.section {
+    padding: 40px 0;
+    @include media-rules(desktop) {
+        padding-bottom: 150px;
+    }
+}
+
+.title {
+    margin-bottom: 0;
+    &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(69, 63, 65, 0.5);
+        margin: 16px auto 36px auto;
+    }
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include media-rules(tablet) {
+        gap: 26px;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
