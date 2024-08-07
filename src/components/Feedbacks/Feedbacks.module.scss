@@ -5,7 +5,6 @@
 }
 
 .base_review {
-    // position: relative;
     background-size: cover;
     background-position: center;
     height: 203px;
@@ -14,11 +13,14 @@
     padding-bottom: 51.25%;
     @include media-rules(tablet) {
         padding-bottom: 46.25%;
+        height: 354px;
+    }
+    @include media-rules(desktop) {
+        height: 606px;
     }
 }
 
 .base_ellipse {
-    // position: absolute;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -75,6 +77,9 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+    @include media-rules(tablet) {
+        background-size: cover;
+    }
 }
 
 .ellipse_1 {
@@ -94,7 +99,7 @@
         // left: 74px;
         bottom: 22px;
     }
-    @include media-rules(tablet) {
+    @include media-rules(desktop) {
         background: url('../../assets/images/feedbacks/ellipse1_desktop.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -260,3 +265,4 @@
         bottom: 10px;
     }
 }
+

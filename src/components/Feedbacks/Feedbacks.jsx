@@ -17,6 +17,9 @@ const Feedbacks = () => {
     useEffect(() => {
         const style = document.createElement('style');
         style.innerHTML = `
+            // .slick-dots {
+            // bottom: 7px;
+            // }
             .slick-dots li.slick-active>div {
                 background-color: #e3dedb;
             }
