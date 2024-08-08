@@ -2,6 +2,8 @@ import Container from '../Container';
 import CustomForm from '../CustomForm';
 import PageTitle from '../PageTitle';
 import scss from './InjektionenTermin.module.scss';
+import { montserrat } from '@/app/ui';
+import clsx from 'clsx';
 
 const InjektionenTermin = () => {
     return (
@@ -11,7 +13,7 @@ const InjektionenTermin = () => {
                     <PageTitle className={scss.page_title}>
                         Wichtige Information zur Terminvereinbarung
                     </PageTitle>
-                    <p className={scss.termin_text}>
+                    <p className={clsx(montserrat.className, scss.termin_text)}>
                         Eine Anmeldung für Injektionen erfolgt ausschließlich
                         nach Einreichung Ihrer Anfrage. Danach werden wir uns
                         mit Ihnen in Verbindung setzen und einen Termin
