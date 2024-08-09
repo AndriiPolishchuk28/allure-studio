@@ -8,11 +8,14 @@ const validationSchema = yup.object({
     email: yup
         .string()
         .required('E-Mail ist erforderlich*')
-        .matches(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'E-Mail ist nicht gültig'),
+        .matches(
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+            'E-Mail ist nicht gültig'
+        ),
     phone: yup
         .string()
         .required('Telefonnummer ist erforderlich*')
-        .matches(/^[0-9]{1,14}$/, 'Telefonnummer ist nicht gültig'),
+        .matches(/^[0-9,+]{1,14}$/, 'Telefonnummer ist nicht gültig'),
     subject: yup.string(),
     message: yup
         .string()

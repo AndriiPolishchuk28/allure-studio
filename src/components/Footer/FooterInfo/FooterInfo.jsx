@@ -3,6 +3,8 @@ import Image from 'next/image';
 import socialLinks from '../socialLinks.json';
 import logo from '@/assets/images/header/logo.svg';
 import scss from './FooterInfo.module.scss';
+import clsx from 'clsx';
+import { italiana } from '@/app/ui';
 
 const FooterInfo = () => {
     const icons = ['instagram1.svg', 'facebook1.svg'];
@@ -11,10 +13,14 @@ const FooterInfo = () => {
         <div className={scss.info}>
             <div className={scss.logo}>
                 <Image src={logo} alt="ALLURE" className={scss.logoImage} />
-                <span className={scss.logoTitle}>ALLURE</span>
+                <span className={clsx(italiana.className, scss.logoTitle)}>
+                    ALLURE
+                </span>
             </div>
 
-            <p className={scss.description}>Permanent Make-Up & Beauty</p>
+            <p className={clsx(italiana.className, scss.description)}>
+                Permanent Make-Up & Beauty
+            </p>
 
             <ul className={scss.social}>
                 {socialLinks.map(({ href, label }, index) => (

@@ -7,6 +7,8 @@ import logo from '../../../assets/images/header/logo.svg';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Logo.module.scss';
 import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
+import { italiana } from '@/app/ui';
 
 const Logo = ({ ...props }) => {
     const [isMounted, setIsMounted] = useState(false);
@@ -47,7 +49,11 @@ const Logo = ({ ...props }) => {
                             priority
                             className={scss.image}
                         />
-                        <span className={scss.logoTitle}>ALLURE</span>
+                        <span
+                            className={clsx(italiana.className, scss.logoTitle)}
+                        >
+                            ALLURE
+                        </span>
                     </motion.div>
                 </motion.div>
             ) : (

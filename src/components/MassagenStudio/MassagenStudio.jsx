@@ -1,18 +1,22 @@
 import Image from 'next/image';
+import clsx from 'clsx';
 import Container from '../Container';
 import PageTitle from '../PageTitle';
 import scss from './MassagenStudio.module.scss';
 import data from './data';
+import { italiana, oooh_Baby } from '@/app/ui';
 
 const MassagenStudio = () => {
     return (
         <section className={scss.section}>
             <Container>
                 <div className={scss.head}>
-                    <h2 className={scss.title}>
+                    <h2 className={clsx(italiana.className, scss.title)}>
                         WIE FINDEST DU DEIN PERFEKTES NAGELSTUDIO?
                     </h2>
-                    <p className={scss.subtitle}>Darauf solltest du achten</p>
+                    <p className={clsx(oooh_Baby.className, scss.subtitle)}>
+                        Darauf solltest du achten
+                    </p>
                 </div>
 
                 <ul className={scss.list}>
