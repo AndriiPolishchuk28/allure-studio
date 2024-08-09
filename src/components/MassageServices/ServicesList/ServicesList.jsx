@@ -32,6 +32,7 @@ const ServicesList = () => {
                 <CustomModal
                     modalIsOpen={modalIsOpen}
                     closeModal={() => setModalIsOpen(false)}
+                    service
                 >
                     <ServiceModal {...service} />
                 </CustomModal>
