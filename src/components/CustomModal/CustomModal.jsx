@@ -34,7 +34,12 @@ const CustomModal = ({
                         )}
                         style={nageldesign ? { height: 'inherit' } : {}}
                     >
-                        <div className={scss.container}>
+                        <div
+                            className={clsx(
+                                scss.container,
+                                service && scss.containerService
+                            )}
+                        >
                             <button
                                 onClick={closeModal}
                                 className={scss.closeButton}
