@@ -7,22 +7,6 @@
     padding: 32px 41px;
 }
 
-.description:last-of-type {
-    display: none;
-}
-
-.description:first-of-type {
-    @include media-rules(tablet) {
-        display: none;
-    }
-}
-
-.description:last-of-type {
-    @include media-rules(tablet) {
-        display: block;
-    }
-}
-
 .wrapper {
     display: flex;
 }

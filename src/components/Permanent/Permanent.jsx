@@ -5,16 +5,21 @@ import Image from 'next/image';
 import ReadMore from './ReadMore/ReadMore';
 import { main_tablet, main_phone, main_desktop } from '@/assets/images/main';
 import clsx from 'clsx';
+import { italiana, oooh_Baby } from '@/app/ui';
 
 const Permanent = () => {
     return (
         <section className={scss.section}>
             <div className={scss.wrapper_text}>
-                <h1 className={scss.title_text}>PERMANENT SCHÖN MIT ALLURE</h1>
-                <h2 className={scss.subtitle_text}>
+                <h1 className={clsx(scss.title_text, italiana.className)}>
+                    PERMANENT SCHÖN MIT ALLURE
+                </h1>
+                <h2 className={clsx(scss.subtitle_text, italiana.className)}>
                     Permanent Make-Up &amp Beauty
                 </h2>
-                <p className={scss.text_owner}>by Uliana Eremenko</p>
+                <p className={clsx(scss.text_owner, oooh_Baby.className)}>
+                    by Uliana Eremenko
+                </p>
             </div>
             <div className={scss.img_wrapper}>
                 <picture>

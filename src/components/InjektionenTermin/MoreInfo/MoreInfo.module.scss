@@ -1,0 +1,33 @@
+.btn_wrapper {
+    margin: 0 auto;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--gen-w);
+    background-color: var(--gen-green);
+    border-radius: 6px;
+    padding: 14px 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.info_text {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.form {
+    overflow-y: auto;
+    max-height: 90vh;
+    padding: 62px 70px;
+}

@@ -7,6 +7,8 @@ import {
 } from '@/assets/images/injektionen';
 import PageTitle from '../PageTitle';
 import Link from 'next/link';
+import ReadMore from './ReadMore';
+import clsx from 'clsx';
 
 const InjektionenBerlin = () => {
     return (
@@ -15,16 +17,43 @@ const InjektionenBerlin = () => {
                 <div className={scss.title_wrapper}>
                     <div className={scss.text_wrapper}>
                         <PageTitle className={scss.title}>
-                            KOSMETISCHE INJEKTIONEN
+                            KOSMETISCHE INJEKTIONEN in Berlin mitte
                         </PageTitle>
                         <p className={scss.description}>
-                            Wir führen Injektionen mit den Botulinumtoxin,
-                            Hyloronsäure und Mesotherapie durch. Die
-                            unterschiedlichen Anwendungen reduzieren Fälltchen,
-                            durch die Fett-weg Spritzen wird das Fett in der
-                            Körperregion reduziert und mit der Filling-Methode
+                            In unserem Beauty-Studio bieten wir kosmetische
+                            Injektionen durch. Wir führen Injektionen mit den
+                            Botulinumtoxin, Hyloronsäure und Mesotherapie durch.
+                            Die unterschiedlichen Anwendungen reduzieren
+                            Fälltchen, durch die Fett-weg Spritzen wird das Fett
+                            in der Körperregion ...
+                        </p>
+                        <p className={clsx(scss.description, scss.desk_tablet)}>
+                            In unserem Beauty-Studio bieten wir kosmetische
+                            Injektionen durch. Wir führen Injektionen mit den
+                            Botulinumtoxin, Hyloronsäure und Mesotherapie durch.
+                            Die unterschiedlichen Anwendungen reduzieren
+                            Fälltchen, durch die Fett-weg Spritzen wird das Fett
+                            in der Körperregion reduziert und mit der Filling
                             werden eure zum Beispiel Lippen aufgefüllt.
                         </p>
+                        <p
+                            className={clsx(
+                                scss.description,
+                                scss.desk_desktop
+                            )}
+                        >
+                            In unserem Beauty-Studio bieten wir kosmetische
+                            Injektionen durch. Wir führen Injektionen mit den
+                            Botulinumtoxin, Hyloronsäure und Mesotherapie durch.
+                            Die unterschiedlichen Anwendungen reduzieren
+                            Fälltchen, durch die Fett-weg Spritzen wird das Fett
+                            in der Körperregion reduziert und mit der
+                            Filling-Methode werden eure zum Beispiel Lippen
+                            aufgefüllt. All diese Anwendungen werden
+                            fachmännisch von unserer Ärztin Iryna durchgeführt.
+                        </p>
+
+                        <ReadMore />
                         <div className={scss.link_wrapper_desktop}>
                             <Link
                                 className={scss.link}

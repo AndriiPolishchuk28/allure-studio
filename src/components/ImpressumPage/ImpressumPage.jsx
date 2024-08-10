@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import scss from './ImpressumPage.module.scss';
 import { impressum } from '@/assets/images/impressum';
+import { italiana } from '@/app/ui';
+import clsx from 'clsx';
 
 const ImpressumPage = () => {
     return (
         <section className={scss.wrapper}>
-            <h2 className={scss.title}>Impressum</h2>
+            <h2 className={clsx(scss.title, italiana.className)}>Impressum</h2>
             <div className={scss.desktop_wrapper}>
                 <Image
                     src={impressum}

@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .item {
     display: flex;
     justify-content: space-between;
@@ -8,20 +10,37 @@
     flex-direction: column;
     gap: 6px;
     max-width: 183px;
+    @include media-rules(tablet) {
+        max-width: 100%;
+    }
+    @include media-rules(desktop) {
+        flex-direction: row;
+    }
 }
 
 .price {
-    max-width: 83px;
+    max-width: 87px;
     text-align: right;
     font-size: 12px;
     line-height: 1.5;
     color: var(--gen);
+    @include media-rules(tablet) {
+        max-width: 100%;
+        font-size: 16px;
+    }
 }
 
 .service_text {
     font-size: 12px;
     line-height: 1.5;
     text-transform: uppercase;
+    @include media-rules(tablet) {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
 }
 
 .additional {
@@ -30,4 +49,19 @@
     line-height: 1.5;
     text-transform: uppercase;
     color: var(--gen);
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+}
+
+.item .list_tablet {
+    @include media-rules(tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 2;
+        max-width: 403px;
+    }
+    @include media-rules(desktop) {
+        max-width: 903px;
+    }
 }

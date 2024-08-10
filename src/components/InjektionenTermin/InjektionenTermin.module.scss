@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .section {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -8,11 +10,30 @@
     flex-direction: column;
     gap: 40px;
     padding-bottom: 20px;
+    @include media-rules(tablet) {
+        padding-bottom: 0;
+        gap: 36px;
+    }
+    @include media-rules(desktop) {
+        align-items: center;
+    }
+}
+.wrapper_text .page_title {
+    margin-bottom: 0;
+    @include media-rules(desktop) {
+        max-width: 708px;
+        text-align: center;
+    }
 }
 
 .page_title {
     text-align: center;
-    margin-bottom: 0;
+}
+
+.title_none {
+    @include media-rules(tablet) {
+        display: none;
+    }
 }
 
 .termin_text {
@@ -20,8 +41,26 @@
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+    @include media-rules(desktop) {
+        max-width: 708px;
+        font-size: 16px;
+    }
 }
 
 .form_wrapper {
     padding-top: 20px;
+    @include media-rules(tablet) {
+        display: none;
+    }
+}
+
+.more_info_wrapper {
+    display: none;
+    @include media-rules(tablet) {
+        display: block;
+        margin-top: 36px;
+    }
 }

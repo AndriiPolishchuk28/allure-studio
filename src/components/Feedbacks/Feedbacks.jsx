@@ -8,6 +8,7 @@ import feedbacks from './feedbacks.json';
 import scss from './Feedbacks.module.scss';
 import Title from '../Title';
 import { useEffect } from 'react';
+import { raleway } from '@/app/ui';
 
 const SampleNextArrow = () => {
     return null;
@@ -66,7 +67,13 @@ const Feedbacks = () => {
                         className={clsx(scss.base_review, scss[classReview])}
                     >
                         <div className={clsx(scss.base_ellipse, scss[ellipse])}>
-                            <p className={clsx(scss.base_text, scss[text])}>
+                            <p
+                                className={clsx(
+                                    scss.base_text,
+                                    raleway.className,
+                                    scss[text]
+                                )}
+                            >
                                 {feedback}
                             </p>
                         </div>

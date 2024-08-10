@@ -1,8 +1,9 @@
 export const botulinum = [
     {
         service: 'STIRN / ZORNESFALTEN / AUGENFALTEN',
-        additional: '1/2 / 3 ZONE',
+        additional_mobile: '1 / 2 / 3 ZONE',
         price: '140 / 250 / 330 euro',
+        price_tablet: '140 / ZONE, 250 / 2, 330 / 3',
     },
     {
         service: 'FULLFACE',
