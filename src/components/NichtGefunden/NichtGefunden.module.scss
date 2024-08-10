@@ -1,0 +1,146 @@
+@import '@/styles/mixins';
+
+.section {
+    padding: 40px 0 80px;
+
+    @include media-rules(tablet) {
+        padding: 40px 0 70px;
+    }
+
+    @include media-rules(desktop) {
+        padding: 80px 0;
+    }
+}
+
+.container {
+    max-width: 390px;
+    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    @include media-rules(tablet) {
+        max-width: 768px;
+        padding: 0 34px;
+    }
+
+    @include media-rules(desktop) {
+        max-width: 1440px;
+        padding: 0 80px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @include media-rules(tablet) {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2f2f37;
+
+    @include media-rules(tablet) {
+        font-size: 38px;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+
+    @include media-rules(desktop) {
+        font-size: 115px;
+        line-height: 0.26;
+        margin-bottom: 90px;
+    }
+}
+
+.image {
+    width: 273px;
+    height: 273px;
+    margin: 0 auto;
+
+    @include media-rules(tablet) {
+        width: 376px;
+        height: 376px;
+    }
+
+    @include media-rules(desktop) {
+        width: 756px;
+        height: 756px;
+    }
+}
+
+.info {
+    padding: 0 18px;
+
+    @include media-rules(tablet) {
+        display: none;
+    }
+}
+
+.infoTab {
+    display: none;
+
+    @include media-rules(tablet) {
+        display: block;
+    }
+}
+
+.description {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2f2f37;
+    margin-bottom: 28px;
+
+    @include media-rules(tablet) {
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+
+    @include media-rules(desktop) {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 2.18;
+        letter-spacing: 0.02em;
+        margin-bottom: 90px;
+    }
+}
+
+.linkWrapper {
+    text-align: center;
+
+    @include media-rules(tablet) {
+        text-align: left;
+    }
+}
+
+.link {
+    display: inline-block;
+    font-weight: 200;
+    line-height: 2.4;
+    text-transform: capitalize;
+    color: var(--gen-w);
+    border-radius: 2px;
+    background-color: var(--gen-green);
+    padding: 1px 10px;
+
+    @include media-rules(tablet) {
+        font-size: 20px;
+        line-height: 1.2;
+        border-radius: 6px;
+        padding: 14px 20px;
+    }
+}

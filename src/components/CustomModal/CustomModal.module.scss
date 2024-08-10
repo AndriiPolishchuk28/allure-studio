@@ -39,6 +39,12 @@
     }
 }
 
+.containerService {
+    @include media-rules(tablet) {
+        max-width: 100%;
+    }
+}
+
 .closeButton {
     position: absolute;
     top: 14px;

@@ -1,12 +1,18 @@
 'use client';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
 import logo from '../../../assets/images/header/logo.svg';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Logo.module.scss';
-import { usePathname } from 'next/navigation';
+// import {
+//     logo_mob_1x,
+//     logo_mob_2x,
+//     logo_tab_1x,
+//     logo_tab_2x,
+// } from '@/assets/images/header';
 
 const Logo = ({ ...props }) => {
     const [isMounted, setIsMounted] = useState(false);
