@@ -5,11 +5,10 @@ import scss from './MoreInfo.module.scss';
 import { useEffect, useState } from 'react';
 import { useMedia } from '@/hooks/useMedia';
 import CustomForm from '@/components/CustomForm';
-import PageTitle from '@/components/PageTitle';
 
 const MoreInfo = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const { isDesktop, isMobile, isTablet } = useMedia();
+    const { isDesktop } = useMedia();
 
     useEffect(() => {
         if (isDesktop) {
