@@ -1,6 +1,6 @@
-import HomePage from './(pages)/page';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import HomePage from './(pages)/page';
 
 const Home = () => {
     return (
