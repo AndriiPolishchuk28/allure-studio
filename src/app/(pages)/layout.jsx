@@ -1,15 +1,14 @@
-import HomePage from './(pages)/page';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const Home = () => {
+const AdminLayout = ({ children }) => {
     return (
-        <main>
+        <div>
             <Header />
-            <HomePage />
+            {children}
             <Footer />
-        </main>
+        </div>
     );
 };
 
-export default Home;
+export default AdminLayout;
