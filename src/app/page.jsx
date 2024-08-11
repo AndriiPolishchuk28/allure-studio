@@ -1,12 +1,16 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import HomePage from './(allure)/page';
+import dynamic from 'next/dynamic';
+
+const ServicesVideo = dynamic(() => import('@/components/Services'), {
+    ssr: false,
+});
 
 const Home = () => {
     return (
         <main>
             <Header />
-            <HomePage />
+            <ServicesVideo />
             <Footer />
         </main>
     );
