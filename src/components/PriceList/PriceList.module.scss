@@ -1,0 +1,28 @@
+.section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.section .title {
+    margin-bottom: 0;
+    &::after {
+        content: '';
+        display: block;
+        width: 0.5px;
+        height: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(69, 63, 65, 0.5);
+        margin: 12px auto 0 auto;
+    }
+}
+
+.section .title_service {
+    margin: 40px 0;
+}
+
+.list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

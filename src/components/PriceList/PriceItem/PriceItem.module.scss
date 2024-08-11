@@ -1,0 +1,12 @@
+@import '@/styles/mixins';
+
+.section .page_title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
