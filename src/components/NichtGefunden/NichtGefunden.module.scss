@@ -42,16 +42,17 @@
 }
 
 .title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: 0.06em;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 1.5;
     text-transform: uppercase;
     text-align: center;
     color: #2f2f37;
 
     @include media-rules(tablet) {
-        font-size: 38px;
+        font-size: 55px;
+        line-height: 0.55;
         text-align: left;
         margin-bottom: 70px;
     }
@@ -102,6 +103,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #2f2f37;
+    font-family: var(--font-family);
     margin-bottom: 28px;
 
     @include media-rules(tablet) {
@@ -129,6 +131,7 @@
 
 .link {
     display: inline-block;
+    font-family: var(--font-family);
     font-weight: 200;
     line-height: 2.4;
     text-transform: capitalize;

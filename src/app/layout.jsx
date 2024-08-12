@@ -1,5 +1,5 @@
 import '../styles/globals.scss';
-import { montserrat } from '@/app/ui';
+import { montserrat } from './ui';
 
 const RootLayout = ({ children }) => {
     return (

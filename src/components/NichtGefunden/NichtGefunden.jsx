@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { not_found } from '@/assets/images/not-found';
 import scss from './NichtGefunden.module.scss';
+import clsx from 'clsx';
+import { montserrat } from '@/app/ui';
 
 const NichtGefunden = () => {
     return (
@@ -11,7 +13,12 @@ const NichtGefunden = () => {
                     <div>
                         <h1 className={scss.title}>OOPS...</h1>
                         <div className={scss.infoTab}>
-                            <p className={scss.description}>
+                            <p
+                                className={clsx(
+                                    montserrat.className,
+                                    scss.description
+                                )}
+                            >
                                 Entschuldigung! Seite nicht gefunden. Lass uns
                                 zur Startseite zurückkehren.
                             </p>
@@ -25,6 +32,7 @@ const NichtGefunden = () => {
                     <Image
                         src={not_found}
                         alt="not found"
+                        priority
                         className={scss.image}
                     />
 

@@ -13,16 +13,18 @@ const ServicesVideo = dynamic(() => import('@/components/Services'), {
 
 const Home = () => {
     return (
-        <main>
+        <>
             <Header />
-            <Hero />
-            <Permanent />
-            <ServicesVideo />
-            <Feedbacks />
-            <OurTeam />
-            <Location />
+            <main>
+                <Hero />
+                <Permanent />
+                <ServicesVideo />
+                <Feedbacks />
+                <OurTeam />
+                <Location />
+            </main>
             <Footer />
-        </main>
+        </>
     );
 };
 
