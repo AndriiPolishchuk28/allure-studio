@@ -7,12 +7,12 @@ import { motion } from 'framer-motion';
 import logo from '../../../assets/images/header/logo.svg';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Logo.module.scss';
-import {
-    logo_mob_1x,
-    logo_mob_2x,
-    logo_tab_1x,
-    logo_tab_2x,
-} from '@/assets/images/header';
+// import {
+//     logo_mob_1x,
+//     logo_mob_2x,
+//     logo_tab_1x,
+//     logo_tab_2x,
+// } from '@/assets/images/header';
 
 const Logo = ({ ...props }) => {
     const [isMounted, setIsMounted] = useState(false);
