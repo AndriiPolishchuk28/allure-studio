@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import dynamic from 'next/dynamic';
 import Permanent from '@/components/Permanent/Permanent';
 import Hero from '@/components/Hero';
@@ -13,18 +11,14 @@ const ServicesVideo = dynamic(() => import('@/components/Services'), {
 
 const Home = () => {
     return (
-        <>
-            <Header />
-            <main>
-                <Hero />
-                <Permanent />
-                <ServicesVideo />
-                <Feedbacks />
-                <OurTeam />
-                <Location />
-            </main>
-            <Footer />
-        </>
+        <main>
+            <Hero />
+            <Permanent />
+            <ServicesVideo />
+            <Feedbacks />
+            <OurTeam />
+            <Location />
+        </main>
     );
 };
 
