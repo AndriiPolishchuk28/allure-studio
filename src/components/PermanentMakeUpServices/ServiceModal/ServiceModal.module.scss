@@ -1,17 +1,5 @@
 @import "@/styles/mixins";
 
-.service {
-    padding: 24px 0;
-
-    @include media-rules(tablet) {
-        padding: 36px 0;
-    }
-
-    @include media-rules(desktop) {
-        padding: 70px 0;
-    }
-}
-
 .title {
     font-weight: 200;
     font-size: 14px;
@@ -72,7 +60,7 @@
     height: 170px;
 
     @include media-rules(tablet) {
-        width: 344px;
+        width: 300px;
         height: 178px;
         object-fit: cover;
         object-position: top;

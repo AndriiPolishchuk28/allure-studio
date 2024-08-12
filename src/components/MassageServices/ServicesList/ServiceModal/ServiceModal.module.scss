@@ -1,17 +1,5 @@
 @import '@/styles/mixins';
 
-.service {
-    padding: 24px;
-
-    @include media-rules(tablet) {
-        padding: 36px 72px;
-    }
-
-    @include media-rules(desktop) {
-        padding: 70px 160px;
-    }
-}
-
 .title {
     font-weight: 200;
     font-size: 14px;
@@ -44,6 +32,10 @@
 .priceListItem {
     display: flex;
     justify-content: space-between;
+
+    @include media-rules(tablet) {
+        align-items: center;
+    }
 }
 
 .titleTime {
@@ -53,9 +45,9 @@
 }
 
 .serviceTitle {
+    font-weight: 400;
     line-height: 1.5;
     color: var(--gen);
-    width: 220px;
 
     @include media-rules(tablet) {
         width: 320px;

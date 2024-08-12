@@ -65,14 +65,6 @@
 
 .buttonWrapper {
     text-align: right;
-
-    @include media-rules(tablet) {
-        padding: 0 36px;
-    }
-
-    @include media-rules(desktop) {
-        padding: 0;
-    }
 }
 
 .modalButton {

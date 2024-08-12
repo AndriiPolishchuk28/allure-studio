@@ -7,9 +7,9 @@ import scss from './CustomModal.module.scss';
 const CustomModal = ({
     modalIsOpen,
     closeModal,
-    service = false,
     children,
-    nageldesign = false,
+    full = false,
+    secondary = false,
 }) => {
     return (
         <Modal
@@ -26,31 +26,25 @@ const CustomModal = ({
             }}
         >
             <Fade in={modalIsOpen}>
-                <div>
+                <div className={clsx(scss.wrapper, full && scss.fullScreen)}>
                     <div
                         className={clsx(
                             scss.content,
-                            service && scss.contentService
+                            full && scss.fullScreen,
+                            secondary && scss.secondary
                         )}
-                        style={nageldesign ? { height: 'inherit' } : {}}
                     >
-                        <div
-                            className={clsx(
-                                scss.container,
-                                service && scss.containerService
-                            )}
+                        <button
+                            onClick={closeModal}
+                            className={scss.closeButton}
                         >
-                            <button
-                                onClick={closeModal}
-                                className={scss.closeButton}
-                            >
-                                <Image
-                                    src={closeIcon}
-                                    alt="close icon"
-                                    className={closeIcon}
-                                />
-                            </button>
-
+                            <Image
+                                src={closeIcon}
+                                alt="close icon"
+                                className={scss.closeIcon}
+                            />
+                        </button>
+                        <div className={full && scss.fullScreenContent}>
                             {children}
                         </div>
                     </div>

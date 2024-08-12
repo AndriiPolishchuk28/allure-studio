@@ -1,15 +1,5 @@
 @import '@/styles/mixins';
 
-.wrapper_content {
-    padding: 24px;
-    @include media-rules(tablet) {
-        padding: 36px 72px;
-    }
-    @include media-rules(desktop) {
-        padding: 70px 160px;
-    }
-}
-
 .list_wrapper {
     display: flex;
     flex-direction: column;

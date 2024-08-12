@@ -3,10 +3,12 @@
         "label": ["Linienstraße 154A, 10115 Berlin-Mitte"]
     },
     {
-        "label": ["+49 (0) 176 70029740"]
+        "label": ["+49 (0) 176 70029740"],
+        "href": "tel:+49017670029740"
     },
     {
-        "label": ["uliana.eremenko@allure-studio.de"]
+        "label": ["uliana.eremenko@allure-studio.de"],
+        "href": "mailto:uliana.eremenko@allure-studio.de"
     },
     {
         "label": [

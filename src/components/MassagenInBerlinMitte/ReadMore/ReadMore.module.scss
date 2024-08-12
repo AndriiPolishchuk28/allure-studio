@@ -21,10 +21,8 @@
 .description {
     font-weight: 200;
     line-height: 1.5;
-    padding: 32px 41px;
 
     @include media-rules(tablet) {
         font-size: 16px;
-        padding: 32px 50px;
     }
 }
