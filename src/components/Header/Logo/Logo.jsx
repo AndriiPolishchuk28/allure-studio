@@ -48,12 +48,7 @@ const Logo = ({ ...props }) => {
                         transition={{ duration: 0.5, ease: 'easeOut' }}
                         className={scss.logoWrapper}
                     >
-                        <img
-                            src={log}
-                            alt="Allure"
-                            priority
-                            className={scss.image}
-                        />
+                        <img src={log} alt="Allure" className={scss.image} />
                         <span className={scss.logoTitle}>ALLURE</span>
                     </motion.div>
                 </motion.div>
