@@ -4,10 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import logo from '../../../assets/images/header/logo.svg';
+import log from '../../../assets/images/header/log.svg';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Logo.module.scss';
-import { log } from '@/assets/images/header';
 // import {
 //     logo_mob_1x,
 //     logo_mob_2x,
@@ -48,14 +47,20 @@ const Logo = ({ ...props }) => {
                         transition={{ duration: 0.5, ease: 'easeOut' }}
                         className={scss.logoWrapper}
                     >
-                        <img src={log} alt="Allure" className={scss.image} />
+                        <Image
+                            src={log}
+                            alt="Allure"
+                            priority
+                            className={scss.image}
+                            quality={100}
+                        />
                         <span className={scss.logoTitle}>ALLURE</span>
                     </motion.div>
                 </motion.div>
             ) : (
                 <div className={scss.logoWrapper}>
                     <Image
-                        src={logo}
+                        src={log}
                         alt="Allure"
                         priority
                         className={scss.image}
