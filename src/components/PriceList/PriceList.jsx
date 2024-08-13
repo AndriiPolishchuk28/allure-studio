@@ -37,11 +37,12 @@ const PriceList = () => {
                 </div>
                 <Title className={scss.title_service}>Injektionen</Title>
                 <div className={scss.list_wrapper}>
-                    {injektionen.map((item, index) => (
+                    {injektionen.map(({ header, services }, index) => (
                         <PriceItem
                             className="list_tablet"
                             key={index}
-                            data={item.services}
+                            title={header}
+                            data={services}
                         />
                     ))}
                 </div>

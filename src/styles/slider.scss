@@ -1,0 +1,28 @@
+@import '@/styles/mixins';
+
+.slick-slider {
+    & .slick-dots {
+        bottom: 0;
+        @include media-rules(tablet) {
+            bottom: 8px;
+        }
+        @include media-rules(desktop) {
+            bottom: 23px;
+        }
+    }
+    & .slick-dots li {
+        width: initial;
+    }
+    & .slick-dots ul {
+        gap: 2px;
+        @include media-rules(tablet) {
+            gap: 8px;
+        }
+        @include media-rules(desktop) {
+            gap: 10px;
+        }
+    }
+    & .slick-dots li.slick-active > div {
+        background-color: #e3dedb;
+    }
+}

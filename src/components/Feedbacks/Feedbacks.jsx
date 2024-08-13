@@ -7,7 +7,6 @@ import clsx from 'clsx';
 import feedbacks from './feedbacks.json';
 import scss from './Feedbacks.module.scss';
 import Title from '../Title';
-import { useEffect } from 'react';
 import { raleway } from '@/app/ui';
 
 const SampleNextArrow = () => {
@@ -15,29 +14,6 @@ const SampleNextArrow = () => {
 };
 
 const Feedbacks = () => {
-    useEffect(() => {
-        const style = document.createElement('style');
-        style.innerHTML = `
-            .slick-dots {
-            bottom: 3px;
-            }
-            .slick-dots li.slick-active>div {
-                background-color: #e3dedb;
-            }
-            .slick-dots li {
-            margin: 0;
-            display: block;
-            padding-bottom: 10px;
-            height: initial;
-            }
-        `;
-        document.head.appendChild(style);
-
-        return () => {
-            document.head.removeChild(style);
-        };
-    }, []);
-
     const settings = {
         dots: true,
         infinite: true,

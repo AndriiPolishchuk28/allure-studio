@@ -247,6 +247,9 @@ export const injektionen = [
                 service: 'FULLFACE',
                 additional:
                     '(3 ZONE + BUNNY LINES, MUNDWINKEL / TRAUERMUSKEL, KINN)',
+                // additional_text:
+                // '(3 ZONE + BUNNY LINES, MUNDWINKEL / TRAUERMUSKEL, KINN)',
+
                 price: 'AB 400 euro',
             },
             {

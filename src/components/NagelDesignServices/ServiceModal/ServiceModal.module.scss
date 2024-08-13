@@ -32,10 +32,15 @@
     line-height: 1.5;
     text-align: center;
     color: var(--gen);
+    font-weight: 400;
     @include media-rules(tablet) {
         font-size: 14px;
     }
     @include media-rules(desktop) {
         font-size: 16px;
     }
+}
+
+.time {
+    margin-left: 4px;
 }

@@ -3,6 +3,12 @@
 .section .page_title {
     text-align: center;
     margin-bottom: 40px;
+    @include media-rules(tablet) {
+        margin-bottom: 26px;
+    }
+    @include media-rules(desktop) {
+        margin-bottom: 70px;
+    }
 }
 
 .list {

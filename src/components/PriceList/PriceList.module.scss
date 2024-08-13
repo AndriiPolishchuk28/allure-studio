@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .section {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -14,15 +16,37 @@
         transform: translateX(-50%);
         background-color: rgba(69, 63, 65, 0.5);
         margin: 12px auto 0 auto;
+        @include media-rules(tablet) {
+            width: 1px;
+            height: 40px;
+            margin-top: 16px;
+        }
+        @include media-rules(desktop) {
+            height: 60px;
+            margin-top: 36px;
+        }
     }
 }
 
 .section .title_service {
     margin: 40px 0;
+    @include media-rules(tablet) {
+        margin: 70px 0;
+    }
+    @include media-rules(desktop) {
+        margin-top: 36px;
+        margin-bottom: 70px;
+    }
 }
 
 .list_wrapper {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @include media-rules(tablet) {
+        gap: 26px;
+    }
+    @include media-rules(desktop) {
+        gap: 70px;
+    }
 }

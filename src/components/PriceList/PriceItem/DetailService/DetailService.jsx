@@ -10,6 +10,7 @@ const DetailService = ({
     price,
     price_tablet,
     additional_mobile,
+    additional_text,
     className = '',
     detail,
     detailService,
@@ -35,7 +36,7 @@ const DetailService = ({
                 <div className={scss.service_detail_row}>
                     <h4 className={scss.service_text}>{service}</h4>
                     {detailService && (
-                        <span className={scss.span}> {detailService}</span>
+                        <span className={scss.span}>{detailService}</span>
                     )}
                 </div>
                 {additional_mobile && (
@@ -49,7 +50,9 @@ const DetailService = ({
                     </p>
                 )}
                 {additional && <p className={scss.additional}>{additional}</p>}
-                {}
+                {/* {additional_text && (
+                    <p className={scss.additional_text}>{additional_text}</p>
+                )} */}
             </div>
             <div className={scss.wrapper_detail}>
                 {detail && <p className={scss.detail}>{detail}</p>}

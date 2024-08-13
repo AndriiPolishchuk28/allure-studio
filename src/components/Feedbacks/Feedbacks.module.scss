@@ -170,7 +170,7 @@
     @include media-rules(tablet) {
         background: url('../../assets/images/feedbacks/ellipse4_tablet.png');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         width: 201px;
         height: 295px;
         left: 29px;
@@ -252,15 +252,21 @@
 }
 
 .custom_dot {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: rgba(227, 222, 219, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    @include media-rules(tablet) {
+        width: 15px;
+        height: 15px;
+    }
     @include media-rules(desktop) {
         bottom: 10px;
+        width: 24px;
+        height: 24px;
     }
 }
