@@ -10,7 +10,6 @@ const DetailService = ({
     price,
     price_tablet,
     additional_mobile,
-    additional_text,
     className = '',
     detail,
     detailService,
