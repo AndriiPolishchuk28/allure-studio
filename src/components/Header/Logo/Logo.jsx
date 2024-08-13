@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import logo from '../../../assets/images/header/logo.svg';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Logo.module.scss';
+import { log } from '@/assets/images/header';
 // import {
 //     logo_mob_1x,
 //     logo_mob_2x,
@@ -47,8 +48,8 @@ const Logo = ({ ...props }) => {
                         transition={{ duration: 0.5, ease: 'easeOut' }}
                         className={scss.logoWrapper}
                     >
-                        <Image
-                            src={logo}
+                        <img
+                            src={log}
                             alt="Allure"
                             priority
                             className={scss.image}
