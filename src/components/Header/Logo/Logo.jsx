@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import log from '../../../assets/images/header/log.svg';
+import logo from '../../../assets/images/header/logo.svg';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Logo.module.scss';
 // import {
@@ -48,7 +48,7 @@ const Logo = ({ ...props }) => {
                         className={scss.logoWrapper}
                     >
                         <Image
-                            src={log}
+                            src={logo}
                             alt="Allure"
                             priority
                             className={scss.image}
@@ -60,7 +60,7 @@ const Logo = ({ ...props }) => {
             ) : (
                 <div className={scss.logoWrapper}>
                     <Image
-                        src={log}
+                        src={logo}
                         alt="Allure"
                         priority
                         className={scss.image}
