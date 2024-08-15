@@ -50,3 +50,17 @@
         gap: 70px;
     }
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include media-rules(tablet) {
+        gap: 26px;
+    }
+}
+
+.list_wrapper .subtitle {
+    margin-bottom: 0;
+    text-align: center;
+}

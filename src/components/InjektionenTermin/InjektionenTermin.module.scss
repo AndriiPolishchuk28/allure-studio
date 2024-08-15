@@ -3,6 +3,10 @@
 .section {
     padding-top: 40px;
     padding-bottom: 80px;
+    background-image: url('../../assets/images/injektionen/bg_photo.png');
+    background-size: cover;
+    background-color: var(--gen-w), 0.2;
+    background-position: center;
 }
 
 .wrapper_text {

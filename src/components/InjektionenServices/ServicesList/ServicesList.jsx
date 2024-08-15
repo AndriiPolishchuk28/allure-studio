@@ -44,6 +44,7 @@ const ServicesList = ({
                 )}
             >
                 <h4 className={scss.service_text}>{service}</h4>
+                <span></span>
                 {displayAdditional && (
                     <p className={scss.additional}>{displayAdditional}</p>
                 )}

@@ -235,42 +235,6 @@ export const massage = [
 
 export const injektionen = [
     {
-        header: 'BOTULINUMTOXIN : BOCOUTURE / AYYALURE / VISTABEL',
-        services: [
-            {
-                service: 'STIRN / ZORNESFALTEN / AUGENFALTEN',
-                additional_mobile: '1 / 2 / 3 ZONE',
-                price: '140 / 250 / 330 euro',
-                price_tablet: '140 / ZONE, 250 / 2, 330 / 3',
-            },
-            {
-                service: 'FULLFACE',
-                additional:
-                    '(3 ZONE + BUNNY LINES, MUNDWINKEL / TRAUERMUSKEL, KINN)',
-                // additional_text:
-                // '(3 ZONE + BUNNY LINES, MUNDWINKEL / TRAUERMUSKEL, KINN)',
-
-                price: 'AB 400 euro',
-            },
-            {
-                service: 'NEFERTITI LIFTING',
-                price: '350 euro',
-            },
-            {
-                service: 'MIGRÄNEBEHANDLUNG',
-                price: 'AB 300 euro',
-            },
-            {
-                service: 'MUSSETER',
-                price: '200 euro',
-            },
-            {
-                service: 'HYPERHYDROSIS',
-                price: '350 euro',
-            },
-        ],
-    },
-    {
         header: 'MESOTHERAPIE',
         services: [
             {

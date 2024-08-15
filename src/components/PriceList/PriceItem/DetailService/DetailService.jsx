@@ -13,6 +13,7 @@ const DetailService = ({
     className = '',
     detail,
     detailService,
+    additional_text,
 }) => {
     const { isTablet } = useMedia();
     const [displayPrice, setDisplayPrice] = useState(null);
@@ -49,9 +50,6 @@ const DetailService = ({
                     </p>
                 )}
                 {additional && <p className={scss.additional}>{additional}</p>}
-                {/* {additional_text && (
-                    <p className={scss.additional_text}>{additional_text}</p>
-                )} */}
             </div>
             <div className={scss.wrapper_detail}>
                 {detail && <p className={scss.detail}>{detail}</p>}

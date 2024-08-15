@@ -45,6 +45,9 @@
     line-height: 1.5;
     text-transform: uppercase;
     color: var(--gen);
+    &:last-of-type() {
+        color: red;
+    }
     @include media-rules(tablet) {
         font-size: 14px;
         text-transform: capitalize;
@@ -127,5 +130,12 @@
     }
     @include media-rules(desktop) {
         max-width: 903px;
+    }
+}
+
+.additional_text {
+    display: none;
+    @include media-rules(desktop) {
+        display: inline-block;
     }
 }

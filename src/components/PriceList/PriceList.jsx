@@ -3,6 +3,9 @@ import Title from '../Title';
 import PriceItem from './PriceItem';
 import scss from './PriceList.module.scss';
 import { permanent, nageldesign, massage, injektionen } from './data';
+import BotulinumList from '../InjektionenServices/ServicesList/ServicesList';
+import { botulinum } from '../InjektionenServices/ServicesList/data';
+import PageTitle from '../PageTitle';
 
 const PriceList = () => {
     return (
@@ -37,6 +40,14 @@ const PriceList = () => {
                 </div>
                 <Title className={scss.title_service}>Injektionen</Title>
                 <div className={scss.list_wrapper}>
+                    <PageTitle className={scss.subtitle}>
+                        BOTULINUMTOXIN : BOCOUTURE / AYYALURE/ VISTABEL
+                    </PageTitle>
+                    <ul className={scss.list}>
+                        {botulinum.map((item, index) => (
+                            <BotulinumList key={index} {...item} />
+                        ))}
+                    </ul>
                     {injektionen.map(({ header, services }, index) => (
                         <PriceItem
                             className="list_tablet"
