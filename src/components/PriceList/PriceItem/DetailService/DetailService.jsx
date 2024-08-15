@@ -13,7 +13,6 @@ const DetailService = ({
     className = '',
     detail,
     detailService,
-    additional_text,
 }) => {
     const { isTablet } = useMedia();
     const [displayPrice, setDisplayPrice] = useState(null);
