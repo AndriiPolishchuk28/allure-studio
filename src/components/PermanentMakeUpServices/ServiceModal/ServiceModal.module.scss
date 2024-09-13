@@ -1,4 +1,4 @@
-@import "@/styles/mixins";
+@import '@/styles/mixins';
 
 .title {
     font-weight: 200;
@@ -36,14 +36,25 @@
     }
 }
 
-.imageWrapper {
-    display: flex;
-    gap: 25px;
+.imageList {
     margin-bottom: 40px;
 
     @include media-rules(tablet) {
-        gap: 24px;
         margin-bottom: 70px;
+    }
+
+    @include media-rules(desktop) {
+        max-width: 940px;
+        margin: 0 auto 70px;
+    }
+}
+
+.imageWrapper {
+    display: flex;
+    gap: 25px;
+
+    @include media-rules(tablet) {
+        gap: 24px;
     }
 
     @include media-rules(desktop) {
@@ -58,12 +69,12 @@
 .image {
     width: 159px;
     height: 170px;
+    object-fit: cover;
+    object-position: center;
 
     @include media-rules(tablet) {
         width: 300px;
         height: 178px;
-        object-fit: cover;
-        object-position: top;
     }
 
     @include media-rules(desktop) {
@@ -94,6 +105,11 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
+
+    @include media-rules(desktop) {
+        max-width: 936px;
+        margin: 0 auto;
+    }
 }
 
 .priceListItem {
@@ -134,8 +150,6 @@
     @include media-rules(tablet) {
         text-transform: capitalize;
     }
-
-    
 }
 
 .timePrice {

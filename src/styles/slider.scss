@@ -25,4 +25,20 @@
     & .slick-dots li.slick-active > div {
         background-color: #e3dedb;
     }
+
+    & .slick-prev {
+        left: -30px;
+
+        @include media-rules(tablet) {
+            left: -64px;
+        }
+    }
+
+    & .slick-next {
+        right: -30px;
+
+        @include media-rules(tablet) {
+            right: -64px;
+        }
+    }
 }

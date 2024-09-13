@@ -1,4 +1,12 @@
 import {
+    image_1_after,
+    image_1_before,
+    image_2_after,
+    image_2_before,
+    image_3_after,
+    image_3_before,
+    image_4_after,
+    image_4_before,
     service_1,
     service_2,
     service_3,
@@ -14,6 +22,24 @@ const services = [
         image: service_1,
         descriptionModal:
             'In unserem Beautystudio Allure Permanent Make-up & Beauty bieten wir auch nicht permanente Lösungen für deine Schönheit an. Dazu gehört unsere wunderbaren Beautybehandlung rund um deine Augenbrauen. Dabei bieten wir dir eine umfangreiche Beratung. Du kannst entscheiden, ob du deine Augenbrauen zupfen oder deine Augenbrauen färben möchtest. Das komplette Paket erhältst du mit unserem Perfect-Brow-Styling. Perfekte Augenbrauen für deinen Alltag.',
+        imagesList: [
+            {
+                before: image_1_before,
+                after: image_1_after,
+            },
+            {
+                before: image_2_before,
+                after: image_2_after,
+            },
+            {
+                before: image_3_before,
+                after: image_3_after,
+            },
+            {
+                before: image_4_before,
+                after: image_4_after,
+            },
+        ],
         priceList: [
             {
                 service: 'MASTER POWDER BROW',
