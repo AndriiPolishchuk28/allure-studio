@@ -1,7 +1,10 @@
-@import "@/styles/mixins";
+@import '@/styles/mixins';
 
 .checkboxWrapper {
     margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include media-rules(tablet) {
         margin-bottom: 22px;

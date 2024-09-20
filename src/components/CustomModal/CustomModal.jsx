@@ -10,6 +10,7 @@ const CustomModal = ({
     children,
     full = false,
     secondary = false,
+    termin = false,
 }) => {
     return (
         <Modal
@@ -31,7 +32,8 @@ const CustomModal = ({
                         className={clsx(
                             scss.content,
                             full && scss.fullScreen,
-                            secondary && scss.secondary
+                            secondary && scss.secondary,
+                            termin && scss.termin
                         )}
                     >
                         <button

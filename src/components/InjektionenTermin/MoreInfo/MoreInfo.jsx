@@ -28,6 +28,7 @@ const MoreInfo = () => {
             <CustomModal
                 modalIsOpen={modalIsOpen}
                 closeModal={() => setModalIsOpen(false)}
+                termin
             >
                 <div className={scss.form}>
                     <p className={scss.info_text}>

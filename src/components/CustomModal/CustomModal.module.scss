@@ -50,6 +50,14 @@
             padding: 70px 160px;
         }
     }
+    &.termin {
+        @include media-rules(tablet) {
+            max-width: 596px;
+            overflow-y: auto;
+            max-height: 90vh;
+            padding: 62px 70px;
+        }
+    }
 }
 
 .fullScreenContent {

@@ -3,10 +3,25 @@
 .section {
     padding-top: 40px;
     padding-bottom: 80px;
-    background-image: url('../../assets/images/injektionen/bg_photo.png');
-    background-size: cover;
     background-color: var(--gen-w), 0.2;
-    background-position: center;
+    @include media-rules(tablet) {
+        padding-top: 90px;
+        padding-bottom: 150px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.bg_wrapper {
+    @include media-rules(tablet) {
+        background-image: url('../../assets/images/injektionen/bg_tablet.png');
+        background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 110px;
+        width: 100%;
+        // max-width: 100%;
+        max-width: 768px;
+    }
 }
 
 .wrapper_text {
@@ -56,6 +71,10 @@
 
 .form_wrapper {
     padding-top: 20px;
+    background-image: url('../../assets/images/injektionen/bg_photo.png');
+    background-size: cover;
+    background-position: center -58px;
+    // height: 785px;
     @include media-rules(tablet) {
         display: none;
     }

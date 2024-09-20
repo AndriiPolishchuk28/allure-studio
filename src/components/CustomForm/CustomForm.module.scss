@@ -1,4 +1,4 @@
-@import "@/styles/mixins";
+@import '@/styles/mixins';
 
 .form {
     @include media-rules(tablet) {
@@ -10,7 +10,7 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 18px;
     margin-bottom: 40px;
 }
 
