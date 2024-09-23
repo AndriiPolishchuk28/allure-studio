@@ -2,13 +2,30 @@
 
 .section {
     background-color: var(--photo-bg);
-    height: 190px;
+    width: 390px;
+    height: 158px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    margin: 0 auto;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
     @include media-rules(tablet) {
-        height: 403px;
+        width: 768px;
+        height: 370px;
     }
 
     @include media-rules(desktop) {
-        height: 651px;
+        width: 1440px;
+        height: 618px;
     }
 }

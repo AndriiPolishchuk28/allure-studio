@@ -31,10 +31,12 @@ const Logo = ({ ...props }) => {
         hidden: {
             y: 300,
             scale: 2,
+            color: '#e3dedb',
         },
         visible: {
             y: 0,
             scale: 1,
+            color: '#07332b',
         },
     };
 

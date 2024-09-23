@@ -1,10 +1,13 @@
 @import '@/styles/mixins';
 
 .logo {
+    color: var(--gen-w);
+
     @include media-rules(tablet) {
         order: 1;
         margin-right: auto;
         margin-left: 50px;
+        color: var(--gen-green);
     }
 
     @include media-rules(desktop) {
@@ -36,11 +39,11 @@
     font-family: var(--second-family);
     font-size: 18px;
     letter-spacing: 0.15em;
-    color: var(--gen-w);
+    // color: var(--gen-w);
 
     @include media-rules(tablet) {
         font-size: 36px;
-        color: var(--gen-green);
+        // color: var(--gen-green);
     }
 
     @include media-rules(desktop) {
