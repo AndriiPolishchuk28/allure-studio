@@ -13,6 +13,7 @@ const DetailService = ({
     className = '',
     detail,
     detailService,
+    massage,
 }) => {
     const { isTablet } = useMedia();
     const [displayPrice, setDisplayPrice] = useState(null);
@@ -29,7 +30,8 @@ const DetailService = ({
             <div
                 className={clsx(
                     scss.service_info,
-                    className && scss[className]
+                    className && scss[className],
+                    massage === 'massage' && scss.massage
                 )}
             >
                 <div className={scss.service_detail_row}>

@@ -4,7 +4,7 @@ import scss from './PriceItem.module.scss';
 import DetailService from './DetailService';
 import PageTitle from '@/components/PageTitle';
 
-const ServicesList = ({ title = '', data, className = '' }) => {
+const ServicesList = ({ title = '', data, className = '', massage }) => {
     return (
         <div className={scss.section}>
             {title && (
@@ -16,6 +16,7 @@ const ServicesList = ({ title = '', data, className = '' }) => {
                         className={className}
                         key={index}
                         {...item}
+                        massage={massage}
                     />
                 ))}
             </ul>

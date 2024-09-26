@@ -16,7 +16,7 @@
     & .slick-dots ul {
         gap: 2px;
         @include media-rules(tablet) {
-            gap: 8px;
+            gap: 4px;
         }
         @include media-rules(desktop) {
             gap: 10px;

@@ -4,25 +4,25 @@ export const permanent = [
         services: [
             {
                 service: 'MASTER POWDER BROW',
-                additional: 'ERSTBEHALDUNG',
+                additional: 'Erstbehaldung',
                 detail: '2 ST',
                 price: '250 euro',
             },
             {
                 service: 'MASTER POWDER BROW',
-                additional: 'NACHBEHANDLUNG',
+                additional: 'Nachbehandlung',
                 detail: '2 ST',
                 price: '100 euro',
             },
             {
                 service: 'NANO BROWS',
-                additional: 'ERSTBEHALDUNG',
+                additional: 'Erstbehaldung',
                 detail: '2 ST',
                 price: '350 euro',
             },
             {
                 service: 'NANO BROWS',
-                additional: 'NACHBEHANDLUNG',
+                additional: 'Nachbehandlung',
                 detail: '2 ST',
                 price: '150 euro',
             },
@@ -48,25 +48,25 @@ export const permanent = [
         services: [
             {
                 service: 'VELVET LIPS',
-                additional: 'ERSTBEHALDUNG',
+                additional: 'Erstbehaldung',
                 detail: '2,5 ST',
                 price: '300 euro',
             },
             {
                 service: 'VELVET LIPS',
-                additional: 'NACHBEHANDLUNG',
+                additional: 'Nachbehandlung',
                 detail: '2 ST',
                 price: '120 euro',
             },
             {
                 service: 'AQUARELL LIPS',
-                additional: 'ERSTBEHALDUNG',
+                additional: 'Erstbehaldung',
                 detail: '2,5 ST',
                 price: '270 euro',
             },
             {
                 service: 'AQUARELL LIPS',
-                additional: 'NACHBEHANDLUNG',
+                additional: 'Nachbehandlung',
                 detail: '2,5 ST',
                 price: '100 euro',
             },
@@ -77,13 +77,13 @@ export const permanent = [
         services: [
             {
                 service: 'SOFT LINER',
-                additional: 'ERSTBEHALDUNG',
+                additional: 'Erstbehaldung',
                 detail: '2,5 ST',
                 price: '270 euro',
             },
             {
                 service: 'SOFT LINER',
-                additional: 'NACHBEHANDLUNG',
+                additional: 'Nachbehandlung',
                 detail: '2 ST',
                 price: '100 euro',
             },

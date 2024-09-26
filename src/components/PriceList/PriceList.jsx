@@ -35,7 +35,11 @@ const PriceList = () => {
                 <Title className={scss.title_service}>massage</Title>
                 <div className={scss.list_wrapper}>
                     {massage.map((item, index) => (
-                        <PriceItem key={index} data={item.services} />
+                        <PriceItem
+                            massage="massage"
+                            key={index}
+                            data={item.services}
+                        />
                     ))}
                 </div>
                 <Title className={scss.title_service}>Injektionen</Title>

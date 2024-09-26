@@ -52,6 +52,9 @@
         font-size: 14px;
         text-transform: capitalize;
     }
+    @include media-rules(tablet) {
+        font-size: 16px;
+    }
 }
 
 .additional_mobile {
@@ -119,6 +122,9 @@
 
 .span {
     font-weight: 200;
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
 }
 
 .item .list_tablet {
@@ -137,5 +143,12 @@
     display: none;
     @include media-rules(desktop) {
         display: inline-block;
+    }
+}
+
+.massage {
+    @include media-rules(tablet) {
+        flex-grow: 1;
+        justify-content: space-between;
     }
 }

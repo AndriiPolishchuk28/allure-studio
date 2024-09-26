@@ -149,6 +149,10 @@
 
     @include media-rules(tablet) {
         text-transform: capitalize;
+        font-size: 14px;
+    }
+    @include media-rules(tablet) {
+        font-size: 16px;
     }
 }
 

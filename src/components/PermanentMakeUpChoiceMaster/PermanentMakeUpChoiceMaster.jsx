@@ -27,7 +27,7 @@ const PermanentMakeUpNagelstudio = () => {
                                 alt={title}
                                 className={scss.image}
                             />
-                            <div>
+                            <div className={scss.text_wrapper}>
                                 <PageTitle className={scss.pageTitle}>
                                     {title}
                                 </PageTitle>
