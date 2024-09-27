@@ -44,3 +44,10 @@
 .time {
     margin-left: 4px;
 }
+
+.title {
+    margin-bottom: 40px;
+    @include media-rules(tablet) {
+        margin-bottom: 70px;
+    }
+}

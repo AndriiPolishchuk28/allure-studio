@@ -32,6 +32,7 @@
 .image {
     width: 159px;
     height: 200px;
+    object-fit: cover;
 
     @include media-rules(tablet) {
         width: 100%;

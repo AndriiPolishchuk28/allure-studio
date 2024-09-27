@@ -7,7 +7,9 @@ const ServiceModal = ({ item }) => {
 
     return (
         <div className={scss.wrapper_content}>
-            <PageTitle style={{ textAlign: 'center' }}>{title}</PageTitle>
+            <PageTitle className={scss.title} style={{ textAlign: 'center' }}>
+                {title}
+            </PageTitle>
             <ul className={scss.list_wrapper}>
                 {info.map(({ name, price, time }, index) => (
                     <li className={scss.item} key={index}>
