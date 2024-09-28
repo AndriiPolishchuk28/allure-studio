@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import CustomModal from '@/components/CustomModal';
-import scss from './ReadMore.module.scss';
 import { useMedia } from '@/hooks/useMedia';
+import scss from './ReadMore.module.scss';
 
 const ReadMore = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);

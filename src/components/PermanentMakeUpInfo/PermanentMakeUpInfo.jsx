@@ -27,7 +27,8 @@ const PermanentMakeUpInfo = () => {
                                 Jahren hält, geschaffen. Um diese Aufwändige
                                 Behandlung perfekt auszuführen braucht man eine
                                 professionelle Ausbildung und langjährige
-                                Erfahrung.
+                                Erfahrung. Grundsätzlich kann man beim Permanent
+                                Make up in zwei Kategorien unterteilen
                             </p>
                             <p className={scss.descriptionParagraphAdditional}>
                                 Grundsätzlich kann man beim Permanent Make up in

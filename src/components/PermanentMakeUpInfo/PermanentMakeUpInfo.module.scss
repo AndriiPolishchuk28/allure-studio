@@ -94,7 +94,7 @@
         font-size: 14px;
     }
 
-    @include media-rules(tablet) {
+    @include media-rules(desktop) {
         font-size: 16px;
     }
 }
