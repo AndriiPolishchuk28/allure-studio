@@ -1,4 +1,4 @@
-import { alex, oxana, tanja, uliana } from '@/assets/images/team';
+import { name_1, name_2, oxana, tanja, uliana } from '@/assets/images/team';
 
 const team = [
     {
@@ -30,10 +30,19 @@ const team = [
     },
     {
         id: 4,
-        name: 'Alex',
+        name: 'Name',
         description:
             'Ich bin professioneller Masseur  mit mehr als drei Jahren Erfahrung.Meine Aufgabe ist, Ihren Körper in einen gesunden Zustand zu bringen , Muskelkrämpe und Schmerzen lindern.',
-        image: alex,
+        image: name_1,
+        facebook: '#',
+        instagram: '#',
+    },
+    {
+        id: 5,
+        name: 'Name',
+        description:
+            'Ich bin professioneller Masseur  mit mehr als drei Jahren Erfahrung.Meine Aufgabe ist, Ihren Körper in einen gesunden Zustand zu bringen , Muskelkrämpe und Schmerzen lindern.',
+        image: name_2,
         facebook: '#',
         instagram: '#',
     },

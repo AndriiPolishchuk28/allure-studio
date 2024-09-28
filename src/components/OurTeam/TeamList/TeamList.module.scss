@@ -20,8 +20,8 @@
     }
 
     @include media-rules(desktop) {
-        column-gap: 48px;
-        max-width: 768px;
+        max-width: 100%;
+        column-gap: 24px;
         background-image: none;
     }
 }

@@ -19,6 +19,23 @@ export { default as image_3_after } from './image-3-after.jpg';
 export { default as image_4_before } from './image-4-before.jpg';
 export { default as image_4_after } from './image-4-after.jpg';
 
+export { default as lips_1_before } from './lips-1-before.jpg';
+export { default as lips_1_after } from './lips-1-after.jpg';
+export { default as lips_2_before } from './lips-2-before.jpg';
+export { default as lips_2_after } from './lips-2-after.jpg';
+export { default as lips_3_before } from './lips-3-before.jpg';
+export { default as lips_3_after } from './lips-3-after.jpg';
+
+export { default as softliner_1_before } from './softliner-1-before.jpg';
+export { default as softliner_1_after } from './softliner-1-after.jpg';
+export { default as softliner_2_before } from './softliner-2-before.jpg';
+export { default as softliner_2_after } from './softliner-2-after.jpg';
+
+export { default as lifting_1_before } from './lifting-1-before.jpg';
+export { default as lifting_1_after } from './lifting-1-after.jpg';
+export { default as lifting_2_before } from './lifting-2-before.jpg';
+export { default as lifting_2_after } from './lifting-2-after.jpg';
+
 export { default as benefit_1 } from './benefit-1.jpg';
 export { default as benefit_2 } from './benefit-2.jpg';
 export { default as benefit_3 } from './benefit-3.jpg';

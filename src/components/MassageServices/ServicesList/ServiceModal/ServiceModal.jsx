@@ -31,7 +31,7 @@ const ServiceModal = ({ title, titleModal, priceList }) => {
                         </div>
                         <div className={scss.timePrice}>
                             <p className={scss.timeDesk}>{time}</p>
-                            <p className={scss.price}>{`${price} euro`}</p>
+                            <p className={scss.price}>{`${price} EURO`}</p>
                         </div>
                     </li>
                 ))}

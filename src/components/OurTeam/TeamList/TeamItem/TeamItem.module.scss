@@ -18,10 +18,62 @@
         &:nth-child(even) {
             flex-direction: row;
         }
+
+        &:first-child {
+            flex-basis: 100%;
+            margin: 0 auto;
+
+            & .image {
+                width: 302px;
+                margin: 0 auto;
+            }
+
+            & .person {
+                width: 302px;
+                margin: 0 auto;
+            }
+        }
     }
 
     @include media-rules(desktop) {
-        flex-basis: calc((100% - 48px) / 2);
+        flex-basis: calc((100% - 48px) / 3);
+
+        &:first-child {
+            flex-basis: 48%;
+            & .image {
+                width: 360px;
+                margin: 0;
+                margin-left: auto;
+            }
+
+            & .person {
+                width: 360px;
+                margin: 0;
+                margin-left: auto;
+            }
+
+            & .description {
+                left: 65%;
+            }
+        }
+
+        &:nth-child(2) {
+            flex-basis: 48%;
+
+            & .image {
+                width: 360px;
+                margin-right: auto;
+            }
+
+            & .person {
+                width: 360px;
+                margin-right: auto;
+            }
+
+            & .description {
+                left: 32%;
+            }
+        }
     }
 }
 

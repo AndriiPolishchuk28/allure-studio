@@ -46,7 +46,7 @@
 
 .image {
     min-width: 200px;
-    height: 332px;
+    height: 352px;
     object-fit: cover;
 
     @include media-rules(tablet) {
@@ -58,6 +58,10 @@
         min-width: 708px;
         height: 463px;
     }
+}
+
+.pageTitle {
+    padding-top: 20px;
 }
 
 .description {

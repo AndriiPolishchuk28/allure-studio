@@ -26,7 +26,9 @@ const MassagenInBerlinMitte = () => {
                         />
                     </picture>
                     <div className={scss.info}>
-                        <PageTitle>massagen IN BERLIN MITTE</PageTitle>
+                        <PageTitle className={scss.pageTitle}>
+                            massagen IN BERLIN MITTE
+                        </PageTitle>
                         <div className={scss.description}>
                             <p className={scss.descriptionParagraph}>
                                 Lasse dich fallen, genieße den Moment mit

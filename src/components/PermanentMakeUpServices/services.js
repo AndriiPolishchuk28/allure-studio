@@ -7,10 +7,24 @@ import {
     image_3_before,
     image_4_after,
     image_4_before,
+    lifting_1_after,
+    lifting_1_before,
+    lifting_2_after,
+    lifting_2_before,
+    lips_1_after,
+    lips_1_before,
+    lips_2_after,
+    lips_2_before,
+    lips_3_after,
+    lips_3_before,
     service_1,
     service_2,
     service_3,
     service_4,
+    softliner_1_after,
+    softliner_1_before,
+    softliner_2_after,
+    softliner_2_before,
 } from '@/assets/images/make-up';
 
 const services = [
@@ -91,6 +105,20 @@ const services = [
         image: service_2,
         descriptionModal:
             'Permanent Make up für deine Lippen werden für dich eine Bereicherung sein für deine Daily-Beauty-Routin. Durch das Permanent-Lippen können asymetirsche Lippenformen korrigiert, dein Mund mehr Volumen oder auch weniger Volumen erhalten. Es kommt auf deinen Wunsch an. Was du möchtest und was zu deinem Typ passt. Auch die Stärke und Farbe der Farbpigmente wirst du nach einen ausführlich Beratungsgespräch wählen. Komm zu deinem Beratungsgespräch in unser Beauty-Studio in Berlin Mitte.',
+        imagesList: [
+            {
+                before: lips_1_before,
+                after: lips_1_after,
+            },
+            {
+                before: lips_2_before,
+                after: lips_2_after,
+            },
+            {
+                before: lips_3_before,
+                after: lips_3_after,
+            },
+        ],
         priceList: [
             {
                 service: 'VELVET LIPS',
@@ -128,6 +156,16 @@ const services = [
         image: service_3,
         descriptionModal:
             'Mit der Softliner-Technik erzeugen wir mit dem Permanent Make-up den Effekt eines Lidstriches, der mit einem Lidschatten geschminkt worden ist. Durch die verschiedene Pigmentdichte wird eine Farbabstufung und damit eine Schattierung am Lid geschaffen. Die Form, Farbe, Größe werden wir in einem persönlichen Gespräch typgerecht festlegen. Durch dieses Permanent Make-up Methode werden deine Augen bis zu 3 Jahren betont. Ein Make-up, dass auch dem Sommer-Badespaß standhält.',
+        imagesList: [
+            {
+                before: softliner_1_before,
+                after: softliner_1_after,
+            },
+            {
+                before: softliner_2_before,
+                after: softliner_2_after,
+            },
+        ],
         priceList: [
             {
                 service: 'SOFT LINER',
@@ -152,6 +190,16 @@ const services = [
         image: service_4,
         descriptionModal:
             'Unser Lifting-Service für Permanent Make-up bietet Ihnen die perfekte Lösung, um Ihrem bestehenden Make-up neuen Glanz und Frische zu verleihen. Diese innovative Behandlung revitalisiert die Pigmente, intensiviert die Farben und verlängert die Haltbarkeit Ihres Permanent Make-ups. Unsere erfahrenen Fachkräfte sorgen dafür, dass Ihr Make-up wieder wie neu aussieht und Sie sich rundum wohlfühlen. Ideal, um verblasste Farben aufzufrischen und die Konturen zu verstärken.',
+        imagesList: [
+            {
+                before: lifting_1_before,
+                after: lifting_1_after,
+            },
+            {
+                before: lifting_2_before,
+                after: lifting_2_after,
+            },
+        ],
         priceList: [
             {
                 service: 'PERFECT BROW STYLING',
