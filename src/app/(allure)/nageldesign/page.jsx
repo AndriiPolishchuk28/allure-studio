@@ -2,6 +2,10 @@ import NagelDesignBerlin from '@/components/NageldesignBerlin';
 import NagelDesignFindUs from '@/components/NagelDesignFindUs';
 import NagelDesignServices from '@/components/NagelDesignServices';
 
+export const metadata = {
+    title: 'Nageldesign',
+};
+
 const NagelDesign = () => {
     return (
         <main>

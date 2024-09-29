@@ -49,9 +49,12 @@ const ServiceModal = ({
                                         alt="Before"
                                         className={scss.image}
                                     />
-                                    <div className={scss.labelWrapper}>
-                                        voher
-                                    </div>
+                                    {title !== 'MAKE-UP LIDSTRICH' &&
+                                        title !== 'lifting' && (
+                                            <div className={scss.labelWrapper}>
+                                                voher
+                                            </div>
+                                        )}
                                 </div>
                                 <div className={scss.imageItem}>
                                     <Image
@@ -59,9 +62,12 @@ const ServiceModal = ({
                                         alt="After"
                                         className={scss.image}
                                     />
-                                    <div className={scss.labelWrapper}>
-                                        naher
-                                    </div>
+                                    {title !== 'MAKE-UP LIDSTRICH' &&
+                                        title !== 'lifting' && (
+                                            <div className={scss.labelWrapper}>
+                                                naher
+                                            </div>
+                                        )}
                                 </div>
                             </div>
                         </div>
