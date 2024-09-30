@@ -748,7 +748,7 @@ const Policy = () => {
                     <p className={clsx(scss.text, scss.margin)}>
                         Zu diesem Zweck werden bei Verwendung unserer Formulare
                         diverse Fragen gestellt (etwa: „Klicken Sie ein Symbol X
-                        an“ etc.). EverCAPTCHA speichert hierbei alle
+                        an etc.). EverCAPTCHA speichert hierbei alle
                         Fehlversuche eines Nutzers, eine IP-Adresse über eine
                         Session ID, die im LocalStorage gespeichert wird. Die
                         Session ID wird per JavaScript bei jeder Anfrage an den
@@ -798,7 +798,7 @@ const Policy = () => {
                         <li className={scss.item}>
                             Erhebung von Zugriffsdaten und Logfiles: Der Zugriff
                             auf unser Onlineangebot wird in Form von so
-                            genannten "Server-Logfiles" protokolliert. Zu den
+                            genannten `Server-Logfiles` protokolliert. Zu den
                             Serverlogfiles können die Adresse und Name der
                             abgerufenen Webseiten und Dateien, Datum und Uhrzeit
                             des Abrufs, übertragene Datenmengen, Meldung über
