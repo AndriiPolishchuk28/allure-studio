@@ -11,7 +11,7 @@ const PriceList = () => {
     return (
         <section className={scss.section}>
             <Container>
-                <Title className={scss.title}>preiseliste</Title>
+                <Title className={scss.title}>preisliste</Title>
                 <Title className={scss.title_service}>permanent make up</Title>
                 <div className={scss.list_wrapper}>
                     {permanent.map(({ header, services }) => (

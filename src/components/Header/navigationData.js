@@ -20,8 +20,8 @@ const navigationItems = [
         href: '/injektionen',
     },
     {
-        label: 'Preiseliste',
-        href: '/preiseliste',
+        label: 'Preisliste',
+        href: '/preisliste',
     },
     {
         label: 'Kontaktiere Uns',

@@ -11,6 +11,9 @@ export const metadata = {
 const RootLayout = ({ children }) => {
     return (
         <html lang="en">
+            <head>
+                <link sizes="16x16" rel="icon" href="/favicon.svg" />
+            </head>
             <body className={montserrat.className}>{children}</body>
         </html>
     );

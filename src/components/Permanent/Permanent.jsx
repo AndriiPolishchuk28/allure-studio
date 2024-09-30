@@ -15,7 +15,7 @@ const Permanent = () => {
                     PERMANENT SCHÖN MIT ALLURE
                 </h1>
                 <h2 className={clsx(scss.subtitle_text, italiana.className)}>
-                    Permanent Make-Up &amp Beauty
+                    Permanent Make-Up &#38; Beauty
                 </h2>
                 <p className={clsx(scss.text_owner, oooh_Baby.className)}>
                     by Uliana Eremenko

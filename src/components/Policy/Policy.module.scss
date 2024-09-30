@@ -1,0 +1,71 @@
+@import '@/styles/mixins';
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    @include media-rules(tablet) {
+        padding-top: 70px;
+        padding-bottom: 150px;
+    }
+}
+
+.title {
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    &::after {
+        content: '';
+        display: block;
+        width: 0.5px;
+        height: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(69, 63, 65, 0.5);
+        margin: 16px auto 0;
+    }
+}
+
+.text_wrapper {
+    margin-top: 24px;
+    @include media-rules(tablet) {
+        margin-top: 70px;
+    }
+    @include media-rules(desktop) {
+        margin-top: 36px;
+    }
+}
+
+.margin {
+    margin-bottom: 16px;
+}
+
+.text {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 150%;
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
+}
+
+.list {
+    padding-left: 18px;
+}
+
+.item {
+    list-style: disc;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 150%;
+    @include media-rules(tablet) {
+        font-size: 14px;
+    }
+    @include media-rules(desktop) {
+        font-size: 16px;
+    }
+}
