@@ -299,7 +299,6 @@ const Policy = () => {
                         Löschung die Einschränkung der Datenverarbeitung
                         verlangen.
                     </p>
-
                     <p className={scss.text}>
                         Wenn wir Ihre personenbezogenen Daten nicht mehr
                         benötigen, Sie sie jedoch zur Ausübung, Verteidigung
