@@ -10,8 +10,12 @@ const Services = () => {
             <Container>
                 <Title>SERVICES</Title>
                 <ul className={scss.list}>
-                    {videos.map((video) => (
-                        <ServicesItem key={video.id} {...video} />
+                    {videos.map((video, index) => (
+                        <ServicesItem
+                            key={video.id}
+                            {...video}
+                            image={index === 3 && true}
+                        />
                     ))}
                 </ul>
             </Container>
