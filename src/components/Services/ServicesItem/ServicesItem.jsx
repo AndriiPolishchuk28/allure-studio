@@ -2,9 +2,19 @@
 import Link from 'next/link';
 import ReactPlayer from 'react-player';
 import { useMedia } from '@/hooks/useMedia';
+import Image from 'next/image';
+import { injektionen_main } from '@/assets/images/injektionen';
 import scss from './ServicesItem.module.scss';
 
-const ServicesItem = ({ label, labelDesk, path, pathTab, pathDesk, link }) => {
+const ServicesItem = ({
+    label,
+    labelDesk,
+    path,
+    pathTab,
+    pathDesk,
+    link,
+    image = false,
+}) => {
     const { isTablet, isDesktop } = useMedia();
 
     let videoUrl = path;
@@ -25,16 +35,24 @@ const ServicesItem = ({ label, labelDesk, path, pathTab, pathDesk, link }) => {
     return (
         <li className={scss.video}>
             <div className={scss.playerWrapper}>
-                <ReactPlayer
-                    url={videoUrl}
-                    width="100%"
-                    height={height}
-                    playing
-                    muted
-                    loop
-                    onReady
-                    playsinline
-                />
+                {!image ? (
+                    <ReactPlayer
+                        url={videoUrl}
+                        width="100%"
+                        height={height}
+                        playing
+                        muted
+                        loop
+                        onReady
+                        playsinline
+                    />
+                ) : (
+                    <Image
+                        src={injektionen_main}
+                        alt="injektionen"
+                        className={scss.image}
+                    />
+                )}
             </div>
             <span className={scss.linkText}>
                 {isTablet && labelDesk ? labelDesk : label}
