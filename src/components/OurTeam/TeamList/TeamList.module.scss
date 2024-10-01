@@ -1,4 +1,4 @@
-@import "@/styles/mixins";
+@import '@/styles/mixins';
 
 .team {
     display: flex;
@@ -7,6 +7,7 @@
     background-image: url(../../../assets/images/team/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     @include media-rules(tablet) {
         background-image: url(../../../assets/images/team/bg-tab.png);
