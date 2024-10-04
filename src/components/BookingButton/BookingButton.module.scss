@@ -1,0 +1,20 @@
+@import '@/styles/mixins';
+
+.link {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.33;
+    text-transform: capitalize;
+    color: var(--gen-w);
+    background-color: var(--gen-green);
+    padding: 10px 16px;
+    border-radius: 6px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 100;
+    @include media-rules(tablet) {
+        font-size: 20px;
+        padding: 14px 20px;
+    }
+}

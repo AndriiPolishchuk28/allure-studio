@@ -7,6 +7,7 @@ import BurgerMenu from './BurgerMenu';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Header.module.scss';
 import { useEffect, useState } from 'react';
+import BookingButton from '../BookingButton/BookingButton';
 
 const Header = () => {
     const [isMounted, setIsMounted] = useState(false);
@@ -32,7 +33,11 @@ const Header = () => {
                 <div className={scss.wrapper}>
                     <Logo />
                     <BurgerMenu />
-                    <Link href="#" className={scss.link}>
+                    <Link
+                        href="https://connect.shore.com/widget/allure-studio?locale=de"
+                        className={scss.link}
+                        target="_blank"
+                    >
                         {isDesktop && isMounted ? (
                             <motion.div
                                 initial="hidden"
