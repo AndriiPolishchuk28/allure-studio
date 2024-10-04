@@ -35,7 +35,7 @@ const PermanentMakeUpInBerlinMitte = () => {
 
                         <div className={scss.linkWrapperDesk}>
                             <Link
-                                href="#"
+                                href="https://www.instagram.com/eremenko.pmu?igsh=Mmt1d3lnY3pkcTBu"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={scss.link}

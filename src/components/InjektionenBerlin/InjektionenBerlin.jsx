@@ -57,7 +57,7 @@ const InjektionenBerlin = () => {
                         <div className={scss.link_wrapper_desktop}>
                             <Link
                                 className={scss.link}
-                                href="#"
+                                href="https://www.instagram.com/allurestudio.berlin?igsh=MWh1MjgwajNpbHVmbg=="
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

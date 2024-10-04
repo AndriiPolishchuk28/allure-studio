@@ -70,7 +70,12 @@ const NagelDesignBerlin = () => {
                         </p>
                         <ReadMore />
                         <div className={scss.link_desktop}>
-                            <Link className={scss.link} href="#">
+                            <Link
+                                className={scss.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.instagram.com/allure.nailsstudio?igsh=YWtoM3BpY2RreDRx"
+                            >
                                 Alles Unsere Arbeiten in Instagrame
                             </Link>
                         </div>

@@ -8,6 +8,7 @@ const BookingButton = () => {
                 href="https://connect.shore.com/widget/allure-studio?locale=de"
                 className={scss.link}
                 target="_blank"
+                rel="noopener noreferrer"
             >
                 Jetzt Buchen
             </Link>
