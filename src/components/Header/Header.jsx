@@ -7,7 +7,6 @@ import BurgerMenu from './BurgerMenu';
 import { useMedia } from '@/hooks/useMedia';
 import scss from './Header.module.scss';
 import { useEffect, useState } from 'react';
-import BookingButton from '../BookingButton/BookingButton';
 
 const Header = () => {
     const [isMounted, setIsMounted] = useState(false);
