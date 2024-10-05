@@ -2,10 +2,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import instagramImage from '../../../../../public/icons/instagram.svg';
-import facebookImage from '../../../../../public/icons/facebook.svg';
 import scss from './TeamItem.module.scss';
 
-const TeamItem = ({ name, description, image, facebook, instagram }) => {
+const TeamItem = ({ name, description, image, instagram }) => {
     return (
         <li className={scss.item}>
             <div className={scss.personInfo}>
@@ -13,17 +12,6 @@ const TeamItem = ({ name, description, image, facebook, instagram }) => {
                 <div className={scss.person}>
                     <p className={scss.name}>{name}</p>
                     <div className={scss.socials}>
-                        <Link
-                            href={facebook}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                src={facebookImage}
-                                alt="facebook"
-                                className={scss.socialIcon}
-                            />
-                        </Link>
                         <Link
                             href={instagram}
                             target="_blank"

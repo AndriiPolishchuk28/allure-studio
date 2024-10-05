@@ -1,4 +1,5 @@
 @import '@/styles/mixins';
+@import '@/styles/fonts';
 
 .item {
     display: flex;
@@ -144,11 +145,11 @@
 }
 
 .description {
-    width: 159px;
     font-weight: 200;
-    line-height: 1.5;
+    line-height: 150%;
     text-align: center;
     padding: 0 12px;
+    font-family: var(--third-family);
 
     @include media-rules(tablet) {
         position: absolute;
@@ -164,7 +165,7 @@
 
     @include media-rules(desktop) {
         bottom: 84px;
-        max-width: 292px;
+        max-width: 316px;
         font-size: 16px;
     }
 }
