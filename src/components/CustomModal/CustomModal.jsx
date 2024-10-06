@@ -19,6 +19,7 @@ const CustomModal = ({
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
             closeAfterTransition
+            disablePortal
             slots={{ backdrop: Backdrop }}
             slotProps={{
                 backdrop: {

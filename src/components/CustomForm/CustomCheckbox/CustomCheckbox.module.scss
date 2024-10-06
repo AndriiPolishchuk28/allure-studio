@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 121212121121212;
 
     @include media-rules(tablet) {
         margin-bottom: 22px;

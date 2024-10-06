@@ -10,6 +10,10 @@
         display: flex;
         justify-content: center;
     }
+    @include media-rules(desktop) {
+        padding-bottom: 175px;
+        padding-top: 65px;
+    }
 }
 
 .bg_wrapper {
@@ -17,10 +21,17 @@
         background-image: url('../../assets/images/injektionen/bg_tablet.png');
         background-size: cover;
         padding-top: 30px;
-        padding-bottom: 110px;
+        height: 390px;
         width: 100%;
-        // max-width: 100%;
         max-width: 768px;
+    }
+    @include media-rules(desktop) {
+        background-image: url('../../assets/images/injektionen/bg_desktop.png');
+        background-size: cover;
+        padding-top: 167px;
+        width: 100%;
+        max-width: 1440px;
+        height: 522px;
     }
 }
 

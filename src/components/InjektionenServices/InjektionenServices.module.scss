@@ -4,9 +4,10 @@
     padding: 40px 0;
     @include media-rules(tablet) {
         padding-top: 75px;
+        padding-bottom: 90px;
     }
     @include media-rules(desktop) {
-        padding-bottom: 150px;
+        padding-bottom: 65px;
     }
 }
 
