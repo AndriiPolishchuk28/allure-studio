@@ -82,7 +82,12 @@ const NagelDesignBerlin = () => {
                     </div>
                 </div>
                 <div className={scss.link_wrapper}>
-                    <Link className={scss.link} href="#">
+                    <Link
+                        className={scss.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.instagram.com/allure.nailsstudio?igsh=YWtoM3BpY2RreDRx"
+                    >
                         Alles Unsere Arbeiten in Instagrame
                     </Link>
                 </div>

@@ -31,7 +31,7 @@ const CustomCheckbox = ({ register, errors }) => {
                 </p>
             </label>
 
-            <Link href="#" className={scss.checkboxLink}>
+            <Link href="/datenschutzerklarung" className={scss.checkboxLink}>
                 Zur Datenschutzerklärung
             </Link>
         </div>

@@ -62,6 +62,10 @@
 
 .pageTitle {
     padding-top: 20px;
+
+    @include media-rules(tablet) {
+        padding-top: 0;
+    }
 }
 
 .description {

@@ -65,7 +65,7 @@ const MassagenInBerlinMitte = () => {
                 </div>
                 <div className={scss.linkWrapper}>
                     <Link
-                        href="#"
+                        href="https://www.instagram.com/allure.massage?igsh=MTI2YzAxcGswbjk5NA=="
                         target="_blank"
                         rel="noopener noreferrer"
                         className={scss.link}

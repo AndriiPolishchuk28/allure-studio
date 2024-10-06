@@ -99,6 +99,14 @@
     }
 }
 
+.descriptionSpan {
+    display: none;
+    
+    @include media-rules(tablet) {
+        display: block;
+    }
+}
+
 .descriptionParagraphAdditional {
     display: none;
 
