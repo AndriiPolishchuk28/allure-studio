@@ -15,7 +15,10 @@ const validationSchema = yup.object({
     phone: yup
         .string()
         .required('Telefonnummer ist erforderlich*')
-        .matches(/^[0-9,+]{1,14}$/, 'Telefonnummer ist nicht gültig'),
+        .matches(
+            /^\+?\d{1,3}?[-.\s]?(\(?\d{1,4}\)?)[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{0,9}$/,
+            'Telefonnummer ist nicht gültig'
+        ),
     subject: yup.string(),
     message: yup
         .string()
