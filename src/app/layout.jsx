@@ -4,7 +4,7 @@ import Script from 'next/script';
 
 export const metadata = {
     title: {
-        default: 'Allure',
+        default: 'Allure studio',
         template: '%s | Allure',
     },
 };

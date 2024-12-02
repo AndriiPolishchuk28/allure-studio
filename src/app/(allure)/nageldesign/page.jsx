@@ -3,7 +3,9 @@ import NagelDesignFindUs from '@/components/NagelDesignFindUs';
 import NagelDesignServices from '@/components/NagelDesignServices';
 
 export const metadata = {
-    title: 'Nageldesign',
+    title: 'Nageldesign | Allure studio',
+    description:
+        'Perfektes Nageldesign in Berlin Mitte - professionelle Maniküre, Pediküre, Nagelverlängerungen und individuelle Designs von erfahrenen Nageldesignerinnen.',
 };
 
 const NagelDesign = () => {
