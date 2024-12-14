@@ -4,7 +4,7 @@ import sendMail from '@/helpers/sendMail';
 const POST = async (req) => {
     const { fullName, email, phone, subject, message } = await req.json();
     const mail = {
-        to: 'dmytro.liuba@outlook.com',
+        to: process.env.EMAIL,
         subject,
         html: `
             <p>You have a new message from your contact form:</p>

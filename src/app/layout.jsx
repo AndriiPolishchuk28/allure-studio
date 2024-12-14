@@ -4,7 +4,7 @@ import Script from 'next/script';
 
 export const metadata = {
     title: {
-        default: 'Allure studio',
+        default: 'ALLURE-Permanent Make-up & Beauty in Berlin Mitte',
         template: '%s | Allure',
     },
 };
