@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Line from './Line';
 import scss from './ContactsLocation.module.scss';
+import Link from 'next/link';
 
 const ContactsLocation = () => {
     return (
@@ -34,7 +35,7 @@ const ContactsLocation = () => {
                                     <use href="/icons/icons.svg#icon-phone"></use>
                                 </svg>
                                 <p className={scss.contactsItemData}>
-                                    +49 (0) 171 32 08 120
+                                    +49 (0) 176 700 29 740
                                 </p>
                             </div>
                             <div className={scss.contactsItemInfo}>
@@ -42,7 +43,9 @@ const ContactsLocation = () => {
                                     <use href="/icons/icons.svg#icon-email"></use>
                                 </svg>
                                 <p className={scss.contactsItemData}>
-                                    uliana.eremenko@allure-studio.de
+                                    <Link href="mailto:uliana.eremenko@allure-studio.de">
+                                        uliana.eremenko@allure-studio.de
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -61,7 +64,7 @@ const ContactsLocation = () => {
                                 <use href="/icons/icons.svg#icon-time"></use>
                             </svg>
                             <p className={scss.contactsItemData}>
-                                MO. - SA.: 09.00 - 18.30 Uhr
+                                MO. - SA.: nach Terminvereinbarung
                             </p>
                         </div>
                     </div>

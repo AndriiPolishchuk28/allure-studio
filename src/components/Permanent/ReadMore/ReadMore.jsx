@@ -32,22 +32,20 @@ const ReadMore = () => {
                         aller Welt ihren Wunsch nach permanenter Schönheit zu
                         erfüllen. Unser Leistungskatalog von ALLURE Permanent
                         Make up & Beauty umfasst Permanent Make- up
-                        Behandlungen, Nageldesign, Wimpernverdichtung und
-                        Wimpernverlängerung. Neu in unserem Angebot sind zu dem
-                        Massagen.
+                        Behandlungen, Nageldesign, Wimpern und
+                        Augenbrauenlaminierung und Massagen.
                     </p>
                 ) : (
                     <p className={scss.description}>
                         Beauty ist unsere Leidenschaft. 2022 konnten wir nun
                         endlich unser eigenes Studio im Herzen von Berlin
-                        eröffnen. Wir sind ein Zusammenschluss aus sechs
+                        eröffnen. Wir sind ein Zusammenschluss aus
                         Beauty-Experten. Die sich das Ziel gesetzt haben
                         Menschen aus Berlin und aller Welt ihren Wunsch nach
                         permanenter Schönheit zu erfüllen. Unser
                         Leistungskatalog von ALLURE Permanent Make up & Beauty
                         umfasst Permanent Make- up Behandlungen, Nageldesign,
-                        Wimpernverdichtung und Wimpernverlängerung. Neu in
-                        unserem Angebot sind zu dem Massagen.
+                        Wimpern und Augenbrauenlaminierung und Massagen.
                     </p>
                 )}
             </CustomModal>

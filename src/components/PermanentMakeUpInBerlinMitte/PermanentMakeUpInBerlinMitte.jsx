@@ -17,7 +17,7 @@ const PermanentMakeUpInBerlinMitte = () => {
                             <p className={scss.descriptionParagraph}>
                                 Permanente Schönheit mit ALLURE Permanent
                                 Make-up & Beauty. Mit meiner nun mehr als
-                                5-jährigen Erfahrung bist du in meinem Beauty
+                                6-jährigen Erfahrung bist du in meinem Beauty
                                 Studio in Berlin Mitte an der richtigen Adresse.
                                 Ich bin zertifizierte Permanent Make-up
                                 Artistin, meine Passion habe ich zum Beruf

@@ -29,7 +29,7 @@ const ImpressumPage = () => {
                     </div>
                     <div className={scss.item}>
                         <dt className={scss.text}>Telefonumer:</dt>
-                        <dd className={scss.text}>+49 1713208120</dd>
+                        <dd className={scss.text}>+49 176 700 29 740</dd>
                     </div>
                     <div className={scss.item}>
                         <dt className={scss.text}>E-Mail:</dt>

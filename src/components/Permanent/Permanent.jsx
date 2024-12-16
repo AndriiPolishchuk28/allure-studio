@@ -42,8 +42,8 @@ const Permanent = () => {
                 <div className={scss.smear_wrapper}>
                     <div className={scss.smear_wrapper_text}>
                         <p className={scss.smear_text}>
-                            2022 Inhaberin und Geschäftsführering von ALLURE
-                            Permanent Make up & Beauty, 2022 Jury-Mitgleider der
+                            2022 Inhaberin und Geschäftsführerin von ALLURE
+                            Permanent Make up & Beauty, 2022 Jury-Mitgleid der
                             German WULOP, 2021 Siegerin der German WULOP (Powder
                             Brow), seit 2018 Permanent Make up - Artis Mehr
                             lesen
@@ -55,8 +55,8 @@ const Permanent = () => {
                                     scss.tablet_text
                                 )}
                             >
-                                2022 Inhaberin und Geschäftsführering von ALLURE
-                                Permanent Make up & Beauty, 2022 Jury-Mitgleider
+                                2022 Inhaberin und Geschäftsführerin von ALLURE
+                                Permanent Make up & Beauty, 2022 Jury-Mitgleid
                                 der German WULOP, 2021 Siegerin der German WULOP
                                 (Powder Brow), seit 2018 Permanent Make up -
                                 Artist.
@@ -70,7 +70,7 @@ const Permanent = () => {
                                 Beauty ist unsere Leidenschaft. 2022 konnten wir
                                 nun endlich unser eigenes Studio im Herzen von
                                 Berlin eröffnen. Wir sind ein Zusammenschluss
-                                aus sechs Beauty-Experten.
+                                aus Beauty-Experten.
                             </p>
                         </div>
                         <div className={scss.desktop_text_wrapper}>
@@ -80,8 +80,8 @@ const Permanent = () => {
                                     scss.desktop_text
                                 )}
                             >
-                                2022 Inhaberin und Geschäftsführering von ALLURE
-                                Permanent Make up & Beauty, 2022 Jury-Mitgleider
+                                2022 Inhaberin und Geschäftsführerin von ALLURE
+                                Permanent Make up & Beauty, 2022 Jury-Mitgleid
                                 der German WULOP, 2021 Siegerin der German WULOP
                                 (Powder Brow), seit 2018 Permanent Make up -
                                 Artist.
@@ -95,14 +95,13 @@ const Permanent = () => {
                                 Beauty ist unsere Leidenschaft. 2022 konnten wir
                                 nun endlich unser eigenes Studio im Herzen von
                                 Berlin eröffnen. Wir sind ein Zusammenschluss
-                                aus sechs Beauty-Experten. Die sich das Ziel
-                                gesetzt haben Menschen aus Berlin und aller Welt
-                                ihren Wunsch nach permanenter Schönheit zu
-                                erfüllen. Unser Leistungskatalog von ALLURE
-                                Permanent Make up & Beauty umfasst Permanent
-                                Make- up Behandlungen, Nageldesign,
-                                Wimpernverdichtung und Wimpernverlängerung. Neu
-                                in unserem Angebot sind zu dem Massagen.
+                                aus Beauty-Experten. Die sich das Ziel gesetzt
+                                haben Menschen aus Berlin und aller Welt ihren
+                                Wunsch nach permanenter Schönheit zu erfüllen.
+                                Unser Leistungskatalog von ALLURE Permanent Make
+                                up & Beauty umfasst Permanent Make- up
+                                Behandlungen, Nageldesign, Wimpern und
+                                Augenbrauenlaminierung und Massagen.
                             </p>
                         </div>
                         <ReadMore />

@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 import Permanent from '@/components/Permanent/Permanent';
 import Hero from '@/components/Hero';
 import Feedbacks from '@/components/Feedbacks';
-import OurTeam from '@/components/OurTeam';
+// import OurTeam from '@/components/OurTeam';
 import Location from '@/components/Location';
 
 const ServicesVideo = dynamic(() => import('@/components/Services'), {
@@ -16,7 +16,7 @@ const Home = () => {
             <Permanent />
             <ServicesVideo />
             <Feedbacks />
-            <OurTeam />
+            {/* <OurTeam /> */}
             <Location />
         </main>
     );

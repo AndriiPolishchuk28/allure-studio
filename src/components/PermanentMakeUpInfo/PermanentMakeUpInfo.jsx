@@ -35,8 +35,7 @@ const PermanentMakeUpInfo = () => {
                             </p>
                             <p className={scss.descriptionParagraphAdditional}>
                                 Grundsätzlich kann man beim Permanent Make up in
-                                zwei Kategorien unterteilen. Permanent Make-up
-                                für einen natürlichen Look und Permanent Make up
+                                zwei Kategorien unterteilen. Permanent Make up
                                 für einen expresiven Look. Die Entscheidung
                                 liegt bei dir. Gerne berate ich dich dazu
                                 ausführlich in einem Telefongespräch oder Vorort

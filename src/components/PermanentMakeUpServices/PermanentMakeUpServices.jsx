@@ -8,7 +8,6 @@ const PermanentMakeUpServices = () => {
         <section className={scss.section}>
             <Container>
                 <Title line>SERVICES</Title>
-
                 <ServicesList />
             </Container>
         </section>
