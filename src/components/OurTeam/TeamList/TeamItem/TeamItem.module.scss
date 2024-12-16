@@ -9,90 +9,32 @@
     &:nth-child(even) {
         flex-direction: row-reverse;
     }
-
     @include media-rules(tablet) {
         position: relative;
         display: block;
         flex-basis: calc((100% - 20px) / 2);
         gap: 0;
-
         &:nth-child(even) {
             flex-direction: row;
         }
-
-        &:first-child {
-            flex-basis: 100%;
-            margin: 0 auto;
-
-            & .image {
-                width: 302px;
-                margin: 0 auto;
-            }
-
-            & .person {
-                width: 302px;
-                margin: 0 auto;
-            }
-        }
     }
-
     @include media-rules(desktop) {
-        flex-basis: calc((100% - 48px) / 3);
-
-        &:first-child {
-            flex-basis: 48%;
-            & .image {
-                width: 360px;
-                margin: 0;
-                margin-left: auto;
-            }
-
-            & .person {
-                width: 360px;
-                margin: 0;
-                margin-left: auto;
-            }
-
-            & .description {
-                left: 65%;
-            }
-        }
-
-        &:nth-child(2) {
-            flex-basis: 48%;
-
-            & .image {
-                width: 360px;
-                margin-right: auto;
-            }
-
-            & .person {
-                width: 360px;
-                margin-right: auto;
-            }
-
-            & .description {
-                left: 32%;
-            }
-        }
+        flex-basis: calc((100% - 48px) / 2);
     }
 }
 
 .personInfo {
     position: relative;
+    // z-index: -1;
 }
-
 .image {
     width: 159px;
     height: 200px;
-    object-fit: cover;
-
     @include media-rules(tablet) {
         width: 100%;
         height: 342px;
         object-fit: cover;
     }
-
     @include media-rules(desktop) {
         height: 480px;
     }
@@ -104,7 +46,6 @@
     justify-content: space-between;
     background-color: var(--gen-green);
     padding: 6px 8px;
-
     @include media-rules(tablet) {
         padding: 16px 22px;
     }
@@ -114,7 +55,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-
     @include media-rules(tablet) {
         gap: 14px;
     }
@@ -124,11 +64,9 @@
     font-weight: 200;
     line-height: 1.5;
     color: var(--gen-w);
-
     @include media-rules(tablet) {
         font-size: 14px;
     }
-
     @include media-rules(desktop) {
         font-size: 16px;
     }
@@ -137,7 +75,6 @@
 .socialIcon {
     width: 13px;
     height: 13px;
-
     @include media-rules(tablet) {
         width: 28px;
         height: 28px;
@@ -145,12 +82,11 @@
 }
 
 .description {
+    width: 159px;
     font-weight: 200;
-    line-height: 150%;
+    line-height: 1.5;
     text-align: center;
     padding: 0 12px;
-    font-family: var(--third-family);
-
     @include media-rules(tablet) {
         position: absolute;
         left: 50%;
@@ -162,10 +98,9 @@
         background-color: rgba(227, 222, 219, 0.9);
         padding: 12px;
     }
-
     @include media-rules(desktop) {
         bottom: 84px;
-        max-width: 316px;
+        max-width: 292px;
         font-size: 16px;
     }
 }

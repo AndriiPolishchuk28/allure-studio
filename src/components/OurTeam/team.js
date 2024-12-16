@@ -1,4 +1,4 @@
-import { name_1, name_2, oxana, tanja, uliana } from '@/assets/images/team';
+import { name_1, oxana, tanja, uliana } from '@/assets/images/team';
 
 const team = [
     {
@@ -31,15 +31,15 @@ const team = [
         instagram:
             'https://www.instagram.com/allure.nailsstudio?igsh=YWtoM3BpY2RreDRx',
     },
-    {
-        id: 4,
-        name: 'Stanislav',
-        description:
-            'Ich bin ein professioneller Masseur. Habe eine medizinische Ausbildung.Erfahrung von über 12 Jahren. Liebe meinen Beruf und gebe immer mein Bestes.',
-        image: name_2,
-        facebook: '#',
-        instagram: 'https://www.instagram.com/allure.massage?igsh=MTI2YzAxcGswbjk5NA==',
-    },
+    // {
+    //     id: 4,
+    //     name: 'Stanislav',
+    //     description:
+    //         'Ich bin ein professioneller Masseur. Habe eine medizinische Ausbildung.Erfahrung von über 12 Jahren. Liebe meinen Beruf und gebe immer mein Bestes.',
+    //     image: name_2,
+    //     facebook: '#',
+    //     instagram: 'https://www.instagram.com/allure.massage?igsh=MTI2YzAxcGswbjk5NA==',
+    // },
     {
         id: 5,
         name: 'Iryna',
