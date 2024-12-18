@@ -4,6 +4,31 @@
             "source": "/massagen-berlin-mitte",
             "destination": "/massage",
             "permanent": true
+        },
+        {
+            "source": "/permanent-make-up-berlin-mitte",
+            "destination": "/make-up",
+            "permanent": true
+        },
+        {
+            "source": "/nageldesign-berlin-mitte",
+            "destination": "/nageldesign",
+            "permanent": true
+        },
+        {
+            "source": "/kosmetische-injektionen-berlin",
+            "destination": "/injektionen",
+            "permanent": true
+        },
+        {
+            "source": "/kontaktformular-allure",
+            "destination": "/kontaktiere",
+            "permanent": true
+        },
+        {
+            "source": "/preise",
+            "destination": "/preisliste",
+            "permanent": true
         }
     ]
 }
