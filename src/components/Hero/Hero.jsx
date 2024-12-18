@@ -16,7 +16,7 @@ const Hero = () => {
     const getVideoUrl = () => {
         if (isTablet) return 'https://vimeo.com/1011935582';
         if (isDesktop) return 'https://vimeo.com/1011935599';
-        return 'https://vimeo.com/1011935563';
+        return 'https://vimeo.com/1040328579';
     };
 
     if (!isClient) {
@@ -28,7 +28,7 @@ const Hero = () => {
             <ReactPlayer
                 url={getVideoUrl()}
                 width={'100%'}
-                height={isDesktop ? 651 : isTablet ? 403 : 190}
+                height={isDesktop ? 651 : isTablet ? 403 : 220}
                 playing
                 muted
                 loop
