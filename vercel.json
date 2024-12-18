@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/massagen-berlin-mitte",
+            "destination": "/massage",
+            "permanent": true
+        }
+    ]
+}
