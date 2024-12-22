@@ -12,6 +12,23 @@
     }
 }
 
+.container {
+    max-width: $mobile;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+
+    @include media-rules(tablet) {
+        max-width: $tablet;
+        padding-right: 0;
+        padding-left: 70px;
+    }
+    @include media-rules(desktop) {
+        max-width: $desktop;
+        padding-left: 156px;
+    }
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -19,10 +36,13 @@
 
     @include media-rules(tablet) {
         margin-bottom: 36px;
+        gap: 20px;
+        justify-content: flex-end;
     }
 
     @include media-rules(desktop) {
         margin-bottom: 0;
+        gap: 27px;
     }
 }
 
@@ -34,7 +54,10 @@
     }
 
     @include media-rules(desktop) {
-        max-width: 456px;
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -71,22 +94,22 @@
 
     @include media-rules(desktop) {
         display: block;
-        composes: descriptionParagraph
+        composes: descriptionParagraph;
     }
 }
 
 .image {
-    width: 159px;
+    width: 137px;
     height: 308px;
     object-fit: cover;
 
     @include media-rules(tablet) {
-        width: 384px;
+        width: 454px;
         height: 446px;
     }
 
     @include media-rules(desktop) {
-        width: 647px;
+        width: 737px;
         height: 463px;
     }
 }

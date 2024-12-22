@@ -38,10 +38,11 @@
 .logoTitle {
     font-family: var(--second-family);
     font-size: 18px;
-    letter-spacing: 0.15em;
-    // color: var(--gen-w);
+    letter-spacing: 0.25em;
+    color: var(--gen-green);
 
     @include media-rules(tablet) {
+        letter-spacing: 0.15em;
         font-size: 36px;
         // color: var(--gen-green);
     }

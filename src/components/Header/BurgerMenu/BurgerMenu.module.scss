@@ -25,7 +25,7 @@
 .burgerIcon {
     width: 36px;
     height: 20px;
-    fill: var(--gen-w);
+    fill: var(--gen-green);
 
     @include media-rules(tablet) {
         width: 23px;
@@ -118,7 +118,6 @@
         font-size: 20px;
         line-height: 1.2;
     }
-
 }
 
 .closeIcon {

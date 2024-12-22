@@ -20,7 +20,7 @@
     @include media-rules(tablet) {
         max-width: $tablet;
         padding-left: 0;
-        padding-right: 70px;
+        padding-right: 65px;
     }
 
     @include media-rules(desktop) {
@@ -31,7 +31,6 @@
 
 .wrapper {
     display: flex;
-    align-items: center;
     gap: 24px;
 
     @include media-rules(tablet) {
@@ -66,8 +65,11 @@
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @include media-rules(tablet) {
-        max-width: 220px;
+        max-width: 227px;
     }
 
     @include media-rules(desktop) {
@@ -101,7 +103,7 @@
 
 .descriptionSpan {
     display: none;
-    
+
     @include media-rules(tablet) {
         display: block;
     }

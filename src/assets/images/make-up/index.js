@@ -1,8 +1,8 @@
-export { default as info } from './info.png';
+export { default as info } from './info.jpg';
 
-export { default as photo_1 } from './photo-1.png';
-export { default as photo_1_tab } from './photo-1-tab.png';
-export { default as photo_1_desk } from './photo-1-desk.png';
+export { default as photo_1 } from './photo-1.jpg';
+export { default as photo_1_tab } from './photo-1-tab.jpg';
+export { default as photo_1_desk } from './photo-1-desk.jpg';
 export { default as photo_3 } from './photo-3.jpg';
 
 export { default as service_1 } from './service-1.jpg';

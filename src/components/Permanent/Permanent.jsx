@@ -1,5 +1,3 @@
-'use client';
-
 import scss from './Permanent.module.scss';
 import Image from 'next/image';
 import ReadMore from './ReadMore/ReadMore';
@@ -21,32 +19,32 @@ const Permanent = () => {
                     by Uliana Eremenko
                 </p>
             </div>
-            <div className={scss.img_wrapper}>
-                <picture>
-                    <source
-                        media="(min-width: 1440px)"
-                        srcSet={main_desktop.src}
-                    />
-                    <source
-                        media="(min-width: 768px)"
-                        srcSet={main_tablet.src}
-                    />
-                    <Image
-                        src={main_phone}
-                        alt="Owner photo"
-                        priority
-                        className={scss.image}
-                    />
-                </picture>
+            <div className={scss.photo_text_wrapper}>
                 <div className={scss.stick}></div>
-                <div className={scss.smear_wrapper}>
+                <div className={scss.img_wrapper}>
+                    <picture>
+                        <source
+                            media="(min-width: 1440px)"
+                            srcSet={main_desktop.src}
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcSet={main_tablet.src}
+                        />
+                        <Image
+                            src={main_phone}
+                            alt="Owner photo"
+                            priority
+                            className={scss.image}
+                        />
+                    </picture>
+
                     <div className={scss.smear_wrapper_text}>
                         <p className={scss.smear_text}>
                             2022 Inhaberin und Geschäftsführerin von ALLURE
                             Permanent Make up & Beauty, 2022 Jury-Mitgleid der
                             German WULOP, 2021 Siegerin der German WULOP (Powder
-                            Brow), seit 2018 Permanent Make up - Artis Mehr
-                            lesen
+                            Brow), seit 2018 Permanent Make up - Artist
                         </p>
                         <div className={scss.tablet_text_wrapper}>
                             <p

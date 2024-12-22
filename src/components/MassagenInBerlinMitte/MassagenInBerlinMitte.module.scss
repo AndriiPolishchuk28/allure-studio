@@ -2,6 +2,7 @@
 
 .section {
     padding-bottom: 40px;
+    padding-top: 20px;
 
     @include media-rules(tablet) {
         padding: 70px 0 75px;
@@ -27,12 +28,10 @@
 
 .wrapper {
     display: flex;
-    align-items: flex-end;
     gap: 8px;
     margin-bottom: 20px;
-
     @include media-rules(tablet) {
-        align-items: start;
+        // align-items: start;
         flex-direction: row-reverse;
         gap: 20px;
         margin-bottom: 36px;
@@ -46,12 +45,12 @@
 
 .image {
     min-width: 200px;
-    height: 352px;
+    height: 330px;
     object-fit: cover;
 
     @include media-rules(tablet) {
         min-width: 455px;
-        height: 390px;
+        height: 414px;
     }
 
     @include media-rules(desktop) {
@@ -60,9 +59,17 @@
     }
 }
 
-.pageTitle {
-    padding-top: 20px;
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+    @include media-rules(desktop) {
+        gap: 36px;
+    }
+}
 
+.pageTitle {
     @include media-rules(tablet) {
         padding-top: 0;
     }
@@ -74,7 +81,6 @@
     gap: 20px;
     font-weight: 200;
     line-height: 1.5;
-    margin-bottom: 12px;
 
     @include media-rules(tablet) {
         font-size: 14px;
@@ -103,7 +109,7 @@
 }
 
 .linkWrapperDesk {
-    display: none; 
+    display: none;
 
     @include media-rules(desktop) {
         display: block;

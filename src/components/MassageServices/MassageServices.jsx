@@ -8,7 +8,6 @@ const MassageServices = () => {
         <section className={scss.section}>
             <Container>
                 <Title line>Services</Title>
-
                 <ServicesList />
             </Container>
         </section>

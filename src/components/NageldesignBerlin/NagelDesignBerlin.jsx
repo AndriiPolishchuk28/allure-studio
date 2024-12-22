@@ -7,12 +7,11 @@ import {
 import scss from './NagelDesignBerlin.module.scss';
 import ReadMore from './ReadMore';
 import Link from 'next/link';
-import Container from '../Container';
 
 const NagelDesignBerlin = () => {
     return (
         <section className={scss.section}>
-            <Container>
+            <div className={scss.container}>
                 <div className={scss.wrapper}>
                     <picture>
                         <source
@@ -91,7 +90,7 @@ const NagelDesignBerlin = () => {
                         Alles Unsere Arbeiten in Instagrame
                     </Link>
                 </div>
-            </Container>
+            </div>
         </section>
     );
 };

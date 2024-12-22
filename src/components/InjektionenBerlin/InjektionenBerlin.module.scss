@@ -1,6 +1,7 @@
 @import '@/styles/mixins';
 
 .section {
+    padding-top: 20px;
     padding-bottom: 40px;
     @include media-rules(tablet) {
         padding-bottom: 75px;
@@ -36,7 +37,6 @@
 }
 
 .text_wrapper {
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -47,7 +47,7 @@
     @include media-rules(desktop) {
         max-width: 552px;
         gap: 36px;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
@@ -91,7 +91,7 @@
 
 .image {
     width: 200px;
-    height: 326px;
+    height: 306px;
     @include media-rules(tablet) {
         width: 455px;
         height: 446px;

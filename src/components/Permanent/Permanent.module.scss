@@ -2,6 +2,13 @@
 
 .section {
     padding-top: 80px;
+    padding-bottom: 40px;
+    @include media-rules(tablet) {
+        padding-top: 150px;
+    }
+    @include media-rules(desktop) {
+        padding-top: 105px;
+    }
 }
 
 .wrapper_text {
@@ -62,86 +69,65 @@
 }
 
 .img_wrapper {
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+    align-items: center;
+    gap: 25px;
+    margin-top: 36px;
     @include media-rules(tablet) {
-        padding-left: 35px;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-top: 45px;
+        gap: 30px;
+        padding-left: clamp(20px, calc((100vw - 768px) / 2 + 20px), 100vw);
     }
     @include media-rules(desktop) {
-        padding-left: 156px;
+        gap: 164px;
+        margin-top: 0px;
+        padding-left: clamp(38px, calc((100vw - 1440px) / 2 + 38px), 100vw);
     }
 }
 
 .image {
-    width: 174px;
-    height: 269px;
+    width: 340px;
+    height: 198px;
     @include media-rules(tablet) {
-        width: 279px;
-        height: 377px;
+        width: 345px;
+        height: 271px;
     }
     @include media-rules(desktop) {
-        width: 360px;
-        height: 525px;
-        position: relative;
-        top: -43px;
+        width: 626px;
+        height: 390px;
     }
 }
 
 .stick {
-    position: absolute;
     background-color: rgba(69, 63, 65, 0.5);
     width: 0.5px;
     height: 20px;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
+    margin: 0 auto;
     @include media-rules(tablet) {
+        display: block;
         width: 1px;
         height: 40px;
     }
-}
-
-.smear_wrapper {
-    background: url('/img/bg_permanent.jpg') no-repeat;
-    width: 100%;
-    background-size: cover;
-    padding-top: 50px;
-    padding-right: 24px;
-    padding-left: 36px;
-    max-width: 219px;
-    @include media-rules(tablet) {
-        background-size: cover;
-        max-width: 453px;
-        padding-left: 0;
-        background-image: url('/img/bg_tablet.jpg');
-        background-position: 2px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
     @include media-rules(desktop) {
-        background-size: cover;
-        min-width: 924px;
-        background-image: url('/img/bg_desktop.jpg');
-        background-position: 17px -147px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-right: 121px;
+        margin-top: 36px;
+        height: 60px;
     }
 }
 
 .smear_wrapper_text {
     @include media-rules(tablet) {
         max-width: 302px;
-        margin-left: 75px;
     }
     @include media-rules(desktop) {
+        padding-top: 38px;
         max-width: 491px;
         font-size: 16px;
         display: flex;
-        align-self: flex-end;
     }
 }
 
@@ -149,7 +135,7 @@
     font-weight: 200;
     font-size: 12px;
     line-height: 1.5;
-    max-width: 159px;
+    max-width: 340px;
     margin-bottom: 12px;
     @include media-rules(tablet) {
         display: none;

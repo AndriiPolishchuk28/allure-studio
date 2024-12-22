@@ -2,8 +2,9 @@
 
 .header {
     min-height: 56px;
-    background-color: var(--gen-green);
+    background-color: var(--gen-w);
     padding: 12px 0;
+    border-bottom: 1px solid #c9c7c9;
 
     @include media-rules(tablet) {
         min-height: 100px;

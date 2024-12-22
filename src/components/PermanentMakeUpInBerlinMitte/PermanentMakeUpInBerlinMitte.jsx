@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Container from '../Container';
 import PageTitle from '../PageTitle';
 import ReadMore from './ReadMore';
 import { photo_1, photo_1_tab, photo_1_desk } from '@/assets/images/make-up';
@@ -9,7 +8,7 @@ import scss from './PermanentMakeUpInBerlinMitte.module.scss';
 const PermanentMakeUpInBerlinMitte = () => {
     return (
         <section className={scss.section}>
-            <Container>
+            <div className={scss.container}>
                 <div className={scss.wrapper}>
                     <div className={scss.info}>
                         <PageTitle>PERMANENT MAKE UP IN BERLIN MITTE</PageTitle>
@@ -71,7 +70,7 @@ const PermanentMakeUpInBerlinMitte = () => {
                         Alles Unsere Arbeiten in Instagrame
                     </Link>
                 </div>
-            </Container>
+            </div>
         </section>
     );
 };
