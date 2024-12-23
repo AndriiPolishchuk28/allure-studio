@@ -6,7 +6,7 @@ import { useMedia } from '@/hooks/useMedia';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
-    const { isTablet, isDesktop } = useMedia();
+    const { isMobile, isTablet, isDesktop } = useMedia();
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const Hero = () => {
             <ReactPlayer
                 url={'https://vimeo.com/1041692624'}
                 width="100%"
-                height={isDesktop ? 651 : isTablet ? 348 : 220}
+                height={isDesktop ? 651 : isTablet ? 403 : isMobile ? 220 : 180}
                 playing
                 muted
                 loop
