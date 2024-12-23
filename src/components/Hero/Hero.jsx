@@ -20,9 +20,9 @@ const Hero = () => {
     return (
         <section className={scss.section}>
             <ReactPlayer
-                url={'https://vimeo.com/1011935599'}
+                url={'https://vimeo.com/1041692624'}
                 width="100%"
-                height={isDesktop ? 651 : isTablet ? 348 : 168}
+                height={isDesktop ? 651 : isTablet ? 348 : 220}
                 playing
                 muted
                 loop
