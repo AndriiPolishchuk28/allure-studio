@@ -45,6 +45,13 @@ const ServicesItem = ({
                         loop
                         onReady
                         playsinline
+                        config={{
+                            vimeo: {
+                                playerOptions: {
+                                    dnt: true,
+                                },
+                            },
+                        }}
                     />
                 ) : (
                     <Image

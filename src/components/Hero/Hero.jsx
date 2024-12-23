@@ -2,11 +2,9 @@
 
 import ReactPlayer from 'react-player';
 import scss from './Hero.module.scss';
-// import { useMedia } from '@/hooks/useMedia';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
-    // const { isMobile, isTablet, isDesktop } = useMedia();
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
@@ -23,7 +21,6 @@ const Hero = () => {
                 url={'https://vimeo.com/1041692624'}
                 width="100%"
                 height={651}
-                // height={isDesktop ? 651 : isTablet ? 403 : isMobile ? 220 : 180}
                 playing
                 muted
                 loop
@@ -33,6 +30,7 @@ const Hero = () => {
                     vimeo: {
                         playerOptions: {
                             responsive: true,
+                            dnt: true,
                         },
                     },
                 }}
