@@ -2,11 +2,11 @@
 
 import ReactPlayer from 'react-player';
 import scss from './Hero.module.scss';
-import { useMedia } from '@/hooks/useMedia';
+// import { useMedia } from '@/hooks/useMedia';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
-    const { isMobile, isTablet, isDesktop } = useMedia();
+    // const { isMobile, isTablet, isDesktop } = useMedia();
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
