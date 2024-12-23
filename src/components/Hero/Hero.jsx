@@ -13,12 +13,6 @@ const Hero = () => {
         setIsClient(true);
     }, []);
 
-    const getVideoUrl = () => {
-        if (isTablet) return 'https://vimeo.com/1011935582';
-        if (isDesktop) return 'https://vimeo.com/1011935599';
-        return 'https://vimeo.com/1040328579';
-    };
-
     if (!isClient) {
         return <section className={scss.section}></section>;
     }
@@ -26,14 +20,22 @@ const Hero = () => {
     return (
         <section className={scss.section}>
             <ReactPlayer
-                url={getVideoUrl()}
-                width={'100%'}
-                height={isDesktop ? 651 : isTablet ? 403 : 220}
+                url={'https://vimeo.com/1011935599'}
+                width="100%"
+                height={isDesktop ? 651 : isTablet ? 348 : 168}
                 playing
                 muted
                 loop
                 onReady
                 playsinline
+                config={{
+                    vimeo: {
+                        playerOptions: {
+                            responsive: true,
+                        },
+                    },
+                }}
+                className={scss.player}
             />
         </section>
     );
