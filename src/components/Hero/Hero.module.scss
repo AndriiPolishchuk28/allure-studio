@@ -2,18 +2,30 @@
 
 .section {
     background-color: var(--photo-bg);
-    height: 180px;
+    // height: 180px;
     overflow: hidden;
     position: relative;
     z-index: -1;
     margin: 20px auto 0;
 
-    @include media-rules(tablet) {
-        height: 220px;
+    &::before {
+        content: '';
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
     }
 
     @include media-rules(tablet) {
-        height: 403px;
+        // height: 220px;
+    }
+
+    @include media-rules(tablet) {
+        // height: 403px;
         margin: 0 auto;
     }
 
@@ -24,14 +36,5 @@
 
 
 .player {
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 100;
-    }
+    height: auto !important;
 }

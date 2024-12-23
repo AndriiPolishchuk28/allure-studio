@@ -22,7 +22,8 @@ const Hero = () => {
             <ReactPlayer
                 url={'https://vimeo.com/1041692624'}
                 width="100%"
-                height={isDesktop ? 651 : isTablet ? 403 : isMobile ? 220 : 180}
+                height={651}
+                // height={isDesktop ? 651 : isTablet ? 403 : isMobile ? 220 : 180}
                 playing
                 muted
                 loop
