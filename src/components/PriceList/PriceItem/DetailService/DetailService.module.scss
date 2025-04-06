@@ -3,9 +3,7 @@
 .item {
     display: flex;
     justify-content: space-between;
-    @include media-rules(tablet) {
-       align-items: flex-start;
-    }
+    align-items: flex-start;
 }
 
 .service_info {
