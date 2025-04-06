@@ -12,6 +12,7 @@ import {
 import BotulinumList from '../InjektionenServices/ServicesList/ServicesList';
 import { botulinum } from '../InjektionenServices/ServicesList/data';
 import PageTitle from '../PageTitle';
+import { nanoid } from 'nanoid';
 
 const PriceList = () => {
     const test = {
@@ -34,19 +35,19 @@ const PriceList = () => {
                 </div>
                 <Title className={scss.title_service}>massage</Title>
                 <div className={scss.list_wrapper}>
-                    {massage.map((item, index) => (
+                    {massage.map((item) => (
                         <PriceItem
                             massage="massage"
-                            key={index}
+                            key={nanoid()}
                             data={item.services}
                         />
                     ))}
                 </div>
                 <Title className={scss.title_service}>nageldesign</Title>
                 <div className={scss.list_wrapper}>
-                    {nageldesign.map((item, index) => (
+                    {nageldesign.map((item) => (
                         <PriceItem
-                            key={index}
+                            key={nanoid()}
                             data={item.services}
                             // className="detail_row"
                         />
@@ -56,9 +57,9 @@ const PriceList = () => {
                     augenbrauen / wimpern
                 </Title>
                 <div className={scss.list_wrapper}>
-                    {augenbrauen.map((item, index) => (
+                    {augenbrauen.map((item) => (
                         <PriceItem
-                            key={index}
+                            key={nanoid()}
                             data={item.services}
                             className="detail_row"
                         />
@@ -74,10 +75,10 @@ const PriceList = () => {
                             <BotulinumList key={index} {...item} />
                         ))}
                     </ul>
-                    {injektionen.map(({ header, services }, index) => (
+                    {injektionen.map(({ header, services }) => (
                         <PriceItem
                             className={test}
-                            key={index}
+                            key={nanoid()}
                             title={header}
                             data={services}
                         />

@@ -16,6 +16,7 @@
         "@mui/material": "^5.16.5",
         "clsx": "^2.1.1",
         "framer-motion": "^11.3.21",
+        "nanoid": "^5.1.5",
         "next": "14.2.3",
         "nodemailer": "^6.9.14",
         "react": "^18",
