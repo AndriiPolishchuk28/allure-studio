@@ -2,12 +2,22 @@ import Container from '../Container';
 import Title from '../Title';
 import PriceItem from './PriceItem';
 import scss from './PriceList.module.scss';
-import { permanent, nageldesign, massage, injektionen } from './data';
+import {
+    permanent,
+    nageldesign,
+    massage,
+    injektionen,
+    augenbrauen,
+} from './data';
 import BotulinumList from '../InjektionenServices/ServicesList/ServicesList';
 import { botulinum } from '../InjektionenServices/ServicesList/data';
 import PageTitle from '../PageTitle';
 
 const PriceList = () => {
+    const test = {
+        listTablet: 'list_tablet',
+        customWidth: 'custom_width',
+    };
     return (
         <section className={scss.section}>
             <Container>
@@ -22,16 +32,6 @@ const PriceList = () => {
                         />
                     ))}
                 </div>
-                <Title className={scss.title_service}>nageldesign</Title>
-                <div className={scss.list_wrapper}>
-                    {nageldesign.map((item, index) => (
-                        <PriceItem
-                            key={index}
-                            data={item.services}
-                            className="detail_row"
-                        />
-                    ))}
-                </div>
                 <Title className={scss.title_service}>massage</Title>
                 <div className={scss.list_wrapper}>
                     {massage.map((item, index) => (
@@ -39,6 +39,28 @@ const PriceList = () => {
                             massage="massage"
                             key={index}
                             data={item.services}
+                        />
+                    ))}
+                </div>
+                <Title className={scss.title_service}>nageldesign</Title>
+                <div className={scss.list_wrapper}>
+                    {nageldesign.map((item, index) => (
+                        <PriceItem
+                            key={index}
+                            data={item.services}
+                            // className="detail_row"
+                        />
+                    ))}
+                </div>
+                <Title className={scss.title_service}>
+                    augenbrauen / wimpern
+                </Title>
+                <div className={scss.list_wrapper}>
+                    {augenbrauen.map((item, index) => (
+                        <PriceItem
+                            key={index}
+                            data={item.services}
+                            className="detail_row"
                         />
                     ))}
                 </div>
@@ -54,7 +76,7 @@ const PriceList = () => {
                     </ul>
                     {injektionen.map(({ header, services }, index) => (
                         <PriceItem
-                            className="list_tablet"
+                            className={test}
                             key={index}
                             title={header}
                             data={services}

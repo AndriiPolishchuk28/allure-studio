@@ -1,7 +1,30 @@
 export const permanent = [
     {
-        header: 'MASTER POWDER BROW',
         services: [
+            {
+                service: 'BERATUNG PMU',
+                detail: '15 MIN',
+                price: '0 euro',
+            },
+            {
+                service: 'BERATUNG PMU',
+                additional:
+                    'Formgestaltung, Auswahl des Pigmenttons, Allergietest',
+                detail: '30 MIN',
+                price: '30 euro',
+            },
+            {
+                service: 'NANO BROWS (HÄRCHTECHNIK)',
+                additional: 'Erstbehaldung',
+                detail: '3 ST',
+                price: '350 euro',
+            },
+            {
+                service: 'NANO BROWS (HÄRCHTECHNIK)',
+                additional: 'Nachbehandlung',
+                detail: '2 ST',
+                price: '150 euro',
+            },
             {
                 service: 'MASTER POWDER BROW',
                 additional: 'Erstbehaldung',
@@ -12,115 +35,55 @@ export const permanent = [
                 service: 'MASTER POWDER BROW',
                 additional: 'Nachbehandlung',
                 detail: '2 ST',
-                price: '100 euro',
+                price: '130 euro',
             },
             {
-                service: 'NANO BROWS',
+                service: 'AQUARELL LIPS',
                 additional: 'Erstbehaldung',
-                detail: '2 ST',
-                price: '350 euro',
+                detail: '2 st 30 MIN',
+                price: '270 euro',
             },
             {
-                service: 'NANO BROWS',
+                service: 'AQUARELL LIPS',
                 additional: 'Nachbehandlung',
-                detail: '2 ST',
-                price: '150 euro',
+                detail: '2 st 30 MIN',
+                price: '130 euro',
             },
-            {
-                service: 'AUGENBRAUEN ZUPFEN',
-                detail: '10 MIN',
-                price: '15 euro',
-            },
-            {
-                service: 'BROW NUR FÄRBEN',
-                detail: '10 MIN',
-                price: '30 euro',
-            },
-            {
-                service: 'BROW LIFTING',
-                detail: '10 MIN',
-                price: '49 euro',
-            },
-        ],
-    },
-    {
-        header: 'MASTER POWDER LIPPEN',
-        services: [
             {
                 service: 'VELVET LIPS',
                 additional: 'Erstbehaldung',
-                detail: '2,5 ST',
+                detail: '2 st 40 MIN',
                 price: '300 euro',
             },
             {
                 service: 'VELVET LIPS',
                 additional: 'Nachbehandlung',
-                detail: '2 ST',
+                detail: '2 st 30 MIN',
+                price: '150 euro',
+            },
+            {
+                service: 'SOFT LINER',
+                additional: 'Erstbehaldung',
+                detail: '2 st 30 MIN',
+                price: '270 euro',
+            },
+            {
+                service: 'SOFT LINER',
+                additional: 'Nachbehandlung',
+                detail: '2 st 30 MIN',
+                price: '130 euro',
+            },
+            {
+                service: 'WIMPERNKRANZVERDICHTUNG',
+                additional: 'Erstbehaldung',
+                detail: '1 st',
+                price: '200 euro',
+            },
+            {
+                service: 'WIMPERNKRANZVERDICHTUNG',
+                additional: 'Nachbehandlung',
+                detail: '1 st',
                 price: '120 euro',
-            },
-            {
-                service: 'AQUARELL LIPS',
-                additional: 'Erstbehaldung',
-                detail: '2,5 ST',
-                price: '270 euro',
-            },
-            {
-                service: 'AQUARELL LIPS',
-                additional: 'Nachbehandlung',
-                detail: '2,5 ST',
-                price: '100 euro',
-            },
-        ],
-    },
-    {
-        header: 'SOFT LINER',
-        services: [
-            {
-                service: 'SOFT LINER',
-                additional: 'Erstbehaldung',
-                detail: '2,5 ST',
-                price: '270 euro',
-            },
-            {
-                service: 'SOFT LINER',
-                additional: 'Nachbehandlung',
-                detail: '2 ST',
-                price: '100 euro',
-            },
-        ],
-    },
-    {
-        header: 'LIFTING',
-        services: [
-            {
-                service: 'PERFECT BROW STYLING',
-                additional: 'HENNA / FARBE',
-                price: '45 euro',
-            },
-            {
-                service: 'LASH LIFTING',
-                price: '49 euro',
-            },
-            {
-                service: 'BROW LIFTING',
-                price: '49 euro',
-            },
-            {
-                service: 'B + L LIFTING PACKET',
-                price: '90 euro',
-            },
-            {
-                service: 'BROW NUR FÄRBEN',
-                additional: 'HENNA / FARBE',
-                price: '30 euro',
-            },
-            {
-                service: 'BROW NUR ZUPFEN',
-                price: '15 euro',
-            },
-            {
-                service: 'LASH NUR FÄRBEN',
-                price: '19 euro',
             },
         ],
     },
@@ -130,52 +93,70 @@ export const nageldesign = [
     {
         services: [
             {
-                service: 'CLASSIC / KOMBI',
-                price: '35 euro',
-            },
-            {
-                service: 'MANIKÜRE + SCHELLACK',
+                service: 'Japanische Maniküre',
                 price: '50 euro',
             },
             {
-                service: 'MANIKÜRE + FRENCH',
-                price: '60 euro',
-            },
-            {
-                service: 'SCHELLAK ABLÖSEN + MANIKÜRE',
+                service: 'CLASSIC / KOMBI',
                 price: '40 euro',
             },
             {
-                service: 'SCHELLAK ABLÖSEN',
-                price: '15 euro',
+                service: 'CLASSIC / KOMBI + NAGELLACK',
+                price: '45 euro',
             },
             {
-                service: 'VERLÄNGERUNG',
+                service:
+                    'Maniküre + einfarbige Shellac / ohne Nagelverstärkung',
+                price: '55 euro',
+            },
+            {
+                service: 'Maniküre + einfarbige Shellac / MIT Nagelverstärkung',
+                price: '60 euro',
+            },
+            {
+                service: 'Maniküre + French Nails',
+                price: '65 euro',
+            },
+            {
+                service: 'Maniküre + Baby boomer',
+                price: '65 euro',
+            },
+            {
+                service: 'Extra Design +',
+                price: '10 euro',
+            },
+            {
+                service: 'NAGELVERLÄNGERUNG',
+                additional: '(1-2 Länge)',
+                price: '85 euro',
+            },
+            {
+                service: 'NAGELVERLÄNGERUNG KORREKTUR',
                 additional: '(1-2 Länge)',
                 price: '70 euro',
             },
             {
-                service: 'VERLÄNGERUNG',
+                service: 'NAGELVERLÄNGERUNG',
+                additional: '(3-4 Länge)',
+                price: '95 euro',
+            },
+            {
+                service: 'NAGELVERLÄNGERUNG KORREKTUR',
                 additional: '(3-4 Länge)',
                 price: '80 euro',
             },
             {
-                service: 'KORREKTUR',
-                additional: '(1-2 Länge)',
-                price: '55 euro',
+                service: 'SCHELLACK ABLÖSEN',
+                price: '15 euro',
             },
             {
-                service: 'KORREKTUR',
-                additional: '(3-4 Länge)',
-                price: '65 euro',
+                service: 'PEDIKÜRE',
+                additional: '( Classik / Kombi )',
+                price: '50 euro',
             },
             {
-                service: 'REPARATUR',
-                additional: '(1 Nagel)',
-                price: '1-5 euro',
-            },
-            {
-                service: 'CLASSIC / KOMBI ',
+                service: 'PEDIKÜRE + NAGELLACK ',
+                additional: '( Classik / Kombi )',
                 price: '55 euro',
             },
             {
@@ -184,12 +165,34 @@ export const nageldesign = [
             },
             {
                 service: 'PEDIKÜRE + SCHELLACK',
-                additional: '(nür Finger)',
-                price: '50 euro',
+                additional: '(nur Zehen)',
+                price: '55 euro',
             },
             {
-                service: 'PEDIKÜRE + FRENCH',
+                service: 'PEDIKURE+FRENCH',
                 price: '70 euro',
+            },
+            {
+                service: 'REPARATUR',
+                additional: '(pro Nagel)',
+                price: '5 euro',
+            },
+            {
+                service: '4 Hände Behandlung / Klassik',
+                price: '110 euro',
+            },
+            {
+                service:
+                    '4 Hände Behandlung / mit Shellac ohne Nagelverstärkung',
+                price: '135 euro',
+            },
+            {
+                service: '4 Hände Behandlung / mit Shellac + Nagelverstärkung',
+                price: '140 euro',
+            },
+            {
+                service: 'Feuchtigkeitsmaske für Füße / Hände',
+                price: '15 euro',
             },
         ],
     },
@@ -199,35 +202,88 @@ export const massage = [
     {
         services: [
             {
-                service: 'ALLGEMEINE MASSAGE',
-                additional: '60 / 90 MIN',
+                service: 'FULL BODY / GANYKÖRPERMASSAGE',
+                detail: '60 / 90 MIN',
                 price: '65 / 90 euro',
             },
             {
-                service: 'ALLGEMEINE ENTSPANNENDE MASAGE',
-                additional: '90 MIN',
-                price: '90 euro',
-            },
-            {
-                service: 'STONE MASSAGE',
-                additional: '90 MIN',
-                price: '120 euro',
-            },
-            {
                 service: 'RÜCKEN UND NACKENMASSAGE',
-                additional: '45 MIN',
+                detail: '45 MIN',
                 price: '50 euro',
             },
             {
-                service: 'LOKAL MASSAGE',
-                detailService: '(Kopf, Arme, Beine, Bauch)',
-                additional: '30 MIN',
-                price: '35 euro',
+                service: 'ANTI-CELLUILITE MASSAGE',
+                detail: '50 MIN',
+                price: '60 euro',
             },
             {
-                service: 'ANTICELLUILITE MASSAGE',
-                additional: '45 MIN',
+                service: 'RELAX (AROMA) MASSAGE',
+                detail: '60 / 90 MIN',
+                price: '70 / 95 euro',
+            },
+            {
+                service: 'STONE MASSAGE',
+                detail: '60 / 90 MIN',
+                price: '90 / 120 euro',
+            },
+            {
+                service: 'KLASSISCHE GESICHTSMASSAGE',
+                additional: '(mit Maske)',
+                detail: '45 MIN',
                 price: '60 euro',
+            },
+            {
+                service: 'MYOSCULPT GESICHTSMASSAGE',
+                detail: '60 MIN',
+                price: '65 euro',
+            },
+            {
+                service: 'BUCCAL GESICHTSMASSAGE',
+                detail: '60 MIN',
+                price: '65 euro',
+            },
+            {
+                service: 'FACE MASSAGE',
+                additional: '( Classic / MyoSculpt /Buccal + Maske)',
+                detail: '1 ST 10 MIN',
+                price: '75 euro',
+            },
+        ],
+    },
+];
+export const augenbrauen = [
+    {
+        services: [
+            {
+                service: 'Perfect Augenbrauen Styling',
+                price: '50 euro',
+            },
+            {
+                service: 'AUGENBRAUEN ZUPFEN',
+                detail: '10 MIN',
+                price: '15 euro',
+            },
+            {
+                service: 'Augenbrauen FÄRBEN',
+                detail: '10 MIN',
+                price: '30 euro',
+            },
+            {
+                service: 'Wimpern FÄRBEN',
+                detail: '15 MIN',
+                price: '20 euro',
+            },
+            {
+                service: 'AUGENBRAUEN LIFTING',
+                price: '55 euro',
+            },
+            {
+                service: 'WIMPERN LIFTING',
+                price: '55 euro',
+            },
+            {
+                service: 'LIFTING PACKET',
+                price: '100 euro',
             },
         ],
     },
@@ -239,7 +295,7 @@ export const injektionen = [
         services: [
             {
                 service: 'FETT-WEG SPRITZE',
-                additional: '1 ZONE',
+                detail: '1 ZONE',
                 price: '120 euro',
             },
             {
@@ -248,17 +304,17 @@ export const injektionen = [
             },
             {
                 service: 'CROMA SAYPHA RICH',
-                additional: '2 ML',
+                detail: '2 ML',
                 price: '120 / 200 euro',
             },
             {
                 service: 'RESTYLANE SKINBOOSTER',
-                additional: '2 ML',
+                detail: '2 ML',
                 price: '230 / 380 euro',
             },
             {
                 service: 'TEOSYAL',
-                additional: '2 ML',
+                detail: '2 ML',
                 price: '210 / 350 euro',
             },
         ],
@@ -272,17 +328,17 @@ export const injektionen = [
             },
             {
                 service: 'LIPPEN',
-                additional: '0,55 ML / 1 ML',
+                detail: '0,55 ML / 1 ML',
                 price: '180 / 260 euro',
             },
             {
                 service: 'WANGEN / KINN / JAWLINE',
-                additional: '1 ML / 2 ML',
+                detail: '1 ML / 2 ML',
                 price: '280 / 450 euro',
             },
             {
                 service: 'KORREKTUR OBERFLÄCHLICHER FALTCHEN',
-                additional: '1 ML / 2 ML',
+                detail: '1 ML / 2 ML',
                 price: '250 / 400 euro',
             },
             {
