@@ -33,7 +33,7 @@ const Header = () => {
                     <Logo />
                     <BurgerMenu />
                     <Link
-                        href="https://connect.shore.com/widget/allure-studio?locale=de"
+                        href="https://n1356878.alteg.io"
                         className={scss.link}
                         target="_blank"
                     >
