@@ -1,7 +1,6 @@
 const routes = [
     '/make-up',
     '/impressum',
-    '/injektionen',
     '/kontaktiere',
     '/massage',
     '/nageldesign',
