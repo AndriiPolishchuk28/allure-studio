@@ -6,7 +6,7 @@ export const italiana = Italiana({
 });
 
 export const montserrat = Montserrat({
-    subsets: ['latin'],
+    subsets: ['latin', 'cyrillic'],
     weight: ['200', '400', '500'],
 });
 

@@ -46,10 +46,10 @@
 }
 
 .review_1 {
-    background-image: url('../../assets/images/feedbacks/review1.jpg');
+    background-image: url('../../assets/images/feedbacks/review_new_1.jpg');
     @include media-rules(tablet) {
-        background: url('../../assets/images/feedbacks/review1_tablet.jpg');
-        background-size: contain;
+        background: url('../../assets/images/feedbacks/review_new_1.jpg');
+        background-size: cover;
         background-repeat: no-repeat;
     }
 }
@@ -192,7 +192,7 @@
     left: 20px;
     @include media-rules(tablet) {
         max-width: 582px;
-        top: 19px;
+        top: 14px;
         left: 24px;
     }
     @include media-rules(desktop) {

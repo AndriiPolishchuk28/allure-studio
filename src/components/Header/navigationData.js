@@ -16,10 +16,6 @@ const navigationItems = [
         href: '/massage',
     },
     {
-        label: 'Injektionen',
-        href: '/injektionen',
-    },
-    {
         label: 'Preisliste',
         href: '/preisliste',
     },
