@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { nagel } from '@/assets/images/nageldesign';
+import { nagel, nagel_mobile } from '@/assets/images/nageldesign';
 import scss from './NagelDesignBerlin.module.scss';
 import ReadMore from './ReadMore';
 import Link from 'next/link';
@@ -16,7 +16,7 @@ const NagelDesignBerlin = () => {
                         />
                         <source media="(min-width: 768px)" srcSet={nagel.src} />
                         <Image
-                            src={nagel}
+                            src={nagel_mobile}
                             alt="Nageldesign main photo"
                             priority
                             className={scss.image}
