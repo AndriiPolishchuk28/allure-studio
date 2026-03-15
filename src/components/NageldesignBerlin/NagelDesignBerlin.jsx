@@ -1,10 +1,5 @@
 import Image from 'next/image';
-import {
-    photo_main_mobile,
-    photo_main_tablet,
-    photo_main_desktop,
-    nagel,
-} from '@/assets/images/nageldesign';
+import { nagel } from '@/assets/images/nageldesign';
 import scss from './NagelDesignBerlin.module.scss';
 import ReadMore from './ReadMore';
 import Link from 'next/link';
