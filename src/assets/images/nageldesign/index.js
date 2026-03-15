@@ -8,3 +8,4 @@ export { default as photo4 } from './photo-4.jpg';
 export { default as photo5 } from './photo-5.jpg';
 export { default as photo6 } from './photo-6.jpg';
 export { default as photo7 } from './photo-7.jpg';
+export { default as nagel } from './nagel_main.jpg';

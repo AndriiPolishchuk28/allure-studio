@@ -55,27 +55,27 @@
 }
 
 .review_2 {
-    background-image: url('../../assets/images/feedbacks/review2.jpg');
+    background-image: url('../../assets/images/feedbacks/review_new_2.jpeg');
     @include media-rules(tablet) {
-        background: url('../../assets/images/feedbacks/review2_tablet.jpg');
-        background-size: contain;
+        background: url('../../assets/images/feedbacks/review_new_2.jpeg');
+        background-size: cover;
         background-repeat: no-repeat;
     }
 }
 
 .review_3 {
-    background-image: url('../../assets/images/feedbacks/review3.jpg');
+    background-image: url('../../assets/images/feedbacks/review_new_3.jpg');
     @include media-rules(tablet) {
-        background: url('../../assets/images/feedbacks/review3_tablet.jpg');
-        background-size: contain;
+        background: url('../../assets/images/feedbacks/review_new_3.jpg');
+        background-size: cover;
         background-repeat: no-repeat;
     }
 }
 
 .review_4 {
-    background-image: url('../../assets/images/feedbacks/review4.jpg');
+    background-image: url('../../assets/images/feedbacks/review_new_4.jpg');
     @include media-rules(tablet) {
-        background: url('../../assets/images/feedbacks/review4_tablet.jpg');
+        background: url('../../assets/images/feedbacks/review_new_4.jpg');
         background-size: contain;
         background-repeat: no-repeat;
     }
